@@ -42,7 +42,7 @@ function buildSubjectData(id: string, name: string, subjectModule: any): Subject
 }
 
 export const subjects: SubjectData[] = [
-  buildSubjectData('ibm', 'International Business Management', ibm),
+  buildSubjectData('ibm', 'International Business Management (IBM)', ibm),
   buildSubjectData('obe', 'Organizational Behavior', obe)
 ];
 

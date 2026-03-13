@@ -19,7 +19,7 @@ async function readData() {
           sheetUrl: parsed.sheetUrl
         },
         "ibm": {
-          name: "IBM Revision",
+          name: "International Business Management (IBM)",
           sheetUrl: ""
         }
       };
@@ -28,7 +28,7 @@ async function readData() {
     } else if (!parsed.subjects) {
       parsed.subjects = {
         "obe": { name: "Organizational Behavior (OBE)", sheetUrl: "" },
-        "ibm": { name: "IBM Revision", sheetUrl: "" }
+        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" }
       };
     }
 
@@ -47,7 +47,7 @@ async function readData() {
     return { 
       subjects: {
         "obe": { name: "Organizational Behavior (OBE)", sheetUrl: "" },
-        "ibm": { name: "IBM Revision", sheetUrl: "" }
+        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" }
       }, 
       sessions: {} 
     };
