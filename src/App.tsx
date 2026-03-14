@@ -12,14 +12,45 @@ import { BookOpen, BrainCircuit, Moon, Sun, LogOut, Loader2, Shield } from 'luci
 
 function AppContent() {
   const { user, isAdmin, loading, logout } = useAuth();
+  const [dynamicContent, setDynamicContent] = useState<any>(null);
+  const [isLoadingContent, setIsLoadingContent] = useState(false);
   const [highlightedId, setHighlightedId] = useState<string | null>(null);
   const [quizState, setQuizState] = useState<'playing' | 'results'>('playing');
   const [selectedChapter, setSelectedChapter] = useState<number | string>(1);
-  
+
+  useEffect(() => {
+    const fetchDynamicContent = async () => {
+      if (!user?.subjectId) return;
+      setIsLoadingContent(true);
+      try {
+        const res = await fetch(`/api/subjects/content/${user.subjectId}`);
+        const data = await res.json();
+        if (data.content) {
+          setDynamicContent(data.content);
+        }
+      } catch (error) {
+        console.error("Error fetching dynamic content:", error);
+      } finally {
+        setIsLoadingContent(false);
+      }
+    };
+    fetchDynamicContent();
+  }, [user?.subjectId]);
+
   const currentSubject = useMemo(() => {
     if (!user) return null;
-    return subjects.find(s => s.id === user.subjectId) || subjects.find(s => s.id === 'obe');
-  }, [user]);
+    const baseSubject = subjects.find(s => s.id === user.subjectId) || subjects.find(s => s.id === 'obe');
+    
+    if (dynamicContent && baseSubject) {
+      // Merge dynamic content into base subject
+      return {
+        ...baseSubject,
+        chapters: dynamicContent.chapters || baseSubject.chapters
+      };
+    }
+    
+    return baseSubject;
+  }, [user, dynamicContent]);
 
   const chapters = useMemo(() => {
     if (!currentSubject) return [];
@@ -171,7 +202,7 @@ function AppContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <h1 className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pastel-teal-2 to-pastel-pink-1 dark:from-sky-400 dark:to-pink-400">
-              {user.subjectId === 'ibm' ? 'IBM' : (user.subjectName || 'OBE Revision')}
+              {user.subjectId === 'ibm' ? 'International Business Management (IBM)' : (user.subjectName || 'OBE Revision')}
             </h1>
           </div>
           <div className="flex items-center gap-4">

@@ -4,7 +4,22 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs/promises';
 
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'nguyenkhavy5002213@gmail.com';
 const DATA_FILE = path.join(process.cwd(), 'data.json');
+const CONTENT_FILE = path.join(process.cwd(), 'subjects_content.json');
+
+async function readContent() {
+  try {
+    const data = await fs.readFile(CONTENT_FILE, 'utf-8');
+    return JSON.parse(data);
+  } catch (e) {
+    return {};
+  }
+}
+
+async function writeContent(data: any) {
+  await fs.writeFile(CONTENT_FILE, JSON.stringify(data, null, 2));
+}
 
 async function readData() {
   try {
@@ -76,7 +91,11 @@ async function getAllowedEmails(subjectId: string, sheetUrl: string): Promise<st
     const dMatch = sheetUrl.match(/\/d\/(.*?)(?:\/|$|\?)/);
     const eMatch = sheetUrl.match(/\/d\/e\/(.*?)(?:\/|$|\?)/);
     
-    if (eMatch) {
+    if (sheetUrl.includes('docs.google.com/document')) {
+      if (dMatch) {
+        fetchUrl = `https://docs.google.com/document/d/${dMatch[1]}/export?format=txt`;
+      }
+    } else if (eMatch) {
       // Published to web format
       fetchUrl = `https://docs.google.com/spreadsheets/d/e/${eMatch[1]}/pub?output=csv&t=${now}`;
     } else if (dMatch) {
@@ -90,17 +109,13 @@ async function getAllowedEmails(subjectId: string, sheetUrl: string): Promise<st
       if (response.ok) {
         const contentType = response.headers.get('content-type');
         if (contentType && contentType.includes('text/html')) {
-          console.error(`Google Sheet for ${subjectId} is not public or URL is incorrect (returned HTML)`);
-          // If we have no cache, we might want to know it failed
-          if (!cachedEmails[subjectId] || cachedEmails[subjectId].length === 0) {
-             console.log('No cached emails available.');
-          }
+          console.error(`Google resource for ${subjectId} is not public or URL is incorrect (returned HTML)`);
           return cachedEmails[subjectId] || [];
         }
         
-        const csvText = await response.text();
+        const text = await response.text();
         const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
-        const matches = csvText.toLowerCase().match(emailRegex) || [];
+        const matches = text.toLowerCase().match(emailRegex) || [];
         const uniqueEmails = [...new Set(matches.map(e => e.trim()))];
         
         console.log(`Successfully fetched ${uniqueEmails.length} unique emails for ${subjectId}.`);
@@ -108,9 +123,10 @@ async function getAllowedEmails(subjectId: string, sheetUrl: string): Promise<st
         lastFetchTime[subjectId] = now;
         return uniqueEmails;
       } else {
-        console.error(`Fetch failed for ${subjectId} with status:`, response.status);
+        console.error(`Fetch failed for ${subjectId} with status: ${response.status}. Ensure the resource is shared as "Anyone with the link can view".`);
       }
-    } else {
+    }
+ else {
       console.error(`Could not extract Sheet ID from URL for ${subjectId}:`, sheetUrl);
     }
   } catch (error) {
@@ -127,13 +143,132 @@ async function startServer() {
   app.use(express.json());
 
   // API Routes
+  app.get('/api/keep-alive', (req, res) => {
+    res.json({ status: 'alive', timestamp: new Date().toISOString() });
+  });
+
+  app.get('/api/subjects/content/:id', async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const content = await readContent();
+      res.json({ content: content[id] || null });
+    } catch (e) {
+      next(e);
+    }
+  });
+
+  app.post('/api/subjects/sync/:id', async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const { docUrl, adminEmail } = req.body;
+
+      if (adminEmail !== ADMIN_EMAIL && adminEmail !== 'nguyenkhavy5002213@gmail.com') {
+        return res.status(403).json({ error: 'Unauthorized' });
+      }
+
+      const data = await readData();
+      const subject = data.subjects[id];
+      const url = docUrl || subject?.docUrl;
+
+      if (!url) return res.status(400).json({ error: 'No Content URL (Doc/Sheet) provided' });
+
+      // 1. Fetch raw data from Google Docs or Sheets
+      let rawText = "";
+      console.log(`Attempting to fetch raw text for ${id} from URL: ${url}`);
+
+      if (url.includes('docs.google.com/document')) {
+        const docId = url.match(/\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+        if (!docId) throw new Error('Could not extract Document ID from URL');
+        
+        const exportUrl = `https://docs.google.com/document/d/${docId}/export?format=txt`;
+        console.log(`Fetching Doc from: ${exportUrl}`);
+        const response = await fetch(exportUrl);
+        if (!response.ok) {
+          if (response.status === 401 || response.status === 403) {
+            throw new Error('Tài liệu Google Doc không được chia sẻ công khai. Vui lòng chọn "Bất kỳ ai có liên kết đều có thể xem".');
+          }
+          throw new Error(`Failed to fetch Google Doc content (Status: ${response.status})`);
+        }
+        rawText = await response.text();
+      } else if (url.includes('docs.google.com/spreadsheets')) {
+        const sheetId = url.match(/\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+        if (!sheetId) throw new Error('Could not extract Sheet ID from URL');
+        
+        // Try multiple export formats for robustness
+        const exportUrls = [
+          `https://docs.google.com/spreadsheets/d/${sheetId}/export?format=csv`,
+          `https://docs.google.com/spreadsheets/d/${sheetId}/pub?output=csv`,
+          `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv`
+        ];
+
+        let lastError = null;
+        for (const exportUrl of exportUrls) {
+          try {
+            console.log(`Trying Sheet export URL: ${exportUrl}`);
+            const response = await fetch(exportUrl);
+            if (response.ok) {
+              const text = await response.text();
+              if (text && !text.includes('<!DOCTYPE html>')) {
+                rawText = text;
+                break;
+              }
+            } else if (response.status === 401 || response.status === 403) {
+              lastError = 'Tài liệu Google Sheet không được chia sẻ công khai. Vui lòng chọn "Bất kỳ ai có liên kết đều có thể xem".';
+            }
+          } catch (e) {
+            lastError = e instanceof Error ? e.message : String(e);
+          }
+        }
+
+        if (!rawText) {
+          throw new Error(lastError || 'Không thể lấy dữ liệu từ Google Sheet. Vui lòng kiểm tra quyền chia sẻ.');
+        }
+      } else {
+        throw new Error('Unsupported URL format');
+      }
+
+      const currentContent = await readContent();
+      const existingChapters = currentContent[id]?.chapters || [];
+
+      res.json({ 
+        success: true, 
+        rawText, 
+        existingChaptersSummary: existingChapters.map((c: any) => ({ id: c.id, title: c.title })),
+        subjectName: subject?.name || id
+      });
+    } catch (e) {
+      console.error('Fetch Error:', e);
+      res.status(500).json({ error: e instanceof Error ? e.message : 'Failed to fetch document content' });
+    }
+  });
+
+  app.post('/api/subjects/save-content/:id', async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const { content, adminEmail } = req.body;
+
+      if (adminEmail !== ADMIN_EMAIL && adminEmail !== 'nguyenkhavy5002213@gmail.com') {
+        return res.status(403).json({ error: 'Unauthorized' });
+      }
+
+      const allContent = await readContent();
+      allContent[id] = content;
+      await writeContent(allContent);
+
+      res.json({ success: true });
+    } catch (e) {
+      next(e);
+    }
+  });
+
   app.get('/api/subjects', async (req, res, next) => {
     try {
       const data = await readData();
       const subjects = Object.keys(data.subjects).map(id => ({
         id,
         name: data.subjects[id].name,
-        sheetUrl: data.subjects[id].sheetUrl
+        sheetUrl: data.subjects[id].sheetUrl,
+        docUrl: data.subjects[id].docUrl || ''
       }));
       res.json({ subjects });
     } catch (e) {
@@ -143,7 +278,7 @@ async function startServer() {
 
   app.post('/api/subjects', async (req, res, next) => {
     try {
-      const { id, name, sheetUrl } = req.body;
+      const { id, name, sheetUrl, docUrl } = req.body;
       if (!id || !name) {
         return res.status(400).json({ error: 'ID and name are required' });
       }
@@ -151,7 +286,8 @@ async function startServer() {
       const data = await readData();
       data.subjects[id] = {
         name,
-        sheetUrl: sheetUrl || (data.subjects[id] ? data.subjects[id].sheetUrl : '')
+        sheetUrl: sheetUrl || (data.subjects[id] ? data.subjects[id].sheetUrl : ''),
+        docUrl: docUrl || (data.subjects[id] ? data.subjects[id].docUrl : '')
       };
       await writeData(data);
       
@@ -179,7 +315,10 @@ async function startServer() {
       const subjectId = req.query.subjectId as string || 'obe';
       const data = await readData();
       const subject = data.subjects[subjectId];
-      res.json({ url: subject ? subject.sheetUrl : '' });
+      res.json({ 
+        sheetUrl: subject ? subject.sheetUrl : '',
+        docUrl: subject ? subject.docUrl : ''
+      });
     } catch (e) {
       next(e);
     }
@@ -187,16 +326,17 @@ async function startServer() {
 
   app.post('/api/settings/sheet', async (req, res, next) => {
     try {
-      const { url, subjectId = 'obe' } = req.body;
+      const { sheetUrl, docUrl, subjectId = 'obe' } = req.body;
       const data = await readData();
       if (!data.subjects[subjectId]) {
         return res.status(404).json({ error: 'Subject not found' });
       }
-      data.subjects[subjectId].sheetUrl = url;
+      if (sheetUrl !== undefined) data.subjects[subjectId].sheetUrl = sheetUrl;
+      if (docUrl !== undefined) data.subjects[subjectId].docUrl = docUrl;
       await writeData(data);
       
       // Invalidate cache when sheet URL changes
-      lastFetchTime[subjectId] = 0;
+      if (sheetUrl !== undefined) lastFetchTime[subjectId] = 0;
       
       res.json({ success: true });
     } catch (e) {
@@ -204,7 +344,6 @@ async function startServer() {
     }
   });
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'nguyenkhavy5002213@gmail.com';
 
   app.post('/api/auth/login', async (req, res, next) => {
     try {

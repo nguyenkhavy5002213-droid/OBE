@@ -55,7 +55,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
   const [isOpen, setIsOpen] = useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
   const isHighlighted = highlightedId === section.id;
-  const isAnySubHighlighted = section.subsections.some(sub => sub.id === highlightedId);
+  const isAnySubHighlighted = section.subsections?.some(sub => sub.id === highlightedId) ?? false;
 
   useEffect(() => {
     if ((isHighlighted || isAnySubHighlighted) && sectionRef.current) {
@@ -109,7 +109,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
             </div>
           )}
           <div className="space-y-4 pl-2 border-l-2 border-slate-100 dark:border-slate-700 ml-2">
-            {section.subsections.map((sub) => (
+            {section.subsections?.map((sub) => (
               <SubSectionItem key={sub.id} sub={sub} highlightedId={highlightedId} />
             ))}
           </div>
