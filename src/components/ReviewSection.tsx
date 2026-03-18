@@ -9,6 +9,11 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+function removeCitations(text: string | undefined): string {
+  if (!text) return '';
+  return text.replace(/\[cite:[^\]]*\]/g, '');
+}
+
 interface ReviewSectionProps {
   highlightedId: string | null;
   selectedChapter: number | string;
@@ -83,7 +88,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
           onClick={() => setIsOpen(!isOpen)}
           className="flex-1 flex items-center justify-between p-4 text-left"
         >
-          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 pr-4">{section.title}</h3>
+          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 pr-4">{removeCitations(section.title)}</h3>
           <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-slate-700 shadow-sm border border-slate-200 dark:border-slate-600">
             {isOpen ? <ChevronDown className="w-5 h-5 text-slate-500 dark:text-slate-400" /> : <ChevronRight className="w-5 h-5 text-slate-500 dark:text-slate-400" />}
           </div>
@@ -91,7 +96,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
         <button
           onClick={(e) => {
             e.stopPropagation();
-            onStartSpecificQuiz(section.id, section.title);
+            onStartSpecificQuiz(section.id, removeCitations(section.title));
           }}
           className="mr-4 px-3 py-1.5 bg-pastel-teal-2 hover:bg-pastel-teal-1 text-slate-800 text-xs font-extrabold rounded-lg transition-colors flex items-center gap-1.5 shadow-sm border border-pastel-teal-2/50"
           title="Làm bài tập riêng cho phần này"
@@ -105,7 +110,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
         <div className="p-5 border-t border-slate-100 dark:border-slate-700">
           {section.content && (
             <div className="markdown-body text-slate-700 dark:text-slate-300 mb-5 leading-relaxed">
-              <ReactMarkdown>{section.content}</ReactMarkdown>
+              <ReactMarkdown>{removeCitations(section.content)}</ReactMarkdown>
             </div>
           )}
           <div className="space-y-4 pl-2 border-l-2 border-slate-100 dark:border-slate-700 ml-2">
@@ -156,7 +161,7 @@ function SubSectionItem({ sub, highlightedId }: { sub: SubSection; highlightedId
       >
         <div className="flex items-start gap-3">
           <Target className="w-5 h-5 text-pastel-seafoam-1 mt-0.5 flex-shrink-0" />
-          <h4 className="font-extrabold text-slate-800 dark:text-slate-200 leading-snug">{sub.title}</h4>
+          <h4 className="font-extrabold text-slate-800 dark:text-slate-200 leading-snug">{removeCitations(sub.title)}</h4>
         </div>
         {isOpen ? <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" /> : <ChevronRight className="w-5 h-5 text-slate-400 flex-shrink-0" />}
       </button>
@@ -165,7 +170,7 @@ function SubSectionItem({ sub, highlightedId }: { sub: SubSection; highlightedId
         <div className="p-4 pt-0">
           <div className="pl-8">
             <div className="markdown-body text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
-              <ReactMarkdown>{sub.content}</ReactMarkdown>
+              <ReactMarkdown>{removeCitations(sub.content)}</ReactMarkdown>
             </div>
             
             {sub.example && (
@@ -181,7 +186,7 @@ function SubSectionItem({ sub, highlightedId }: { sub: SubSection; highlightedId
                 {showExample && (
                   <div className="mt-3 p-4 bg-pastel-yellow-1/30 dark:bg-amber-900/20 text-slate-800 dark:text-amber-100 rounded-xl text-sm border border-pastel-yellow-1/60 dark:border-amber-700/50 leading-relaxed shadow-sm">
                     <div className="markdown-body">
-                      <ReactMarkdown>{sub.example}</ReactMarkdown>
+                      <ReactMarkdown>{removeCitations(sub.example)}</ReactMarkdown>
                     </div>
                   </div>
                 )}

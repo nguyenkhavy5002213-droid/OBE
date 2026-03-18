@@ -4,217 +4,161 @@ export const chapter4Theory: Section[] = [
   {
     "id": "4.1",
     "chapter": 4,
-    "title": "4.1 Differentiate between emotions and moods.",
-    "content": "Để phân biệt rõ ràng giữa **Emotions** (*Cảm xúc*) và **Moods** (*Tâm trạng*), chúng ta cần hiểu rằng cả hai đều là những nhánh nhỏ nằm dưới một khái niệm ô dù rộng hơn gọi là **Affect** (*Xúc cảm* - một phạm vi rộng các cảm giác mà con người trải qua).",
+    "title": "4.1 Compare person–job fit and person–organization fit.",
+    "content": "Để phân biệt giữa **Person–job fit** (*Sự phù hợp giữa người và việc*) và **Person–organization fit** (*Sự phù hợp giữa người và tổ chức*), chúng ta cần nhìn vào yếu tố cốt lõi mà mỗi lý thuyết đo lường: một bên dựa trên **tính cách** đối với công việc, bên còn lại dựa trên **hệ giá trị** đối với môi trường tổ chức.",
     "subsections": [
       {
         "id": "4.1.1",
-        "title": "4 điểm khác biệt cốt lõi",
-        "content": "1. **Nguyên nhân gây ra (Cause):**\n   - **Emotions:** Bị gây ra bởi một sự kiện hoặc đối tượng vô cùng cụ thể (*specific event*).\n   - **Moods:** Nguyên nhân thường chung chung và không rõ ràng (*general and unclear*). Đôi khi bạn không biết tại sao mình lại mang tâm trạng đó.\n\n2. **Thời gian kéo dài (Duration):**\n   - **Emotions:** Diễn ra trong thời gian rất ngắn (*very brief in duration*), thường chỉ kéo dài vài giây hoặc vài phút.\n   - **Moods:** Kéo dài lâu hơn rất nhiều so với cảm xúc, thường được tính bằng nhiều giờ hoặc nhiều ngày.\n\n3. **Bản chất và Số lượng (Nature):**\n   - **Emotions:** Rất đa dạng, mang tính cụ thể và có nhiều loại khác nhau (*specific and numerous in nature*). Các nhà nghiên cứu thường chỉ ra 6 cảm xúc phổ quát là: tức giận (*anger*), sợ hãi (*fear*), buồn bã (*sadness*), hạnh phúc (*happiness*), kinh tởm (*disgust*) và ngạc nhiên (*surprise*).\n   - **Moods:** Mang tính khái quát hơn, thường được chia thành 2 chiều chính: tâm trạng tích cực (*positive affect*) và tâm trạng tiêu cực (*negative affect*).\n\n4. **Biểu hiện ra bên ngoài (Expressions):**\n   - **Emotions:** Thường đi kèm với những biểu cảm khuôn mặt cực kỳ rõ rệt và dễ nhận biết (*distinct facial expressions*).\n   - **Moods:** Thường không được biểu thị bằng những nét mặt hay biểu cảm rõ ràng."
+        "title": "1. Person–Job Fit (Sự phù hợp giữa Người và Việc)",
+        "content": "**Bản chất:** Lý thuyết này đề xuất rằng sự phù hợp giữa **loại tính cách** (*personality type*) của một người và **môi trường nghề nghiệp** (*occupational environment*) sẽ là yếu tố quyết định mức độ **hài lòng với công việc** (*satisfaction*) và **tỷ lệ nghỉ việc** (*turnover*) của người đó.\n\n**Mô hình áp dụng:** Sự phù hợp này được xác định thông qua **6 nhóm tính cách** trong mô hình của Holland (*Holland's Typology of Personality*), bao gồm:\n- **Realistic (Thực tế):** Thích các hoạt động thể chất đòi hỏi kỹ năng, sức mạnh, hợp với thợ máy, công nhân lắp ráp.\n- **Investigative (Nghiên cứu):** Thích suy nghĩ, tổ chức và thấu hiểu, hợp với nhà sinh học, nhà kinh tế học.\n- **Artistic (Nghệ thuật):** Thích các hoạt động cho phép thể hiện sự sáng tạo, hợp với họa sĩ, nhạc sĩ, nhà văn.\n- **Social (Xã hội):** Thích các hoạt động giúp đỡ và phát triển người khác, hợp với giáo viên, nhân viên xã hội.\n- **Enterprising (Dẫn dắt/Khởi nghiệp):** Thích các hoạt động có cơ hội gây ảnh hưởng đến người khác và đạt được quyền lực, hợp với luật sư, quản lý doanh nghiệp nhỏ.\n- **Conventional (Quy củ):** Thích các hoạt động có quy tắc, trật tự và rõ ràng, hợp với kế toán, quản lý doanh nghiệp, thu ngân."
       },
       {
         "id": "4.1.2",
-        "title": "Ví dụ thực tế trong môi trường OB",
-        "content": "Giả sử bạn đang trình bày dự án thì bị sếp ngắt lời và phê bình gay gắt trước mặt toàn công ty.",
-        "example": "- **Emotion:** Ngay tại khoảnh khắc đó, bạn đỏ mặt, nhíu mày và thấy cực kỳ tức giận với sếp. Sự tức giận này bị kích hoạt bởi sự kiện sếp mắng, chỉ kéo dài vài phút và biểu lộ rõ ra mặt. Đây chính là **Emotion**.\n- **Mood:** Đến buổi chiều cùng ngày, sự tức giận ban sáng đã qua đi, mặt bạn không còn nhăn nhó nữa nhưng bạn lại cảm thấy chán nản, uể oải, không có động lực làm việc mà cũng không xác định được rõ ràng là mình đang giận sếp, giận bản thân hay chán công việc. Cảm giác bao trùm kéo dài suốt cả buổi chiều này chính là **Mood**."
+        "title": "2. Person–Organization Fit (Sự phù hợp giữa Người và Tổ chức)",
+        "content": "**Bản chất:** Khác với việc đo lường tính cách cho một công việc cụ thể, lý thuyết này cho rằng con người bị thu hút và được tuyển chọn bởi những tổ chức phù hợp với **hệ giá trị** (*values*) của họ.\n\n**Hệ quả:** Nếu nhân viên làm việc trong một tổ chức mà họ cảm thấy không có sự **tương thích** (*no compatibility*) về mặt giá trị, họ sẽ rời bỏ tổ chức đó.\n\n**Tóm lại:** Nếu như *Person–job fit* trả lời cho câu hỏi *\"Tính cách của bạn có hợp để làm nghề này không?\"*, thì *Person–organization fit* giải quyết vấn đề *\"Giá trị cá nhân của bạn có đồng điệu với giá trị của công ty này để gắn bó lâu dài hay không?\"*."
       }
     ]
   },
   {
     "id": "4.2",
     "chapter": 4,
-    "title": "4.2 Identify the sources of emotions and moods.",
-    "content": "Dưới đây là các nguồn gốc (*sources*) chính tạo ra cảm xúc (*emotions*) và tâm trạng (*moods*) của nhân viên tại nơi làm việc:",
+    "title": "4.2 Describe personality, the way it is measured, and the factors that shape it.",
+    "content": "Dưới đây là phần giải thích chi tiết cho mục 4.2 về **Tính cách**, cách đo lường và các yếu tố hình thành:",
     "subsections": [
       {
         "id": "4.2.1",
-        "title": "1. Personality (Tính cách)",
-        "content": "**Bản chất:** Cảm xúc và tâm trạng có một phần bắt nguồn từ đặc điểm tính cách bẩm sinh (*trait component*). Trong đó, khái niệm **Affect intensity** (*Cường độ cảm xúc*) chỉ ra rằng một số người có khả năng trải nghiệm vui buồn mãnh liệt hơn hẳn người khác.",
-        "example": "**Ví dụ OB:** Cùng bị sếp nhắc nhở nhẹ trong cuộc họp, nhân viên A (có *affect intensity* thấp) chỉ thấy bình thường và sửa lỗi. Nhưng nhân viên B (có *affect intensity* cao) lại cảm thấy tổn thương sâu sắc và buồn bã suốt cả tuần."
+        "title": "1. Định nghĩa Tính cách (Defining Personality)",
+        "content": "**Bản chất:** Tính cách được định nghĩa là tổng hợp tất cả các cách thức mà một cá nhân phản ứng và tương tác với thế giới xung quanh.\n\n**Đặc điểm tính cách** (*Personality traits*): Khi những hành vi của một người được thể hiện ra một cách ổn định và tồn tại lâu dài (*enduring characteristics*), chúng được gọi là các đặc điểm tính cách."
       },
       {
         "id": "4.2.2",
-        "title": "2. Time of Day & Day of the Week",
-        "content": "**Bản chất:** Mọi người thường có một quy luật chung: chúng ta vui vẻ nhất vào khoảng thời gian giữa ngày (*midpoint of the daily awake period*). Tương tự, mọi người thường hạnh phúc hơn vào những ngày cuối tuần.",
-        "example": "**Ví dụ OB:** Hiểu được điều này, một người sếp tinh tế sẽ lên lịch cho những cuộc họp yêu cầu sự sáng tạo hoặc các buổi thông báo tin vui vào giữa trưa hoặc thứ Sáu, thay vì sáng sớm thứ Hai khi nhân viên còn đang uể oải."
+        "title": "2. Cách đo lường Tính cách (Measuring Personality)",
+        "content": "**Mục đích:** Các nhà quản lý cần biết cách đo lường tính cách vì các bài kiểm tra tính cách rất hữu ích trong việc ra quyết định tuyển dụng (*hiring decisions*). Nó giúp họ dự đoán ứng viên nào sẽ là người phù hợp và làm tốt nhất một công việc cụ thể.\n\n**Phương pháp:** Cách thức phổ biến nhất (*most common means*) để đo lường tính cách là thông qua các bài **khảo sát tự đánh giá** (*self-report surveys*).\n\n**Thực tế áp dụng trong OB:** Dựa trên biểu đồ dữ liệu, các công ty có xu hướng sử dụng bài đánh giá tính cách nhiều nhất cho các vị trí quản lý cấp cao và giảm dần ở các cấp bậc thấp hơn. Cụ thể, tỷ lệ sử dụng bài test tính cách trong tuyển dụng đối với vị trí **Giám đốc/Điều hành** (*Executives*) là **32%** và **Quản lý cấp trung** (*Middle Managers*) là **28%**. Tỷ lệ này giảm xuống **20%** đối với nhóm **Nhân viên độc lập** (*Individual Contributors*) và chỉ còn **17%** ở nhóm **Lao động làm theo giờ** (*Hourly Workers*)."
       },
       {
         "id": "4.2.3",
-        "title": "3. Weather (Thời tiết)",
-        "content": "**Bản chất:** Rất nhiều người nghĩ rằng trời mưa thì buồn, trời nắng thì vui. Tuy nhiên, khoa học OB gọi đây là **Illusory correlation** (*Sự tương quan ảo*) - tức là thực chất thời tiết **KHÔNG HỀ** có tác động thực sự đến tâm trạng của chúng ta.",
-        "example": "**Ví dụ OB:** Sếp không nên đổ lỗi năng suất của team đi xuống là do \"dạo này thời tiết u ám\", vì đó là nhận định cảm tính không có cơ sở khoa học."
-      },
-      {
-        "id": "4.2.4",
-        "title": "4. Stress (Căng thẳng)",
-        "content": "**Bản chất:** Ngay cả những mức độ căng thẳng thấp nhưng kéo dài liên tục (*constant stress*) cũng có thể làm tâm trạng của con người trở nên tồi tệ đi rất nhiều.",
-        "example": "**Ví dụ OB:** Việc công ty áp dụng văn hóa làm việc không rõ deadline, nhân viên lúc nào cũng trong trạng thái \"có thể bị gọi bất cứ lúc nào\" sẽ tạo ra stress ngầm, khiến môi trường làm việc lúc nào cũng căng thẳng và dễ cáu gắt."
-      },
-      {
-        "id": "4.2.5",
-        "title": "5. Social Interactions (Tương tác xã hội)",
-        "content": "**Bản chất:** Những tương tác tiêu cực ở chỗ làm không chỉ dừng lại ở công ty, mà nó có hiệu ứng **\"spill over\"** (*tràn ra/lan sang*) cả cuộc sống gia đình của nhân viên.",
-        "example": "**Ví dụ OB:** Một nhân viên bị khách hàng mắng oan ở công ty, vì không xả được cảm xúc đó nên khi về nhà, người này đã cáu gắt và to tiếng với vợ/chồng con cái của mình."
-      },
-      {
-        "id": "4.2.6",
-        "title": "6. Sleep & Exercise (Giấc ngủ & Thể dục)",
-        "content": "**Bản chất:** Chất lượng giấc ngủ kém làm gia tăng các cảm xúc tiêu cực (*negative affect*). Ngược lại, tập thể dục giúp cải thiện đáng kể tâm trạng, đặc biệt tốt cho những người đang bị trầm cảm.",
-        "example": "**Ví dụ OB:** Nhận thức được nguồn gốc này, các công ty công nghệ lớn (như Google) thường trang bị phòng ngủ trưa (*nap room*) và phòng gym miễn phí ngay tại văn phòng để giúp nhân viên tái tạo năng lượng tích cực."
-      },
-      {
-        "id": "4.2.7",
-        "title": "7. Gender Identity (Bản dạng giới)",
-        "content": "**Bản chất:** Tại nơi làm việc vẫn tồn tại những định kiến (*Stereotypical perceptions*) về giới tính: người ta thường mặc định phụ nữ thì hay bị \"cảm xúc\" chi phối, trong khi đàn ông thì hay \"tức giận\".",
-        "example": "**Ví dụ OB:** Khi một nữ quản lý gắt gao trong cuộc họp, nhân viên có thể đánh giá cô ấy là \"quá cảm xúc\". Nhưng cùng hành động đó ở một nam quản lý thì lại được khen là \"quyết đoán\". Là người học OB, bạn phải loại bỏ định kiến này khi đánh giá hành vi con người."
+        "title": "3. Các yếu tố hình thành Tính cách (Factors that shape it)",
+        "content": "Trong phạm vi các trích đoạn tài liệu, nội dung không đi sâu vào việc liệt kê các yếu tố gốc rễ (ví dụ như yếu tố di truyền hay môi trường) định hình nên tính cách con người.\n\nTài liệu hiện tại chỉ tập trung nhấn mạnh rằng tính cách được định hình và mô tả thông qua các đặc điểm hành vi mang tính chất kéo dài và bền vững (*enduring characteristics*) của mỗi cá nhân."
       }
     ]
   },
   {
     "id": "4.3",
     "chapter": 4,
-    "title": "4.3 Show the impact emotional labor has on employees.",
-    "content": "**Emotional labor** là tình trạng một nhân viên bắt buộc phải bộc lộ những cảm xúc mà tổ chức/công ty mong muốn (hoặc quy định) trong quá trình giao tiếp làm việc, bất chấp cảm xúc thật sự của họ lúc đó là gì.",
+    "title": "4.3 Describe the strengths and weaknesses of the Myers- Briggs Type Indicator (MBTI) personality framework, the Big Five model, and the Dark Triad.",
+    "content": "Here is a breakdown of the strengths, weaknesses, and core concepts of the three personality frameworks:",
     "subsections": [
       {
         "id": "4.3.1",
-        "title": "1. Bản chất của Emotional Labor",
-        "content": "Để thực hiện Emotional labor, nhân viên phải làm việc với 2 loại cảm xúc:\n- **Felt emotions:** Cảm xúc thật sự đang diễn ra bên trong cá nhân.\n- **Displayed emotions:** Cảm xúc mà công ty yêu cầu nhân viên phải thể hiện ra bên ngoài cho phù hợp với hoàn cảnh.\n\nNhân viên thường dùng 2 cách để bộc lộ *displayed emotions*:\n- **Surface acting (Diễn bề ngoài):** Giấu đi cảm xúc thật và chỉ \"đeo mặt nạ\" diễn biểu cảm ra bên ngoài (ví dụ: đang buồn nhưng vẫn nhếch mép cười).\n- **Deep acting (Diễn sâu):** Cố gắng thay đổi nội tâm, tự thuyết phục mình cảm nhận đúng cái cảm xúc mà công ty yêu cầu."
+        "title": "1. The Myers-Briggs Type Indicator (MBTI)",
+        "content": "**Overview:** The MBTI classifies individuals based on four dimensions: **Extroverted (E)** or **Introverted (I)**, **Sensing (S)** or **Intuitive (N)**, **Thinking (T)** or **Feeling (F)**, and **Perceiving (P)** or **Judging (J)**. These classifications combine to form specific types, such as **INTJs** (*visionaries*), **ESTJs** (*organizers*), and **ENTPs** (*conceptualizers*).\n\n**Strengths:** Its primary advantage is its popularity, as it is the most widely used personality framework.\n\n**Weaknesses:** There are striking differences in evidence and empirical support across different personality measures. Because of this lack of strong empirical evidence, managers are cautioned to critically evaluate frameworks like the MBTI before making substantive decisions based on their results."
       },
       {
         "id": "4.3.2",
-        "title": "2. Tác động của Emotional Labor lên nhân viên (The Impact)",
-        "content": "Tác động nặng nề nhất xảy ra khi có sự mâu thuẫn giữa cảm xúc thật (*felt*) và cảm xúc phải bộc lộ (*displayed*). Sự không nhất quán này tạo ra một trạng thái tâm lý gọi là **Emotional dissonance** (*Sự bất hòa/bất đồng cảm xúc*).\n\nNếu nhân viên phải chịu đựng *emotional dissonance* trong một thời gian dài (thường do lạm dụng *Surface acting*), nó sẽ tạo ra 3 hậu quả cực kỳ nghiêm trọng:\n1. **Job burnout:** Sự kiệt quệ, \"cháy sạch\" về mặt tâm lý và sức lực.\n2. **Declines in job performance:** Sự suy giảm rõ rệt về hiệu suất và chất lượng công việc.\n3. **Lower job satisfaction:** Mất đi sự hài lòng và niềm vui với công việc hiện tại."
+        "title": "2. The Big Five Model",
+        "content": "**Overview:** The Big Five evaluates individuals across five traits: **Conscientiousness**, **Emotional stability**, **Extroversion**, **Openness to experience**, and **Agreeableness**.\n\n**Strengths:** The Big Five is the most widely supported personality framework to date. Its greatest strength is its ability to successfully predict key organizational outcomes: *emotional stability* leads to higher job and life satisfaction, *extroversion* and *conscientiousness* predict higher performance and enhanced leadership, and *openness* enhances training performance.\n\n**Weaknesses:** While the text does not detail specific flaws of the Big Five itself, it notes a general limitation regarding personality frameworks that managers must consider: while some traits are highly suitable for predicting actual job performance, other traits may only predict how well an employee will do during training and onboarding."
       },
       {
         "id": "4.3.3",
-        "title": "Ví dụ trong môi trường OB",
-        "content": "Hãy tưởng tượng bạn là một nhân viên Chăm sóc khách hàng (CSKH) qua điện thoại. Hôm nay bạn vừa nhận tin buồn từ gia đình, trong lòng bạn đang rất đau buồn và mệt mỏi (**Felt emotions**).",
-        "example": "Tuy nhiên, quy tắc của tổng đài là phải luôn chào khách hàng bằng giọng điệu vui vẻ, năng lượng và nhiệt tình (**Displayed emotions** -> Đây chính là yêu cầu của **Emotional labor**). Nếu bạn cố gắng nén nước mắt, gượng cười và gồng mình nói giọng vui vẻ với 100 khách hàng trong ngày hôm đó (**Surface acting**), tâm lý của bạn sẽ bị giằng xé dữ dội (**Emotional dissonance**). Trải qua việc này lặp đi lặp lại nhiều ngày, bạn sẽ nhanh chóng bị vắt kiệt sức lực tâm trí (**Job burnout**), gọi điện cho khách hay bị vấp/quên kịch bản (**Declines in job performance**) và cuối cùng là chán ghét công việc này đến mức muốn nộp đơn xin nghỉ (**Lower job satisfaction**)."
+        "title": "3. The Dark Triad",
+        "content": "**Overview:** The Dark Triad identifies three highly negative personality traits:\n- **Machiavellianism:** Describes an individual who is pragmatic, maintains emotional distance, and believes that the ends can justify the means.\n- **Narcissism:** Describes a tendency to be arrogant, possess a grandiose sense of self-importance, require excessive admiration, and have a strong sense of entitlement.\n- **Psychopathy:** Describes a tendency to lack concern for others and feel a complete lack of guilt or remorse when one's actions cause harm to others.\n\n**Strengths and Weaknesses:** The sources define these traits entirely by their destructive tendencies rather than identifying positive \"strengths\". The presence of these traits represents a severe weakness or risk for an organization, as they describe individuals who manipulate, act arrogantly, or harm others without remorse."
       }
     ]
   },
   {
     "id": "4.4",
     "chapter": 4,
-    "title": "4.4 Describe affective events theory.",
-    "content": "**Thuyết Sự kiện Cảm xúc** (*Affective events theory - AET*) là một lý thuyết cho rằng nhân viên luôn có những phản ứng về mặt cảm xúc đối với những sự việc (*events*) xảy ra với họ tại nơi làm việc. Những cảm xúc nảy sinh từ các sự kiện này sẽ trực tiếp định hình và ảnh hưởng đến hiệu suất làm việc (*job performance*) cũng như sự hài lòng với công việc (*satisfaction*) của họ.",
+    "title": "4.4 Discuss how the concepts of core self-evaluation (CSE), self-monitoring, and proactive personality contribute to the understanding of personality.",
+    "content": "Để hiểu toàn diện về tính cách của một người lao động trong môi trường Hành vi Tổ chức (OB), bên cạnh các mô hình lớn như Big Five hay MBTI, chúng ta cần phân tích 3 đặc điểm tính cách (personality traits) bổ sung cực kỳ quan trọng. Ba khái niệm này đóng góp trực tiếp vào việc giải thích cách nhân viên nhìn nhận giá trị của mình, cách họ thích ứng với môi trường và cách họ định hình hành vi hành động.",
     "subsections": [
       {
         "id": "4.4.1",
-        "title": "Bản chất cốt lõi của AET",
-        "content": "- Cảm xúc chính là chiếc chìa khóa mang lại những hiểu biết giá trị để ta thấy được các sự kiện tại nơi làm việc đang chi phối năng suất của nhân viên như thế nào.\n- Một điểm cực kỳ quan trọng: Nhân viên và các nhà quản lý (*managers*) tuyệt đối không được phớt lờ những cảm xúc hay các sự kiện sinh ra chúng, ngay cả khi đó chỉ là những chuyện trông có vẻ rất nhỏ nhặt (*minor*). Lý do là vì những cảm xúc tiêu cực từ các sự kiện nhỏ này sẽ không biến mất mà chúng sẽ **accumulate** (*tích tụ dần dần*) theo thời gian."
+        "title": "1. Core Self-Evaluation - CSE (Tự đánh giá cốt lõi)",
+        "content": "Bản chất: Đây là những kết luận sâu thẳm nhất (bottom line conclusions) mà một cá nhân tự đánh giá về năng lực (capabilities), sự tháo vát (competence), và giá trị cốt lõi của họ như một con người (worth as a person).\n\nĐóng góp vào hiểu biết tính cách: Khái niệm này cho chúng ta biết mức độ tự tin và sự vững vàng trong tâm trí của một nhân viên.",
+        "example": "Ví dụ OB: Khi đối mặt với nguy cơ cắt giảm nhân sự, một nhân viên có CSE cao sẽ tin tưởng sâu sắc vào năng lực và giá trị của bản thân, từ đó giữ thái độ bình tĩnh, tiếp tục làm việc hiệu quả vì họ tin rằng mình có khả năng kiểm soát tình hình. Ngược lại, người có CSE thấp sẽ hoảng loạn và nghi ngờ bản thân."
       },
       {
         "id": "4.4.2",
-        "title": "Ví dụ trong môi trường OB",
-        "content": "Giả sử bạn là nhân viên và hôm nay bạn đã hoàn thành xuất sắc một báo cáo khó, nhưng sếp lại bận rộn và quên mất không dành cho bạn một lời khen ngợi (đây là một *event* rất nhỏ). Lúc đó, bạn nảy sinh cảm giác hụt hẫng và tủi thân (đây là *emotion*).",
-        "example": "Nếu sự kiện sếp vô tâm này chỉ xảy ra một lần, bạn có thể dễ dàng bỏ qua. Nhưng nếu ngày nào sếp cũng khắt khe và phớt lờ nỗ lực của bạn, những sự thất vọng nhỏ bé này sẽ **accumulate** (tích tụ lại thành một nỗi uất ức lớn). Hậu quả là theo đúng thuyết AET, bạn bắt đầu làm việc chểnh mảng, để xảy ra sai sót (**job performance** sụt giảm) và cuối cùng là chán ghét môi trường làm việc này (**satisfaction** chạm đáy)."
+        "title": "2. Self-Monitoring (Khả năng tự giám sát/điều chỉnh)",
+        "content": "Bản chất: Đây là thước đo khả năng của một cá nhân trong việc tự điều chỉnh hành vi của mình (adjust his or her behavior) sao cho phù hợp với các yếu tố tình huống hoặc môi trường bên ngoài (external, situational factors).\n\nĐóng góp vào hiểu biết tính cách: Nó giải thích tính linh hoạt trong hành vi. Nó cho thấy tại sao một số người cực kỳ nhạy bén với các tín hiệu xã hội và có thể \"nhập gia tùy tục\", trong khi những người khác lại luôn bộc lộ đúng một kiểu tính cách bất chấp hoàn cảnh.",
+        "example": "Ví dụ OB: Một nhân viên kinh doanh có tính cách thường ngày ở công ty rất phóng khoáng và hay nói đùa. Tuy nhiên, khi đi gặp một khách hàng lớn nổi tiếng nguyên tắc, nhân viên này ngay lập tức biết cách tiết chế, cư xử cực kỳ chuẩn mực và chuyên nghiệp. Sự linh hoạt này chính là biểu hiện của self-monitoring cao."
+      },
+      {
+        "id": "4.4.3",
+        "title": "3. Proactive Personality (Tính cách chủ động)",
+        "content": "Bản chất: Khái niệm này mô tả những người luôn biết cách nhận diện cơ hội (identify opportunities), thể hiện sự chủ động (show initiative), dám hành động (take action), và kiên trì bám đuổi (persevere) cho đến khi tạo ra được một sự thay đổi có ý nghĩa (meaningful change occurs).\n\nĐóng góp vào hiểu biết tính cách: Đặc điểm này giúp các nhà quản lý (managers) xác định được những nhân tố \"hạt giống\" mang lại sự đổi mới, thay vì những người chỉ biết thụ động chờ đợi mệnh lệnh.",
+        "example": "Ví dụ OB: Khi thấy một quy trình báo cáo hiện tại của phòng ban bị lỗi thời và làm mất thời gian, thay vì cam chịu, một nhân viên có proactive personality sẽ chủ động tìm kiếm giải pháp phần mềm mới, tự thiết lập quy trình làm việc mẫu và kiên trì thuyết phục cấp trên áp dụng cho đến khi hệ thống được thay đổi hoàn toàn."
       }
     ]
   },
   {
     "id": "4.5",
     "chapter": 4,
-    "title": "4.5 Describe emotional intelligence.",
-    "content": "**Trí tuệ cảm xúc** (*Emotional Intelligence - EI*) là khả năng của một người trong việc nhận diện, thấu hiểu và quản lý cảm xúc của chính mình cũng như của những người xung quanh.\n\nTrong lĩnh vực OB, khái niệm này được vận hành dựa trên một mô hình rất nổi tiếng gọi là **Mô hình thác đổ** (*A Cascading Model of Emotional Intelligence*).",
+    "title": "4.5 Describe how the situation affects whether personality predicts behavior.",
+    "content": "Trong môi trường làm việc, tính cách không phải lúc nào cũng chuyển hóa thành hành vi theo một cách cố định. Mối quan hệ giữa tính cách và hành vi bị chi phối rất mạnh bởi hoàn cảnh/tình huống (the situation).\n\nĐể giải thích việc tình huống tác động đến hành vi của nhân viên như thế nào, Hành vi Tổ chức (OB) sử dụng 2 lý thuyết cốt lõi sau:",
     "subsections": [
       {
         "id": "4.5.1",
-        "title": "3 bước của Mô hình thác đổ",
-        "content": "1. **Perceive Emotions in Self and Others (Nhận biết cảm xúc):**\n   - **Bản chất:** Là khả năng \"đọc vị\" được bản thân và người khác đang có cảm xúc gì.\n   - **Yếu tố hỗ trợ:** Bước này được thúc đẩy bởi **Conscientiousness** (*Sự tận tâm, chu đáo*). Người càng để tâm, chú ý chi tiết thì càng dễ nhận ra các biến đổi cảm xúc nhỏ nhất.\n\n2. **Understand the Meaning of Emotions (Hiểu ý nghĩa của cảm xúc):**\n   - **Bản chất:** Không chỉ nhận ra cảm xúc, bạn còn phải hiểu được tại sao cảm xúc đó lại xuất hiện và nó sẽ dẫn đến hậu quả gì.\n   - **Yếu tố hỗ trợ:** Bước này phụ thuộc vào **Cognitive Ability** (*Năng lực nhận thức/Tư duy logic*). Bạn cần dùng lý trí để phân tích nguyên nhân sâu xa đằng sau cảm xúc đó.\n\n3. **Regulate Emotions (Điều chỉnh cảm xúc):**\n   - **Bản chất:** Đây là bước đỉnh cao nhất. Sau khi nhận ra và hiểu, bạn phải biết cách kiểm soát, xoa dịu hoặc thể hiện phản ứng cảm xúc của mình sao cho phù hợp nhất với hoàn cảnh.\n   - **Yếu tố hỗ trợ:** Bước này đòi hỏi bạn phải có **Emotional Stability** (*Sự ổn định cảm xúc*). Nghĩa là bạn không được để cảm xúc tiêu cực cuốn đi mà phải giữ được cái đầu lạnh."
+        "title": "1. Situation Strength Theory (Lý thuyết Sức mạnh Tình huống)",
+        "content": "Bản chất: Lý thuyết này chỉ ra rằng cách thức mà tính cách chuyển hóa thành hành vi phụ thuộc vào \"sức mạnh của tình huống\".\n\nSức mạnh tình huống là gì? Là mức độ mà các chuẩn mực (norms), tín hiệu (cues) hoặc tiêu chuẩn (standards) bắt buộc cá nhân phải có cách cư xử phù hợp. Nói một cách dễ hiểu: trong một tình huống \"mạnh\" (nhiều luật lệ khắt khe), tính cách thật sự của nhân viên sẽ bị đè nén để tuân thủ quy định; ngược lại, trong tình huống \"yếu\" (thoải mái, ít quy tắc), tính cách cá nhân mới được tự do bộc lộ thành hành vi.\n\n4 yếu tố cấu thành sức mạnh tình huống bao gồm:\n- Clarity (Sự rõ ràng)\n- Consistency (Sự nhất quán)\n- Constraints (Sự ràng buộc/hạn chế tự do)\n- Consequences (Hệ quả nếu làm sai)"
       },
       {
         "id": "4.5.2",
-        "title": "Ví dụ thực tế trong môi trường OB",
-        "content": "Giả sử bạn là một Quản lý (*Manager*) và đang họp với một nhân viên cấp dưới. Khi bạn giao thêm một task mới, nhân viên này bỗng nhiên thở dài, nhíu mày và nói cộc lốc: \"Vâng, để em làm\".",
-        "example": "- Nhờ có tính chu đáo (**Conscientiousness**), bạn quan sát nét mặt, giọng điệu và nhận ra nhân viên này đang cực kỳ bực bội và quá tải (**Perceive Emotions**).\n- Nhờ có năng lực tư duy tốt (**Cognitive Ability**), bạn nhớ lại lịch trình làm việc và hiểu rằng sự bực tức này không phải do nhân viên ghét bạn, mà do tuần vừa rồi họ đã phải làm thêm giờ liên tục nên đang bị kiệt sức (**Understand the Meaning**).\n- Dù lúc đầu bạn cũng hơi tự ái vì thái độ cộc lốc của nhân viên, nhưng nhờ có **Emotional Stability**, bạn không nổi điên mắng lại họ. Bạn điều chỉnh được cơn giận của mình, hạ giọng nhẹ nhàng bảo: \"Anh thấy dạo này em có vẻ mệt. Thôi task này để anh nhờ người khác, em cứ tập trung làm xong việc cũ rồi nghỉ ngơi nhé\" (**Regulate Emotions**)."
+        "title": "2. Trait Activation Theory - TAT (Lý thuyết Kích hoạt Đặc điểm)",
+        "content": "Bản chất: Lý thuyết này dự đoán rằng: Có một số tình huống, sự kiện hoặc sự can thiệp nhất định sẽ \"kích hoạt\" (activate) một đặc điểm tính cách cụ thể trỗi dậy mạnh mẽ hơn so với các tình huống khác.",
+        "example": "Ví dụ thực tế trong OB: Dựa trên mô hình TAT, các công việc khác nhau sẽ kích hoạt những nét tính cách khác nhau ở nhân viên:\n- Những công việc thường xuyên phải đối phó với người tức giận (Dealing with Angry People) như Tiếp viên hàng không (Flight attendant) hay Nhân viên trực tổng đài (Telemarketer) sẽ \"kích hoạt\" mạnh mẽ các tính cách như Sự hướng ngoại (Extroversion), Sự hòa đồng/Dễ chịu (Agreeableness) và Sự ổn định cảm xúc (Emotional Stability).\n- Những công việc yêu cầu sự chú ý đến chi tiết (Detail Orientation Required) như Kế toán (Accountant) sẽ lập tức kích hoạt tính Tận tâm (Conscientiousness).\n- Những công việc đòi hỏi sự đổi mới (Innovation Required) như Nghề viết quảng cáo (Advertising writer) hay Diễn viên (Actor) sẽ kích hoạt đặc tính Cởi mở với trải nghiệm (Openness)."
+      },
+      {
+        "id": "4.5.3",
+        "title": "Ứng dụng cho Quản lý (Implications for Managers)",
+        "content": "Từ hai lý thuyết trên, khi làm quản lý, bạn cần rút ra các bài học sau:\n1. Đừng vội phán xét: Luôn phải cân nhắc các yếu tố tình huống (situational factors) khi đánh giá các nét tính cách và hành vi có thể quan sát được của nhân viên.\n2. Chủ động kiến tạo môi trường: Quản lý có thể sử dụng các chính sách, quy trình thực hành hoặc các sự kiện để biến môi trường làm việc thành các \"tình huống mạnh\" hoặc \"tình huống yếu\". Việc điều chỉnh tình huống này nhằm mục đích khuyến khích (elicit) các đặc điểm tính cách/hành vi mong muốn và hạn chế sự xuất hiện của những nét tính cách tồi tệ.\n3. Thận trọng: Dù bạn có thể thay đổi tình huống để khích lệ hoặc ngăn chặn các hành vi nhất định, hãy nhớ rằng việc này đôi khi có thể mang lại những tác dụng phụ không mong muốn (unintended effects) đối với nhân viên."
       }
     ]
   },
   {
     "id": "4.6",
     "chapter": 4,
-    "title": "4.6 Identify strategies for emotion regulation.",
-    "content": "Để kiểm soát và điều chỉnh cảm xúc của bản thân trong môi trường làm việc, con người sử dụng các chiến lược **điều chỉnh cảm xúc** (*Emotion regulation*). Bản chất của việc này là khả năng nhận diện (*identifying*) và tự thay đổi (*modifying*) những cảm xúc mà bạn đang trải qua.",
+    "title": "4.6 Sự liên quan của Năng lực Trí tuệ và Thể chất đối với OB",
+    "content": "Để hiểu vai trò của năng lực trong OB, trước tiên chúng ta cần định nghĩa Năng lực (Ability): Đây là công suất/khả năng hiện tại của một cá nhân để có thể thực hiện các nhiệm vụ khác nhau trong một công việc. Năng lực được chia thành 2 nhóm chính:",
     "subsections": [
       {
         "id": "4.6.1",
-        "title": "5 chiến lược cốt lõi (Emotion Regulation Techniques)",
-        "content": "1. **Surface acting (Diễn bề ngoài):**\n   - **Bản chất:** Bạn chỉ đơn thuần che giấu cảm xúc thật của mình và đeo lên một \"chiếc mặt nạ\" với những biểu cảm mà công ty yêu cầu.\n   - **Đánh giá:** Chiến lược này thường kém hiệu quả (*ineffective*) và dễ dẫn đến kiệt sức nếu dùng lâu dài.\n\n2. **Deep acting (Diễn sâu):**\n   - **Bản chất:** Thay vì chỉ diễn nét mặt, bạn cố gắng thuyết phục tâm trí mình thay đổi thực sự những cảm xúc bên trong để phù hợp với hoàn cảnh.\n   - **Đánh giá:** Đây là một chiến lược hiệu quả hơn để quản lý cảm xúc.\n\n3. **Emotional suppression (Kìm nén cảm xúc):**\n   - **Bản chất:** Chủ động đè nén, nuốt cảm xúc tiêu cực vào trong mà không bộc lộ hay giải quyết nó.\n   - **Đánh giá:** Giống như *Surface acting*, việc kìm nén thường không mang lại hiệu quả giải tỏa thực sự (*ineffective*).\n\n4. **Cognitive reappraisal (Tái đánh giá nhận thức):**\n   - **Bản chất:** Đây là một thủ thuật tâm lý cực kỳ mạnh mẽ. Bạn chủ động thay đổi cách suy nghĩ, góc nhìn về tình huống gây ra cảm xúc đó để làm cho nó bớt tiêu cực hơn.\n   - **Đánh giá:** Đây là một trong những chiến lược mang lại hiệu quả tích cực nhất.\n\n5. **Social sharing (Chia sẻ xã hội):**\n   - **Bản chất:** Bạn tìm một người khác (đồng nghiệp, bạn bè) để giãi bày, tâm sự và \"xả rác\" cảm xúc. Việc chia sẻ giúp xoa dịu tâm trí."
+        "title": "1. Năng lực trí tuệ (Intellectual abilities)",
+        "content": "Bản chất: Là những khả năng cần thiết để thực hiện các hoạt động thuộc về trí óc. Các tổ chức thường đo lường loại năng lực này bằng bài kiểm tra Khả năng trí tuệ chung (General mental ability - GMA) hoặc bài test Wonderlic.\n\nNăng lực trí tuệ bao gồm 7 khía cạnh cốt lõi:\n- Number aptitude (Khả năng tính toán): Rất cần cho một kế toán viên để tính toán thuế nhanh và chính xác.\n- Verbal comprehension (Đọc hiểu từ ngữ): Cần cho Quản lý nhà máy để đọc hiểu các chính sách nhân sự của tập đoàn.\n- Perceptual speed (Tốc độ nhận diện): Cần cho Điều tra viên hỏa hoạn để tìm ra các manh mối hình ảnh nhanh chóng.\n- Inductive reasoning (Suy luận quy nạp): Cần cho Người nghiên cứu thị trường để tìm ra quy luật logic nhằm dự báo nhu cầu sản phẩm.\n- Deductive reasoning (Suy luận diễn dịch): Cần cho Quản lý để sử dụng logic khi phải lựa chọn giữa hai đề xuất của nhân viên.\n- Spatial visualization (Tưởng tượng không gian): Rất cần cho một Nhà thiết kế nội thất.\n- Memory (Trí nhớ): Đặc biệt quan trọng với nhân viên Bán hàng để ghi nhớ tên của khách."
       },
       {
         "id": "4.6.2",
-        "title": "Góc nhìn Đạo đức (Ethics) và Lời khuyên cho Manager",
-        "content": "- **Tranh cãi đạo đức:** Có một số ý kiến cho rằng việc ép bản thân điều chỉnh cảm xúc là phi đạo đức (*unethical*) vì nó bắt bạn phải giả tạo/diễn kịch (*acting*). Tuy nhiên, nhiều người lại cho rằng kiểm soát cảm xúc là bắt buộc để bạn có thể nhìn nhận vấn đề một cách khách quan, lý trí (*dispassionate perspective*).\n- **Lời khuyên từ OB:** Trong vai trò quản lý, hãy hướng dẫn nhân viên từ bỏ thói quen dùng *Surface acting* và *Emotional suppression* vì chúng không giải quyết được gốc rễ. Thay vào đó, hãy đào tạo họ cách sử dụng *Deep acting*, *Cognitive reappraisal* và khuyến khích bộc lộ cảm xúc một cách tự nhiên, chân thực nhất có thể."
+        "title": "2. Năng lực thể chất (Physical abilities)",
+        "content": "Bản chất: Là khả năng để thực hiện các nhiệm vụ đòi hỏi sức bền (stamina), sự khéo léo (dexterity), sức mạnh cơ bắp và các đặc điểm thể chất tương tự.\n\nCó 9 năng lực thể chất cơ bản được chia làm 3 nhóm:\n- Nhóm sức mạnh (Strength Factors): Sức mạnh động (liên tục), sức mạnh thân mình (cơ bụng/lưng), sức mạnh tĩnh và sức mạnh bùng nổ.\n- Nhóm dẻo dai (Flexibility Factors): Khả năng vươn/uốn người và sự linh hoạt liên tục.\n- Các yếu tố khác (Other Factors): Sự phối hợp cơ thể (Body coordination), giữ thăng bằng (Balance) và sức bền (Stamina)."
+      },
+      {
+        "id": "4.6.3",
+        "title": "Tính ứng dụng và Lời khuyên cho Nhà quản lý (Implications for Managers)",
+        "content": "Dự đoán hiệu suất: Đánh giá năng lực thường là yếu tố dự đoán tốt nhất về kết quả làm việc (best predictors of job performance) của một nhân viên.\n\nRủi ro pháp lý & Phân biệt đối xử: Việc áp dụng các bài test năng lực có xu hướng vướng phải những rắc rối về sự phân biệt đối xử (disparate impact concerns).\n\nQuy tắc: Do đó, nhà quản lý phải hết sức thận trọng: Chỉ được phép đánh giá ứng viên về năng lực trí tuệ hoặc thể chất NẾU những năng lực đó là điều kiện bắt buộc và thực sự cần thiết cho vị trí công việc đó (necessary and required for the job)."
       }
     ]
   },
   {
     "id": "4.7",
     "chapter": 4,
-    "title": "4.7 Apply concepts about emotions and moods to specific OB issues.",
-    "content": "Cảm xúc và tâm trạng chi phối trực tiếp đến từng ngóc ngách hoạt động của một công ty. Dưới đây là phân tích chi tiết về cách áp dụng các khái niệm này vào **10 khía cạnh/vấn đề cụ thể** trong OB:",
+    "title": "4.7 Phân biệt Giá trị đích đến (Terminal values) và Giá trị công cụ (Instrumental values)",
+    "content": "Trong lĩnh vực OB, **Giá trị** (*Values*) là những niềm tin cơ bản về việc điều gì là đúng, là tốt, hoặc đáng khao khát. Những giá trị này đặt nền móng quan trọng để nhà quản lý thấu hiểu được thái độ (*attitudes*) và động lực (*motivation*) của nhân viên.\n\nHệ thống giá trị của một người được chia thành 2 loại có tính liên kết chặt chẽ với nhau:",
     "subsections": [
       {
         "id": "4.7.1",
-        "title": "1. Selection (Tuyển dụng nhân sự)",
-        "content": "**Bản chất:** Trí tuệ cảm xúc (*EI*) nên được coi là một tiêu chí tuyển dụng (*hiring factor*) quan trọng, đặc biệt là đối với các công việc đòi hỏi tương tác xã hội nhiều (*social jobs*).",
-        "example": "**Ví dụ OB:** Khi tuyển dụng vị trí Chuyên viên Chăm sóc Khách hàng, nhân sự (HR) cần cho ứng viên làm bài test EI để xem họ có khả năng giữ bình tĩnh khi bị khách hàng mắng hay không."
+        "title": "1. Giá trị đích đến / Giá trị mục đích (Terminal Values)",
+        "content": "**Bản chất:** Đây là những \"trạng thái tồn tại mong muốn cuối cùng\" (*desirable end-states of existence*).\n\n**Hiểu đơn giản:** Nó chính là những mục tiêu lớn lao nhất, là cái đích cuối cùng mà một người khao khát đạt được trong suốt cuộc đời hoặc sự nghiệp của họ."
       },
       {
         "id": "4.7.2",
-        "title": "2. Decision Making (Ra quyết định)",
-        "content": "**Bản chất:** Những cảm xúc tích cực (*Positive emotions*) có thể dẫn đến việc đưa ra các quyết định tốt hơn, nhanh nhạy và chính xác hơn.",
-        "example": "**Ví dụ OB:** Khi một vị sếp đang trong tâm trạng vui vẻ, họ thường xử lý thông tin phức tạp tốt hơn và có xu hướng đưa ra quyết định đầu tư táo bạo, mang lại lợi nhuận cao cho công ty."
+        "title": "2. Giá trị công cụ / Giá trị phương tiện (Instrumental Values)",
+        "content": "**Bản chất:** Đây là những phương thức hành vi được ưu tiên (*preferred modes of behavior*) hoặc các phương tiện, cách thức để giúp một cá nhân đạt được những \"giá trị đích đến\" (*terminal values*) kể trên.\n\n**Hiểu đơn giản:** Nó là con đường, là cách thức hành xử hoặc công cụ mà bạn lựa chọn để có thể chạm tới cái đích cuối cùng của mình."
       },
       {
         "id": "4.7.3",
-        "title": "3. Creativity (Sự sáng tạo)",
-        "content": "**Bản chất:** Tâm trạng tích cực (*Positive mood*) làm tăng tính linh hoạt, sự cởi mở và khả năng sáng tạo của nhân viên.",
-        "example": "**Ví dụ OB:** Trong một buổi brainstorm của phòng Marketing, nếu sếp bắt đầu bằng một câu chuyện vui vẻ và lời khen ngợi, nhân viên sẽ có tâm trạng tốt và dễ nảy ra những ý tưởng quảng cáo \"điên rồ\" và độc đáo hơn."
-      },
-      {
-        "id": "4.7.4",
-        "title": "4. Motivation (Động lực làm việc)",
-        "content": "**Bản chất:** Tâm trạng tích cực ảnh hưởng trực tiếp đến kỳ vọng thành công của nhân viên. Việc nhận được phản hồi/đánh giá (*feedback*) sẽ càng khuếch đại (*amplifies*) hiệu ứng này.",
-        "example": "**Ví dụ OB:** Sếp xem qua và đưa ra feedback khen ngợi: \"Em làm phần này rất tốt, cố lên chút nữa là hoàn hảo\". Tâm trạng nhân viên lập tức vui lên, họ tin rằng mình sẽ thành công và có động lực cày cuốc cả đêm."
-      },
-      {
-        "id": "4.7.5",
-        "title": "5. Leadership (Sự lãnh đạo)",
-        "content": "**Bản chất:** Cảm xúc đóng vai trò rất quan trọng trong việc nhân viên có chấp nhận các thông điệp từ nhà lãnh đạo hay không.",
-        "example": "**Ví dụ OB:** Khi CEO thông báo công ty đang gặp khó khăn, nếu CEO truyền đạt với thái độ chân thành và đầy nhiệt huyết, nhân viên sẽ dễ bị lay động và đồng lòng hy sinh. Nếu CEO truyền đạt với vẻ mặt vô cảm, nhân viên sẽ sinh ra bất mãn."
-      },
-      {
-        "id": "4.7.6",
-        "title": "6. Negotiation (Đàm phán)",
-        "content": "**Bản chất:** Cảm xúc có thể ảnh hưởng trực tiếp đến kết quả của các cuộc đàm phán.",
-        "example": "**Ví dụ OB:** Một nhân viên Sales giỏi biết cách kiểm soát cảm xúc, không để lộ sự lo lắng (*negative emotion*) khi đối tác ép giá, từ đó giữ vững được vị thế đàm phán và chốt được deal có lợi."
-      },
-      {
-        "id": "4.7.7",
-        "title": "7. Customer Service (Dịch vụ khách hàng)",
-        "content": "**Bản chất:** Cảm xúc của nhân viên ảnh hưởng trực tiếp đến chất lượng dịch vụ và sự hài lòng của khách. Hiện tượng này được giải thích bằng **Emotional contagion** (*Sự lây lan cảm xúc*).",
-        "example": "**Ví dụ OB:** Bạn bước vào quán cafe, bạn thu ngân cười rất tươi rạng rỡ chào bạn. Theo cơ chế *Emotional contagion*, bạn tự nhiên cũng mỉm cười và thấy vui lây. Lần sau bạn sẽ tiếp tục quay lại quán này."
-      },
-      {
-        "id": "4.7.8",
-        "title": "8. Work-Life Conflict (Xung đột công việc - Cuộc sống)",
-        "content": "**Bản chất:** Cảm xúc có tính chất \"tràn\" (*spill over*). Một ngày làm việc tồi tệ dễ kéo theo một tâm trạng tồi tệ khi về nhà, và ngược lại. May mắn là những cảm xúc này thường tiêu tan sau một đêm ngủ (**dissipates overnight**).",
-        "example": "**Ví dụ OB:** Sếp xả giận lên bạn ở công ty. Bạn mang cục tức đó về nhà và vô cớ gắt gỏng với vợ/chồng mình. Tuy nhiên, sáng hôm sau ngủ dậy, tâm trạng của bạn thường sẽ trở lại mức cân bằng bình thường."
-      },
-      {
-        "id": "4.7.9",
-        "title": "9. Unethical Workplace Behaviors",
-        "content": "**Bản chất:** Những cảm xúc tiêu cực (*Negative emotions*) dễ dẫn đến các hành vi sai lệch (**deviant behaviors**) - tức là những hành động vi phạm chuẩn mực và đe dọa đến tổ chức.",
-        "example": "**Ví dụ OB:** Một nhân viên cảm thấy cay cú (*emotion: anger*) vì không được thăng chức. Cảm xúc tiêu cực này xúi giục anh ta có hành vi trả đũa bằng cách cố tình làm rò rỉ dữ liệu mật của công ty cho đối thủ."
-      },
-      {
-        "id": "4.7.10",
-        "title": "10. Safety and Injury at Work (An toàn và Tai nạn lao động)",
-        "content": "**Bản chất:** Khuyến cáo được đưa ra là: Không làm công việc nguy hiểm khi đang có tâm trạng tồi tệ (*bad mood*).",
-        "example": "**Ví dụ OB:** Một công nhân xây dựng vừa cãi nhau to với vợ. Tâm trạng bực tức, buồn bã khiến anh ta mất tập trung. Kết quả là anh ta dễ bị trượt ngã hoặc gây ra tai nạn máy móc tại công trường."
+        "title": "Tóm lại",
+        "content": "Nếu *Terminal values* là \"Mục tiêu cuối cùng/Đích đến\" (Bạn muốn đi về đâu?), thì *Instrumental values* chính là \"Công cụ/Cách hành xử\" (Bạn sẽ làm gì để đến được đó?).",
+        "example": "**Ví dụ:** Nếu đích đến (*Terminal value*) của bạn là một cuộc sống tự do tài chính, thì công cụ (*Instrumental value*) của bạn có thể là làm việc chăm chỉ, tiết kiệm và đầu tư."
       }
     ]
   }

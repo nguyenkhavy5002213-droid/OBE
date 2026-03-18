@@ -2,1453 +2,1453 @@ import { QuizQuestion } from '../../../types';
 
 export const chapter4Quiz: QuizQuestion[] = [
   {
-    "id": "OBE_201",
+    "id": "OBE_101",
     "chapter": 4,
-    "questionEn": "What is the broad umbrella term that covers a wide range of feelings people experience?",
-    "questionVi": "Thuật ngữ 'ô dù' rộng lớn bao quát một phạm vi rộng các cảm giác mà con người trải qua là gì?",
+    "questionEn": "What is the core focus of Person-Job fit theory?",
+    "questionVi": "Trọng tâm cốt lõi của lý thuyết Sự phù hợp giữa người và việc (Person-Job fit) là gì?",
     "options": {
       "A": {
-        "en": "Emotion",
-        "vi": "Cảm xúc"
+        "en": "Matching personality to organizational values",
+        "vi": "Phù hợp tính cách với giá trị tổ chức"
       },
       "B": {
-        "en": "Mood",
-        "vi": "Tâm trạng"
+        "en": "Matching personality type to occupational environment",
+        "vi": "Phù hợp loại tính cách với môi trường nghề nghiệp"
       },
       "C": {
-        "en": "Affect",
-        "vi": "Xúc cảm (Affect)"
+        "en": "Matching physical abilities to job demands",
+        "vi": "Phù hợp năng lực thể chất với yêu cầu công việc"
       },
       "D": {
-        "en": "Dissonance",
-        "vi": "Sự bất hòa"
-      }
-    },
-    "correctAnswer": "C",
-    "explanationEn": "Affect is a generic term that covers both emotions and moods.",
-    "explanationVi": "Affect là một thuật ngữ chung bao quát cả cảm xúc và tâm trạng.",
-    "relatedSectionId": "4.1",
-    "topic": "Affect"
-  },
-  {
-    "id": "OBE_202",
-    "chapter": 4,
-    "questionEn": "Which of the following is a key characteristic of an emotion?",
-    "questionVi": "Đặc điểm nào sau đây là đặc trưng chính của một cảm xúc (emotion)?",
-    "options": {
-      "A": {
-        "en": "It is caused by a specific event.",
-        "vi": "Nó được gây ra bởi một sự kiện cụ thể."
-      },
-      "B": {
-        "en": "It lasts for many days.",
-        "vi": "Nó kéo dài trong nhiều ngày."
-      },
-      "C": {
-        "en": "It is usually general and unclear.",
-        "vi": "Nó thường chung chung và không rõ ràng."
-      },
-      "D": {
-        "en": "It is not indicated by facial expressions.",
-        "vi": "Nó không được biểu thị bằng biểu cảm khuôn mặt."
-      }
-    },
-    "correctAnswer": "A",
-    "explanationEn": "Emotions are caused by specific events, are brief in duration, and are often accompanied by distinct facial expressions.",
-    "explanationVi": "Cảm xúc được gây ra bởi các sự kiện cụ thể, diễn ra ngắn ngủi và thường đi kèm với các biểu cảm khuôn mặt rõ rệt.",
-    "relatedSectionId": "4.1.1",
-    "topic": "Emotions vs Moods"
-  },
-  {
-    "id": "OBE_203",
-    "chapter": 4,
-    "questionEn": "How do moods differ from emotions in terms of duration?",
-    "questionVi": "Tâm trạng (moods) khác với cảm xúc (emotions) như thế nào về thời gian kéo dài?",
-    "options": {
-      "A": {
-        "en": "Moods last for seconds.",
-        "vi": "Tâm trạng kéo dài trong vài giây."
-      },
-      "B": {
-        "en": "Moods last longer, often hours or days.",
-        "vi": "Tâm trạng kéo dài lâu hơn, thường là nhiều giờ hoặc nhiều ngày."
-      },
-      "C": {
-        "en": "Emotions last longer than moods.",
-        "vi": "Cảm xúc kéo dài lâu hơn tâm trạng."
-      },
-      "D": {
-        "en": "Both last for the same amount of time.",
-        "vi": "Cả hai đều kéo dài trong cùng một khoảng thời gian."
+        "en": "Matching terminal values to instrumental values",
+        "vi": "Phù hợp giá trị đích đến với giá trị công cụ"
       }
     },
     "correctAnswer": "B",
-    "explanationEn": "Moods are longer-lasting than emotions, often persisting for hours or days.",
-    "explanationVi": "Tâm trạng kéo dài lâu hơn cảm xúc, thường tồn tại trong nhiều giờ hoặc nhiều ngày.",
+    "explanationEn": "Person-Job fit focuses on matching a person's personality type to their occupational environment.",
+    "explanationVi": "Person-Job fit tập trung vào sự phù hợp giữa loại tính cách của một người và môi trường nghề nghiệp của họ.",
     "relatedSectionId": "4.1.1",
-    "topic": "Emotions vs Moods"
+    "topic": "Person-Job Fit"
   },
   {
-    "id": "OBE_204",
+    "id": "OBE_102",
     "chapter": 4,
-    "questionEn": "Which of the following is NOT one of the six universal emotions?",
-    "questionVi": "Điều nào sau đây KHÔNG phải là một trong sáu cảm xúc phổ quát?",
+    "questionEn": "According to Holland's Typology, which personality type prefers activities involving thinking, organizing, and understanding?",
+    "questionVi": "Theo mô hình của Holland, loại tính cách nào thích các hoạt động liên quan đến suy nghĩ, tổ chức và thấu hiểu?",
     "options": {
       "A": {
-        "en": "Anger",
-        "vi": "Tức giận"
+        "en": "Realistic",
+        "vi": "Thực tế"
       },
       "B": {
-        "en": "Happiness",
-        "vi": "Hạnh phúc"
+        "en": "Investigative",
+        "vi": "Nghiên cứu"
       },
       "C": {
-        "en": "Surprise",
-        "vi": "Ngạc nhiên"
+        "en": "Artistic",
+        "vi": "Nghệ thuật"
       },
       "D": {
-        "en": "Boredom",
-        "vi": "Buồn chán"
+        "en": "Conventional",
+        "vi": "Quy củ"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "The Investigative type prefers thinking, organizing, and understanding (e.g., biologists, economists).",
+    "explanationVi": "Nhóm Nghiên cứu (Investigative) thích suy nghĩ, tổ chức và thấu hiểu (ví dụ: nhà sinh học, nhà kinh tế học).",
+    "relatedSectionId": "4.1.1",
+    "topic": "Holland's Typology"
+  },
+  {
+    "id": "OBE_103",
+    "chapter": 4,
+    "questionEn": "Which Holland personality type is best suited for a mechanic or assembly-line worker?",
+    "questionVi": "Loại tính cách nào của Holland phù hợp nhất với thợ máy hoặc công nhân lắp ráp?",
+    "options": {
+      "A": {
+        "en": "Realistic",
+        "vi": "Thực tế"
+      },
+      "B": {
+        "en": "Social",
+        "vi": "Xã hội"
+      },
+      "C": {
+        "en": "Enterprising",
+        "vi": "Dẫn dắt/Khởi nghiệp"
+      },
+      "D": {
+        "en": "Conventional",
+        "vi": "Quy củ"
+      }
+    },
+    "correctAnswer": "A",
+    "explanationEn": "The Realistic type prefers physical activities requiring skill and strength, making them suited for mechanics.",
+    "explanationVi": "Nhóm Thực tế (Realistic) thích các hoạt động thể chất đòi hỏi kỹ năng và sức mạnh, phù hợp làm thợ máy.",
+    "relatedSectionId": "4.1.1",
+    "topic": "Holland's Typology"
+  },
+  {
+    "id": "OBE_104",
+    "chapter": 4,
+    "questionEn": "A person who enjoys helping and developing others, such as a teacher or social worker, fits which Holland type?",
+    "questionVi": "Một người thích giúp đỡ và phát triển người khác, chẳng hạn như giáo viên hoặc nhân viên xã hội, thuộc nhóm tính cách nào của Holland?",
+    "options": {
+      "A": {
+        "en": "Artistic",
+        "vi": "Nghệ thuật"
+      },
+      "B": {
+        "en": "Investigative",
+        "vi": "Nghiên cứu"
+      },
+      "C": {
+        "en": "Social",
+        "vi": "Xã hội"
+      },
+      "D": {
+        "en": "Enterprising",
+        "vi": "Dẫn dắt/Khởi nghiệp"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "The Social type prefers activities that help and develop others.",
+    "explanationVi": "Nhóm Xã hội (Social) thích các hoạt động giúp đỡ và phát triển người khác.",
+    "relatedSectionId": "4.1.1",
+    "topic": "Holland's Typology"
+  },
+  {
+    "id": "OBE_105",
+    "chapter": 4,
+    "questionEn": "Which Holland type prefers rule-regulated, orderly, and unambiguous activities (e.g., accountant)?",
+    "questionVi": "Nhóm tính cách nào của Holland thích các hoạt động có quy tắc, trật tự và rõ ràng (ví dụ: kế toán)?",
+    "options": {
+      "A": {
+        "en": "Realistic",
+        "vi": "Thực tế"
+      },
+      "B": {
+        "en": "Conventional",
+        "vi": "Quy củ"
+      },
+      "C": {
+        "en": "Enterprising",
+        "vi": "Dẫn dắt/Khởi nghiệp"
+      },
+      "D": {
+        "en": "Investigative",
+        "vi": "Nghiên cứu"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "The Conventional type prefers rule-regulated, orderly, and unambiguous activities.",
+    "explanationVi": "Nhóm Quy củ (Conventional) thích các hoạt động có quy tắc, trật tự và rõ ràng.",
+    "relatedSectionId": "4.1.1",
+    "topic": "Holland's Typology"
+  },
+  {
+    "id": "OBE_106",
+    "chapter": 4,
+    "questionEn": "What does Person-Organization fit primarily measure?",
+    "questionVi": "Sự phù hợp giữa Người và Tổ chức (Person-Organization fit) chủ yếu đo lường điều gì?",
+    "options": {
+      "A": {
+        "en": "The match between personality and job tasks",
+        "vi": "Sự phù hợp giữa tính cách và nhiệm vụ công việc"
+      },
+      "B": {
+        "en": "The match between individual values and organizational values",
+        "vi": "Sự phù hợp giữa giá trị cá nhân và giá trị tổ chức"
+      },
+      "C": {
+        "en": "The match between physical ability and work environment",
+        "vi": "Sự phù hợp giữa năng lực thể chất và môi trường làm việc"
+      },
+      "D": {
+        "en": "The match between intelligence and job complexity",
+        "vi": "Sự phù hợp giữa trí thông minh và độ phức tạp của công việc"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Person-Organization fit argues that people are attracted to and selected by organizations that match their values.",
+    "explanationVi": "Person-Organization fit cho rằng con người bị thu hút bởi những tổ chức phù hợp với hệ giá trị của họ.",
+    "relatedSectionId": "4.1.2",
+    "topic": "Person-Organization Fit"
+  },
+  {
+    "id": "OBE_107",
+    "chapter": 4,
+    "questionEn": "What happens when an employee experiences a lack of compatibility with their organization's values?",
+    "questionVi": "Điều gì xảy ra khi một nhân viên cảm thấy không có sự tương thích với giá trị của tổ chức?",
+    "options": {
+      "A": {
+        "en": "They will adapt their values.",
+        "vi": "Họ sẽ điều chỉnh giá trị của mình."
+      },
+      "B": {
+        "en": "They will become more productive.",
+        "vi": "Họ sẽ làm việc năng suất hơn."
+      },
+      "C": {
+        "en": "They will leave the organization.",
+        "vi": "Họ sẽ rời bỏ tổ chức."
+      },
+      "D": {
+        "en": "They will ignore the organizational values.",
+        "vi": "Họ sẽ phớt lờ giá trị của tổ chức."
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "If employees feel no compatibility in values, they will leave the organization.",
+    "explanationVi": "Nếu nhân viên cảm thấy không có sự tương thích về mặt giá trị, họ sẽ rời bỏ tổ chức đó.",
+    "relatedSectionId": "4.1.2",
+    "topic": "Person-Organization Fit"
+  },
+  {
+    "id": "OBE_108",
+    "chapter": 4,
+    "questionEn": "Which question best represents Person-Organization fit?",
+    "questionVi": "Câu hỏi nào thể hiện rõ nhất Sự phù hợp giữa Người và Tổ chức?",
+    "options": {
+      "A": {
+        "en": "Does your personality fit this profession?",
+        "vi": "Tính cách của bạn có hợp để làm nghề này không?"
+      },
+      "B": {
+        "en": "Do your personal values align with this company's values?",
+        "vi": "Giá trị cá nhân của bạn có đồng điệu với giá trị của công ty này không?"
+      },
+      "C": {
+        "en": "Do you have the physical strength for this job?",
+        "vi": "Bạn có đủ sức khỏe cho công việc này không?"
+      },
+      "D": {
+        "en": "Are you smart enough to solve this problem?",
+        "vi": "Bạn có đủ thông minh để giải quyết vấn đề này không?"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Person-Organization fit solves the issue of whether personal values align with company values for long-term commitment.",
+    "explanationVi": "Person-Organization fit giải quyết vấn đề 'Giá trị cá nhân của bạn có đồng điệu với giá trị của công ty này để gắn bó lâu dài hay không?'.",
+    "relatedSectionId": "4.1.2",
+    "topic": "Person-Organization Fit"
+  },
+  {
+    "id": "OBE_109",
+    "chapter": 4,
+    "questionEn": "How is personality defined in OB?",
+    "questionVi": "Tính cách được định nghĩa như thế nào trong Hành vi Tổ chức?",
+    "options": {
+      "A": {
+        "en": "The sum total of ways in which an individual reacts to and interacts with others.",
+        "vi": "Tổng hợp tất cả các cách thức mà một cá nhân phản ứng và tương tác với thế giới xung quanh."
+      },
+      "B": {
+        "en": "The genetic traits inherited from parents.",
+        "vi": "Các đặc điểm di truyền được thừa hưởng từ cha mẹ."
+      },
+      "C": {
+        "en": "The temporary emotional states of a person.",
+        "vi": "Trạng thái cảm xúc tạm thời của một người."
+      },
+      "D": {
+        "en": "The physical appearance of an individual.",
+        "vi": "Ngoại hình thể chất của một cá nhân."
+      }
+    },
+    "correctAnswer": "A",
+    "explanationEn": "Personality is the sum total of ways in which an individual reacts to and interacts with others.",
+    "explanationVi": "Tính cách là tổng hợp tất cả các cách thức mà một cá nhân phản ứng và tương tác với thế giới xung quanh.",
+    "relatedSectionId": "4.2.1",
+    "topic": "Defining Personality"
+  },
+  {
+    "id": "OBE_110",
+    "chapter": 4,
+    "questionEn": "What defines 'personality traits'?",
+    "questionVi": "Điều gì định nghĩa 'đặc điểm tính cách' (personality traits)?",
+    "options": {
+      "A": {
+        "en": "Behaviors that change daily.",
+        "vi": "Những hành vi thay đổi hàng ngày."
+      },
+      "B": {
+        "en": "Enduring characteristics that describe an individual's behavior.",
+        "vi": "Những hành vi ổn định và tồn tại lâu dài."
+      },
+      "C": {
+        "en": "Reactions to extreme stress.",
+        "vi": "Phản ứng đối với căng thẳng tột độ."
+      },
+      "D": {
+        "en": "Skills learned through training.",
+        "vi": "Kỹ năng học được qua đào tạo."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "When behaviors are exhibited consistently and exist over a long period (enduring characteristics), they are called personality traits.",
+    "explanationVi": "Khi những hành vi được thể hiện ra một cách ổn định và tồn tại lâu dài, chúng được gọi là các đặc điểm tính cách.",
+    "relatedSectionId": "4.2.1",
+    "topic": "Defining Personality"
+  },
+  {
+    "id": "OBE_111",
+    "chapter": 4,
+    "questionEn": "Why do managers need to measure personality?",
+    "questionVi": "Tại sao các nhà quản lý cần đo lường tính cách?",
+    "options": {
+      "A": {
+        "en": "To determine salary levels.",
+        "vi": "Để xác định mức lương."
+      },
+      "B": {
+        "en": "To predict who is best suited for a specific job during hiring.",
+        "vi": "Để dự đoán ai phù hợp nhất với một công việc cụ thể khi tuyển dụng."
+      },
+      "C": {
+        "en": "To decide on office seating arrangements.",
+        "vi": "Để quyết định chỗ ngồi trong văn phòng."
+      },
+      "D": {
+        "en": "To evaluate past job performance.",
+        "vi": "Để đánh giá hiệu suất làm việc trong quá khứ."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Personality tests are highly useful in hiring decisions to predict who will be a good fit and perform well in a specific job.",
+    "explanationVi": "Các bài kiểm tra tính cách rất hữu ích trong quyết định tuyển dụng để dự đoán ứng viên nào sẽ phù hợp và làm tốt nhất một công việc cụ thể.",
+    "relatedSectionId": "4.2.2",
+    "topic": "Measuring Personality"
+  },
+  {
+    "id": "OBE_112",
+    "chapter": 4,
+    "questionEn": "What is the most common method used to measure personality?",
+    "questionVi": "Phương pháp phổ biến nhất được sử dụng để đo lường tính cách là gì?",
+    "options": {
+      "A": {
+        "en": "Interviews",
+        "vi": "Phỏng vấn"
+      },
+      "B": {
+        "en": "Self-report surveys",
+        "vi": "Khảo sát tự đánh giá"
+      },
+      "C": {
+        "en": "Observer ratings",
+        "vi": "Đánh giá từ người quan sát"
+      },
+      "D": {
+        "en": "Medical exams",
+        "vi": "Khám sức khỏe"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "The most common means of measuring personality is through self-report surveys.",
+    "explanationVi": "Cách thức phổ biến nhất để đo lường tính cách là thông qua các bài khảo sát tự đánh giá (self-report surveys).",
+    "relatedSectionId": "4.2.2",
+    "topic": "Measuring Personality"
+  },
+  {
+    "id": "OBE_113",
+    "chapter": 4,
+    "questionEn": "For which group is the usage of personality tests highest in hiring?",
+    "questionVi": "Đối với nhóm nào, tỷ lệ sử dụng bài kiểm tra tính cách trong tuyển dụng là cao nhất?",
+    "options": {
+      "A": {
+        "en": "Hourly Workers",
+        "vi": "Lao động làm theo giờ"
+      },
+      "B": {
+        "en": "Individual Contributors",
+        "vi": "Nhân viên độc lập"
+      },
+      "C": {
+        "en": "Middle Managers",
+        "vi": "Quản lý cấp trung"
+      },
+      "D": {
+        "en": "Executives",
+        "vi": "Giám đốc/Điều hành"
       }
     },
     "correctAnswer": "D",
-    "explanationEn": "The six universal emotions are anger, fear, sadness, happiness, disgust, and surprise.",
-    "explanationVi": "Sáu cảm xúc phổ quát là tức giận, sợ hãi, buồn bã, hạnh phúc, kinh tởm và ngạc nhiên.",
-    "relatedSectionId": "4.1.1",
-    "topic": "Universal Emotions"
-  },
-  {
-    "id": "OBE_205",
-    "chapter": 4,
-    "questionEn": "What is 'Affect Intensity'?",
-    "questionVi": "'Cường độ cảm xúc' (Affect Intensity) là gì?",
-    "options": {
-      "A": {
-        "en": "The frequency of emotional changes.",
-        "vi": "Tần suất thay đổi cảm xúc."
-      },
-      "B": {
-        "en": "Individual differences in the strength with which people experience emotions.",
-        "vi": "Sự khác biệt cá nhân về mức độ mạnh mẽ khi trải nghiệm cảm xúc."
-      },
-      "C": {
-        "en": "The ability to hide emotions.",
-        "vi": "Khả năng che giấu cảm xúc."
-      },
-      "D": {
-        "en": "The duration of a mood.",
-        "vi": "Thời gian kéo dài của một tâm trạng."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Affect intensity refers to how strongly individuals experience their emotions.",
-    "explanationVi": "Cường độ cảm xúc đề cập đến mức độ mạnh mẽ mà các cá nhân trải nghiệm cảm xúc của họ.",
-    "relatedSectionId": "4.2.1",
-    "topic": "Affect Intensity"
-  },
-  {
-    "id": "OBE_206",
-    "chapter": 4,
-    "questionEn": "When are people generally at their highest level of positive affect during the day?",
-    "questionVi": "Mọi người thường đạt mức xúc cảm tích cực cao nhất vào thời điểm nào trong ngày?",
-    "options": {
-      "A": {
-        "en": "Early morning",
-        "vi": "Sáng sớm"
-      },
-      "B": {
-        "en": "Late at night",
-        "vi": "Đêm muộn"
-      },
-      "C": {
-        "en": "Midpoint of the daily awake period",
-        "vi": "Khoảng thời gian giữa ngày"
-      },
-      "D": {
-        "en": "Right before sleep",
-        "vi": "Ngay trước khi ngủ"
-      }
-    },
-    "correctAnswer": "C",
-    "explanationEn": "Positive affect tends to peak around the midpoint of the daily awake period.",
-    "explanationVi": "Xúc cảm tích cực có xu hướng đạt đỉnh vào khoảng giữa thời gian thức trong ngày.",
+    "explanationEn": "Executives have the highest usage rate of personality tests in hiring at 32%.",
+    "explanationVi": "Giám đốc/Điều hành (Executives) có tỷ lệ sử dụng bài test tính cách cao nhất là 32%.",
     "relatedSectionId": "4.2.2",
-    "topic": "Time of Day"
+    "topic": "Measuring Personality"
   },
   {
-    "id": "OBE_207",
+    "id": "OBE_114",
     "chapter": 4,
-    "questionEn": "What is 'Illusory Correlation' in the context of weather and mood?",
-    "questionVi": "'Sự tương quan ảo' (Illusory Correlation) trong bối cảnh thời tiết và tâm trạng là gì?",
+    "questionEn": "What is the usage rate of personality tests for Middle Managers?",
+    "questionVi": "Tỷ lệ sử dụng bài kiểm tra tính cách cho Quản lý cấp trung là bao nhiêu?",
     "options": {
       "A": {
-        "en": "The fact that rain always makes people sad.",
-        "vi": "Thực tế là trời mưa luôn làm con người buồn."
+        "en": "17%",
+        "vi": "17%"
       },
       "B": {
-        "en": "The tendency of people to associate two events when in reality no connection exists.",
-        "vi": "Xu hướng mọi người liên kết hai sự kiện khi thực tế không có mối liên hệ nào tồn tại."
+        "en": "20%",
+        "vi": "20%"
       },
       "C": {
-        "en": "The scientific proof that sun increases productivity.",
-        "vi": "Bằng chứng khoa học cho thấy ánh nắng làm tăng năng suất."
+        "en": "28%",
+        "vi": "28%"
       },
       "D": {
-        "en": "The impact of seasonal changes on health.",
-        "vi": "Tác động của thay đổi mùa đối với sức khỏe."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Illusory correlation is the tendency to see a relationship between weather and mood when there isn't one.",
-    "explanationVi": "Tương quan ảo là xu hướng nhìn thấy mối quan hệ giữa thời tiết và tâm trạng trong khi thực tế không có.",
-    "relatedSectionId": "4.2.3",
-    "topic": "Weather"
-  },
-  {
-    "id": "OBE_208",
-    "chapter": 4,
-    "questionEn": "How does stress affect mood?",
-    "questionVi": "Căng thẳng (stress) ảnh hưởng đến tâm trạng như thế nào?",
-    "options": {
-      "A": {
-        "en": "It has no impact.",
-        "vi": "Nó không có tác động."
-      },
-      "B": {
-        "en": "Even low levels of constant stress can worsen mood over time.",
-        "vi": "Ngay cả mức độ căng thẳng thấp nhưng kéo dài cũng có thể làm tâm trạng tồi tệ đi theo thời gian."
-      },
-      "C": {
-        "en": "It only affects emotions, not moods.",
-        "vi": "Nó chỉ ảnh hưởng đến cảm xúc, không ảnh hưởng đến tâm trạng."
-      },
-      "D": {
-        "en": "It only impacts people on weekends.",
-        "vi": "Nó chỉ tác động đến mọi người vào cuối tuần."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Constant stress, even at low levels, can significantly worsen a person's mood.",
-    "explanationVi": "Căng thẳng liên tục, ngay cả ở mức độ thấp, có thể làm tâm trạng một người tồi tệ đi đáng kể.",
-    "relatedSectionId": "4.2.4",
-    "topic": "Stress"
-  },
-  {
-    "id": "OBE_209",
-    "chapter": 4,
-    "questionEn": "What is the 'spill over' effect in social interactions?",
-    "questionVi": "Hiệu ứng 'tràn ra' (spill over) trong tương tác xã hội là gì?",
-    "options": {
-      "A": {
-        "en": "Sharing a drink with colleagues.",
-        "vi": "Chia sẻ đồ uống với đồng nghiệp."
-      },
-      "B": {
-        "en": "Negative interactions at work affecting one's home life.",
-        "vi": "Các tương tác tiêu cực tại nơi làm việc ảnh hưởng đến cuộc sống gia đình."
-      },
-      "C": {
-        "en": "Spreading rumors in the office.",
-        "vi": "Lan truyền tin đồn trong văn phòng."
-      },
-      "D": {
-        "en": "The physical layout of the office.",
-        "vi": "Bố trí vật lý của văn phòng."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "The spill over effect occurs when work-related emotions affect personal life outside of work.",
-    "explanationVi": "Hiệu ứng tràn ra xảy ra khi các cảm xúc liên quan đến công việc ảnh hưởng đến cuộc sống cá nhân bên ngoài công việc.",
-    "relatedSectionId": "4.2.5",
-    "topic": "Social Interactions"
-  },
-  {
-    "id": "OBE_210",
-    "chapter": 4,
-    "questionEn": "Which of the following helps improve mood and is especially good for people with depression?",
-    "questionVi": "Điều nào sau đây giúp cải thiện tâm trạng và đặc biệt tốt cho những người bị trầm cảm?",
-    "options": {
-      "A": {
-        "en": "Working long hours",
-        "vi": "Làm việc nhiều giờ"
-      },
-      "B": {
-        "en": "Physical exercise",
-        "vi": "Tập thể dục"
-      },
-      "C": {
-        "en": "Drinking caffeine",
-        "vi": "Uống caffeine"
-      },
-      "D": {
-        "en": "Social isolation",
-        "vi": "Cô lập xã hội"
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Exercise helps improve mood and is beneficial for individuals with depression.",
-    "explanationVi": "Tập thể dục giúp cải thiện tâm trạng và có lợi cho những người bị trầm cảm.",
-    "relatedSectionId": "4.2.6",
-    "topic": "Exercise"
-  },
-  {
-    "id": "OBE_211",
-    "chapter": 4,
-    "questionEn": "What is a common gender stereotype regarding emotions in the workplace?",
-    "questionVi": "Một định kiến giới phổ biến liên quan đến cảm xúc tại nơi làm việc là gì?",
-    "options": {
-      "A": {
-        "en": "Men are seen as more emotional than women.",
-        "vi": "Đàn ông được coi là dễ xúc động hơn phụ nữ."
-      },
-      "B": {
-        "en": "Women are often perceived as being 'emotional' while men are seen as 'angry'.",
-        "vi": "Phụ nữ thường bị coi là 'cảm xúc' trong khi đàn ông bị coi là 'tức giận'."
-      },
-      "C": {
-        "en": "There are no gender stereotypes in OB.",
-        "vi": "Không có định kiến giới trong OB."
-      },
-      "D": {
-        "en": "Men are always praised for being emotional.",
-        "vi": "Đàn ông luôn được khen ngợi vì dễ xúc động."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Stereotypes often label women as 'emotional' and men as 'angry' for similar behaviors.",
-    "explanationVi": "Các định kiến thường dán nhãn phụ nữ là 'cảm xúc' và đàn ông là 'tức giận' cho những hành vi tương tự.",
-    "relatedSectionId": "4.2.7",
-    "topic": "Gender Identity"
-  },
-  {
-    "id": "OBE_212",
-    "chapter": 4,
-    "questionEn": "Define 'Emotional Labor'.",
-    "questionVi": "Định nghĩa 'Lao động cảm xúc' (Emotional Labor).",
-    "options": {
-      "A": {
-        "en": "Physical work that is tiring.",
-        "vi": "Công việc thể chất gây mệt mỏi."
-      },
-      "B": {
-        "en": "An employee's expression of organizationally desired emotions during interpersonal transactions at work.",
-        "vi": "Việc nhân viên bộc lộ những cảm xúc mà tổ chức mong muốn trong các giao dịch liên cá nhân tại nơi làm việc."
-      },
-      "C": {
-        "en": "Working in a laboratory.",
-        "vi": "Làm việc trong phòng thí nghiệm."
-      },
-      "D": {
-        "en": "The study of brain activity.",
-        "vi": "Nghiên cứu hoạt động của não bộ."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Emotional labor involves showing emotions required by the job, regardless of true feelings.",
-    "explanationVi": "Lao động cảm xúc liên quan đến việc thể hiện những cảm xúc mà công việc yêu cầu, bất kể cảm xúc thực sự.",
-    "relatedSectionId": "4.3",
-    "topic": "Emotional Labor"
-  },
-  {
-    "id": "OBE_213",
-    "chapter": 4,
-    "questionEn": "What are 'Felt Emotions'?",
-    "questionVi": "'Cảm xúc thực' (Felt Emotions) là gì?",
-    "options": {
-      "A": {
-        "en": "Emotions an organization requires us to show.",
-        "vi": "Cảm xúc mà tổ chức yêu cầu chúng ta thể hiện."
-      },
-      "B": {
-        "en": "An individual's actual emotions.",
-        "vi": "Cảm xúc thực sự của một cá nhân."
-      },
-      "C": {
-        "en": "Emotions we see in others.",
-        "vi": "Cảm xúc chúng ta thấy ở người khác."
-      },
-      "D": {
-        "en": "Fake emotions for a job.",
-        "vi": "Cảm xúc giả tạo cho một công việc."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Felt emotions are the actual emotions an individual is experiencing internally.",
-    "explanationVi": "Cảm xúc thực là những cảm xúc thực sự mà một cá nhân đang trải qua bên trong.",
-    "relatedSectionId": "4.3.1",
-    "topic": "Felt vs Displayed"
-  },
-  {
-    "id": "OBE_214",
-    "chapter": 4,
-    "questionEn": "What is 'Surface Acting'?",
-    "questionVi": "'Diễn bề ngoài' (Surface Acting) là gì?",
-    "options": {
-      "A": {
-        "en": "Changing internal feelings to match requirements.",
-        "vi": "Thay đổi cảm xúc bên trong để phù hợp với yêu cầu."
-      },
-      "B": {
-        "en": "Hiding inner feelings and forgoing emotional expressions in response to display rules.",
-        "vi": "Che giấu cảm xúc bên trong và từ bỏ các biểu hiện cảm xúc để đáp ứng các quy tắc thể hiện."
-      },
-      "C": {
-        "en": "Acting in a play on a stage.",
-        "vi": "Diễn kịch trên sân khấu."
-      },
-      "D": {
-        "en": "Being honest about all feelings.",
-        "vi": "Thành thật về tất cả cảm xúc."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Surface acting involves hiding true feelings and 'putting on a mask' to meet display rules.",
-    "explanationVi": "Diễn bề ngoài liên quan đến việc che giấu cảm xúc thật và 'đeo mặt nạ' để đáp ứng các quy tắc thể hiện.",
-    "relatedSectionId": "4.3.1",
-    "topic": "Surface Acting"
-  },
-  {
-    "id": "OBE_215",
-    "chapter": 4,
-    "questionEn": "What is 'Deep Acting'?",
-    "questionVi": "'Diễn sâu' (Deep Acting) là gì?",
-    "options": {
-      "A": {
-        "en": "Ignoring all emotions.",
-        "vi": "Bỏ qua tất cả cảm xúc."
-      },
-      "B": {
-        "en": "Trying to modify one's true inner feelings based on display rules.",
-        "vi": "Cố gắng sửa đổi cảm xúc thực sự bên trong dựa trên các quy tắc thể hiện."
-      },
-      "C": {
-        "en": "Acting in a very dramatic way.",
-        "vi": "Diễn xuất một cách rất kịch tính."
-      },
-      "D": {
-        "en": "Only smiling with the mouth, not eyes.",
-        "vi": "Chỉ cười bằng miệng, không cười bằng mắt."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Deep acting involves trying to actually feel the emotions required by the organization.",
-    "explanationVi": "Diễn sâu liên quan đến việc cố gắng thực sự cảm nhận những cảm xúc mà tổ chức yêu cầu.",
-    "relatedSectionId": "4.3.1",
-    "topic": "Deep Acting"
-  },
-  {
-    "id": "OBE_216",
-    "chapter": 4,
-    "questionEn": "What is 'Emotional Dissonance'?",
-    "questionVi": "'Sự bất hòa cảm xúc' (Emotional Dissonance) là gì?",
-    "options": {
-      "A": {
-        "en": "A state of extreme happiness.",
-        "vi": "Một trạng thái cực kỳ hạnh phúc."
-      },
-      "B": {
-        "en": "Inconsistencies between the emotions people feel and the emotions they project.",
-        "vi": "Sự không nhất quán giữa cảm xúc mà mọi người cảm thấy và cảm xúc họ thể hiện ra."
-      },
-      "C": {
-        "en": "A type of hearing loss.",
-        "vi": "Một loại mất thính lực."
-      },
-      "D": {
-        "en": "Agreement between coworkers.",
-        "vi": "Sự đồng thuận giữa các đồng nghiệp."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Emotional dissonance occurs when felt emotions conflict with displayed emotions.",
-    "explanationVi": "Bất hòa cảm xúc xảy ra khi cảm xúc thực sự xung đột với cảm xúc được thể hiện.",
-    "relatedSectionId": "4.3.2",
-    "topic": "Emotional Dissonance"
-  },
-  {
-    "id": "OBE_217",
-    "chapter": 4,
-    "questionEn": "Long-term emotional dissonance, often from surface acting, can lead to:",
-    "questionVi": "Sự bất hòa cảm xúc kéo dài, thường do diễn bề ngoài, có thể dẫn đến:",
-    "options": {
-      "A": {
-        "en": "Increased energy",
-        "vi": "Tăng năng lượng"
-      },
-      "B": {
-        "en": "Job burnout",
-        "vi": "Kiệt sức trong công việc"
-      },
-      "C": {
-        "en": "Higher salary",
-        "vi": "Lương cao hơn"
-      },
-      "D": {
-        "en": "Better sleep",
-        "vi": "Ngủ ngon hơn"
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Chronic emotional dissonance is a major cause of job burnout and lower satisfaction.",
-    "explanationVi": "Bất hòa cảm xúc mãn tính là nguyên nhân chính gây ra kiệt sức trong công việc và giảm sự hài lòng.",
-    "relatedSectionId": "4.3.2",
-    "topic": "Impact of Emotional Labor"
-  },
-  {
-    "id": "OBE_218",
-    "chapter": 4,
-    "questionEn": "According to Affective Events Theory (AET), what triggers emotional reactions in employees?",
-    "questionVi": "Theo Thuyết Sự kiện Cảm xúc (AET), điều gì kích hoạt các phản ứng cảm xúc ở nhân viên?",
-    "options": {
-      "A": {
-        "en": "Work events",
-        "vi": "Các sự kiện trong công việc"
-      },
-      "B": {
-        "en": "The weather",
-        "vi": "Thời tiết"
-      },
-      "C": {
-        "en": "Genetic makeup only",
-        "vi": "Chỉ do di truyền"
-      },
-      "D": {
-        "en": "The stock market",
-        "vi": "Thị trường chứng khoán"
-      }
-    },
-    "correctAnswer": "A",
-    "explanationEn": "AET suggests that workplace events trigger emotional reactions that influence performance and satisfaction.",
-    "explanationVi": "AET cho rằng các sự kiện tại nơi làm việc kích hoạt các phản ứng cảm xúc ảnh hưởng đến hiệu suất và sự hài lòng.",
-    "relatedSectionId": "4.4",
-    "topic": "AET"
-  },
-  {
-    "id": "OBE_219",
-    "chapter": 4,
-    "questionEn": "Why should managers NOT ignore minor negative work events?",
-    "questionVi": "Tại sao các nhà quản lý KHÔNG nên phớt lờ các sự kiện tiêu cực nhỏ trong công việc?",
-    "options": {
-      "A": {
-        "en": "Because they cost money immediately.",
-        "vi": "Bởi vì chúng tốn tiền ngay lập tức."
-      },
-      "B": {
-        "en": "Because negative emotions from small events can accumulate over time.",
-        "vi": "Bởi vì các cảm xúc tiêu cực từ các sự kiện nhỏ có thể tích tụ theo thời gian."
-      },
-      "C": {
-        "en": "Because minor events are always illegal.",
-        "vi": "Bởi vì các sự kiện nhỏ luôn là bất hợp pháp."
-      },
-      "D": {
-        "en": "Because employees will forget them anyway.",
-        "vi": "Bởi vì nhân viên dù sao cũng sẽ quên chúng."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Minor negative events can accumulate and lead to significant drops in performance and satisfaction.",
-    "explanationVi": "Các sự kiện tiêu cực nhỏ có thể tích tụ và dẫn đến sự sụt giảm đáng kể về hiệu suất và sự hài lòng.",
-    "relatedSectionId": "4.4.1",
-    "topic": "AET"
-  },
-  {
-    "id": "OBE_220",
-    "chapter": 4,
-    "questionEn": "What is Emotional Intelligence (EI)?",
-    "questionVi": "Trí tuệ cảm xúc (EI) là gì?",
-    "options": {
-      "A": {
-        "en": "The ability to solve math problems.",
-        "vi": "Khả năng giải các bài toán."
-      },
-      "B": {
-        "en": "The ability to detect and to manage emotional cues and information.",
-        "vi": "Khả năng phát hiện và quản lý các tín hiệu và thông tin cảm xúc."
-      },
-      "C": {
-        "en": "Having a high IQ.",
-        "vi": "Có chỉ số IQ cao."
-      },
-      "D": {
-        "en": "Being very sensitive and crying easily.",
-        "vi": "Rất nhạy cảm và dễ khóc."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "EI is the ability to perceive, understand, and regulate emotions in oneself and others.",
-    "explanationVi": "EI là khả năng nhận biết, thấu hiểu và điều chỉnh cảm xúc ở bản thân và người khác.",
-    "relatedSectionId": "4.5",
-    "topic": "Emotional Intelligence"
-  },
-  {
-    "id": "OBE_221",
-    "chapter": 4,
-    "questionEn": "In the Cascading Model of EI, what is the first step?",
-    "questionVi": "Trong Mô hình thác đổ của EI, bước đầu tiên là gì?",
-    "options": {
-      "A": {
-        "en": "Regulate Emotions",
-        "vi": "Điều chỉnh cảm xúc"
-      },
-      "B": {
-        "en": "Understand the Meaning of Emotions",
-        "vi": "Hiểu ý nghĩa của cảm xúc"
-      },
-      "C": {
-        "en": "Perceive Emotions in Self and Others",
-        "vi": "Nhận biết cảm xúc ở bản thân và người khác"
-      },
-      "D": {
-        "en": "Ignore Emotions",
-        "vi": "Bỏ qua cảm xúc"
+        "en": "32%",
+        "vi": "32%"
       }
     },
     "correctAnswer": "C",
-    "explanationEn": "The first step is perceiving emotions, which is supported by conscientiousness.",
-    "explanationVi": "Bước đầu tiên là nhận biết cảm xúc, được hỗ trợ bởi sự tận tâm (conscientiousness).",
-    "relatedSectionId": "4.5.1",
-    "topic": "Cascading Model of EI"
+    "explanationEn": "The usage rate for Middle Managers is 28%.",
+    "explanationVi": "Tỷ lệ sử dụng bài test tính cách cho Quản lý cấp trung (Middle Managers) là 28%.",
+    "relatedSectionId": "4.2.2",
+    "topic": "Measuring Personality"
   },
   {
-    "id": "OBE_222",
+    "id": "OBE_115",
     "chapter": 4,
-    "questionEn": "Which trait supports the 'Understand the Meaning of Emotions' step in the EI model?",
-    "questionVi": "Đặc điểm nào hỗ trợ bước 'Hiểu ý nghĩa của cảm xúc' trong mô hình EI?",
+    "questionEn": "Which of the following is NOT a dimension of the MBTI?",
+    "questionVi": "Khía cạnh nào sau đây KHÔNG thuộc mô hình MBTI?",
     "options": {
       "A": {
-        "en": "Conscientiousness",
-        "vi": "Sự tận tâm"
+        "en": "Extroverted / Introverted",
+        "vi": "Hướng ngoại / Hướng nội"
       },
       "B": {
-        "en": "Cognitive Ability",
-        "vi": "Năng lực nhận thức"
+        "en": "Sensing / Intuitive",
+        "vi": "Cảm giác / Trực giác"
       },
       "C": {
-        "en": "Emotional Stability",
-        "vi": "Sự ổn định cảm xúc"
+        "en": "Thinking / Feeling",
+        "vi": "Lý trí / Cảm xúc"
       },
       "D": {
-        "en": "Physical Strength",
-        "vi": "Sức mạnh thể chất"
+        "en": "Agreeable / Antagonistic",
+        "vi": "Hòa đồng / Đối kháng"
       }
     },
-    "correctAnswer": "B",
-    "explanationEn": "Understanding the meaning of emotions requires cognitive ability to analyze causes and consequences.",
-    "explanationVi": "Hiểu ý nghĩa của cảm xúc đòi hỏi năng lực nhận thức để phân tích nguyên nhân và hệ quả.",
-    "relatedSectionId": "4.5.1",
-    "topic": "Cascading Model of EI"
-  },
-  {
-    "id": "OBE_223",
-    "chapter": 4,
-    "questionEn": "What is the final, highest step in the Cascading Model of EI?",
-    "questionVi": "Bước cuối cùng, cao nhất trong Mô hình thác đổ của EI là gì?",
-    "options": {
-      "A": {
-        "en": "Perceive Emotions",
-        "vi": "Nhận biết cảm xúc"
-      },
-      "B": {
-        "en": "Understand Emotions",
-        "vi": "Thấu hiểu cảm xúc"
-      },
-      "C": {
-        "en": "Regulate Emotions",
-        "vi": "Điều chỉnh cảm xúc"
-      },
-      "D": {
-        "en": "Suppress Emotions",
-        "vi": "Kìm nén cảm xúc"
-      }
-    },
-    "correctAnswer": "C",
-    "explanationEn": "Regulating emotions is the highest step, requiring emotional stability.",
-    "explanationVi": "Điều chỉnh cảm xúc là bước cao nhất, đòi hỏi sự ổn định cảm xúc.",
-    "relatedSectionId": "4.5.1",
-    "topic": "Cascading Model of EI"
-  },
-  {
-    "id": "OBE_224",
-    "chapter": 4,
-    "questionEn": "Which of the following is an emotion regulation technique?",
-    "questionVi": "Điều nào sau đây là một kỹ thuật điều chỉnh cảm xúc?",
-    "options": {
-      "A": {
-        "en": "Cognitive reappraisal",
-        "vi": "Tái đánh giá nhận thức"
-      },
-      "B": {
-        "en": "Ignoring the problem",
-        "vi": "Bỏ qua vấn đề"
-      },
-      "C": {
-        "en": "Getting angry at everyone",
-        "vi": "Tức giận với tất cả mọi người"
-      },
-      "D": {
-        "en": "Quitting the job immediately",
-        "vi": "Nghỉ việc ngay lập tức"
-      }
-    },
-    "correctAnswer": "A",
-    "explanationEn": "Cognitive reappraisal involves changing how one thinks about a situation to modify its emotional impact.",
-    "explanationVi": "Tái đánh giá nhận thức liên quan đến việc thay đổi cách suy nghĩ về một tình huống để sửa đổi tác động cảm xúc của nó.",
-    "relatedSectionId": "4.6.1",
-    "topic": "Emotion Regulation"
-  },
-  {
-    "id": "OBE_225",
-    "chapter": 4,
-    "questionEn": "What is 'Social Sharing' as an emotion regulation strategy?",
-    "questionVi": "'Chia sẻ xã hội' (Social Sharing) như một chiến lược điều chỉnh cảm xúc là gì?",
-    "options": {
-      "A": {
-        "en": "Posting on social media only.",
-        "vi": "Chỉ đăng bài trên mạng xã hội."
-      },
-      "B": {
-        "en": "Venting or talking to others about one's feelings.",
-        "vi": "Giải tỏa hoặc nói chuyện với người khác về cảm xúc của mình."
-      },
-      "C": {
-        "en": "Sharing office supplies.",
-        "vi": "Chia sẻ văn phòng phẩm."
-      },
-      "D": {
-        "en": "Giving money to charity.",
-        "vi": "Quyên góp tiền cho từ thiện."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Social sharing involves talking to others to help soothe the mind and process emotions.",
-    "explanationVi": "Chia sẻ xã hội liên quan đến việc nói chuyện với người khác để giúp xoa dịu tâm trí và xử lý cảm xúc.",
-    "relatedSectionId": "4.6.1",
-    "topic": "Social Sharing"
-  },
-  {
-    "id": "OBE_226",
-    "chapter": 4,
-    "questionEn": "Is emotion regulation always ethical?",
-    "questionVi": "Điều chỉnh cảm xúc có luôn hợp đạo đức không?",
-    "options": {
-      "A": {
-        "en": "Yes, always.",
-        "vi": "Có, luôn luôn."
-      },
-      "B": {
-        "en": "No, some argue it is unethical because it requires acting or being fake.",
-        "vi": "Không, một số người cho rằng nó phi đạo đức vì nó đòi hỏi sự diễn xuất hoặc giả tạo."
-      },
-      "C": {
-        "en": "It is only ethical for managers.",
-        "vi": "Nó chỉ hợp đạo đức đối với các nhà quản lý."
-      },
-      "D": {
-        "en": "It is only ethical on weekends.",
-        "vi": "Nó chỉ hợp đạo đức vào cuối tuần."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "There is an ethical debate; some see it as fake, while others see it as necessary for professional behavior.",
-    "explanationVi": "Có một cuộc tranh luận về đạo đức; một số người coi đó là giả tạo, trong khi những người khác coi đó là cần thiết cho hành vi chuyên nghiệp.",
-    "relatedSectionId": "4.6.2",
-    "topic": "Ethics of Emotion Regulation"
-  },
-  {
-    "id": "OBE_227",
-    "chapter": 4,
-    "questionEn": "What is 'Emotional Contagion'?",
-    "questionVi": "'Sự lây lan cảm xúc' (Emotional Contagion) là gì?",
-    "options": {
-      "A": {
-        "en": "A type of flu.",
-        "vi": "Một loại cúm."
-      },
-      "B": {
-        "en": "The process by which peoples' emotions are caused by the emotions of others.",
-        "vi": "Quá trình mà cảm xúc của mọi người bị gây ra bởi cảm xúc của người khác."
-      },
-      "C": {
-        "en": "Crying when watching a movie.",
-        "vi": "Khóc khi xem phim."
-      },
-      "D": {
-        "en": "Being afraid of germs.",
-        "vi": "Sợ vi trùng."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Emotional contagion is the 'catching' of emotions from others, common in customer service.",
-    "explanationVi": "Lây lan cảm xúc là việc 'bắt' cảm xúc từ người khác, phổ biến trong dịch vụ khách hàng.",
-    "relatedSectionId": "4.7.7",
-    "topic": "Emotional Contagion"
-  },
-  {
-    "id": "OBE_228",
-    "chapter": 4,
-    "questionEn": "How do positive emotions affect decision making?",
-    "questionVi": "Cảm xúc tích cực ảnh hưởng đến việc ra quyết định như thế nào?",
-    "options": {
-      "A": {
-        "en": "They make people slow and indecisive.",
-        "vi": "Chúng làm con người chậm chạp và thiếu quyết đoán."
-      },
-      "B": {
-        "en": "They can lead to better, faster, and more accurate decisions.",
-        "vi": "Chúng có thể dẫn đến các quyết định tốt hơn, nhanh hơn và chính xác hơn."
-      },
-      "C": {
-        "en": "They have no effect.",
-        "vi": "Chúng không có tác dụng."
-      },
-      "D": {
-        "en": "They always lead to bad investments.",
-        "vi": "Chúng luôn dẫn đến các khoản đầu tư tồi."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Positive emotions help people process complex information better and make bolder, more accurate decisions.",
-    "explanationVi": "Cảm xúc tích cực giúp mọi người xử lý thông tin phức tạp tốt hơn và đưa ra các quyết định táo bạo, chính xác hơn.",
-    "relatedSectionId": "4.7.2",
-    "topic": "Decision Making"
-  },
-  {
-    "id": "OBE_229",
-    "chapter": 4,
-    "questionEn": "Why is EI important in the selection process?",
-    "questionVi": "Tại sao EI lại quan trọng trong quá trình tuyển dụng?",
-    "options": {
-      "A": {
-        "en": "It measures physical strength.",
-        "vi": "Nó đo lường sức mạnh thể chất."
-      },
-      "B": {
-        "en": "It is a good predictor of performance, especially in social jobs.",
-        "vi": "Nó là một yếu tố dự báo tốt về hiệu suất, đặc biệt là trong các công việc xã hội."
-      },
-      "C": {
-        "en": "It helps calculate taxes.",
-        "vi": "Nó giúp tính thuế."
-      },
-      "D": {
-        "en": "It is required by law in all countries.",
-        "vi": "Nó được luật pháp yêu cầu ở tất cả các quốc gia."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "EI is a valuable hiring factor for jobs requiring high social interaction.",
-    "explanationVi": "EI là một yếu tố tuyển dụng có giá trị cho các công việc đòi hỏi tương tác xã hội cao.",
-    "relatedSectionId": "4.7.1",
-    "topic": "Selection"
-  },
-  {
-    "id": "OBE_230",
-    "chapter": 4,
-    "questionEn": "How does a positive mood impact creativity?",
-    "questionVi": "Tâm trạng tích cực tác động đến sự sáng tạo như thế nào?",
-    "options": {
-      "A": {
-        "en": "It decreases flexibility.",
-        "vi": "Nó làm giảm tính linh hoạt."
-      },
-      "B": {
-        "en": "It increases flexibility, openness, and the ability to generate unique ideas.",
-        "vi": "Nó làm tăng tính linh hoạt, sự cởi mở và khả năng tạo ra các ý tưởng độc đáo."
-      },
-      "C": {
-        "en": "It makes people too lazy to be creative.",
-        "vi": "Nó làm con người quá lười biếng để sáng tạo."
-      },
-      "D": {
-        "en": "It has no impact on marketing teams.",
-        "vi": "Nó không có tác động đến các nhóm marketing."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Positive moods enhance creative thinking and flexibility.",
-    "explanationVi": "Tâm trạng tích cực tăng cường tư duy sáng tạo và tính linh hoạt.",
-    "relatedSectionId": "4.7.3",
-    "topic": "Creativity"
-  },
-  {
-    "id": "OBE_231",
-    "chapter": 4,
-    "questionEn": "In negotiation, a skilled salesperson should:",
-    "questionVi": "Trong đàm phán, một nhân viên bán hàng lành nghề nên:",
-    "options": {
-      "A": {
-        "en": "Show all their anxiety.",
-        "vi": "Thể hiện tất cả sự lo lắng của họ."
-      },
-      "B": {
-        "en": "Control their emotions and not reveal negative feelings like anxiety.",
-        "vi": "Kiểm soát cảm xúc và không để lộ các cảm nhận tiêu cực như lo lắng."
-      },
-      "C": {
-        "en": "Cry to get a better deal.",
-        "vi": "Khóc để có được thỏa thuận tốt hơn."
-      },
-      "D": {
-        "en": "Ignore the client's emotions.",
-        "vi": "Bỏ qua cảm xúc của khách hàng."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Controlling emotions helps maintain a strong position during negotiations.",
-    "explanationVi": "Kiểm soát cảm xúc giúp duy trì vị thế vững chắc trong quá trình đàm phán.",
-    "relatedSectionId": "4.7.6",
-    "topic": "Negotiation"
-  },
-  {
-    "id": "OBE_232",
-    "chapter": 4,
-    "questionEn": "Negative emotions at work can lead to 'deviant behaviors' such as:",
-    "questionVi": "Cảm xúc tiêu cực tại nơi làm việc có thể dẫn đến 'hành vi sai lệch' chẳng hạn như:",
-    "options": {
-      "A": {
-        "en": "Helping others",
-        "vi": "Giúp đỡ người khác"
-      },
-      "B": {
-        "en": "Leaking confidential data or sabotage.",
-        "vi": "Rò rỉ dữ liệu mật hoặc phá hoại."
-      },
-      "C": {
-        "en": "Arriving early",
-        "vi": "Đến sớm"
-      },
-      "D": {
-        "en": "Organizing office parties",
-        "vi": "Tổ chức tiệc văn phòng"
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Negative emotions like anger can trigger unethical or deviant workplace behaviors.",
-    "explanationVi": "Cảm xúc tiêu cực như tức giận có thể kích hoạt các hành vi sai trái hoặc sai lệch tại nơi làm việc.",
-    "relatedSectionId": "4.7.9",
-    "topic": "Unethical Behaviors"
-  },
-  {
-    "id": "OBE_233",
-    "chapter": 4,
-    "questionEn": "Why is it dangerous to work in a 'bad mood' in high-risk jobs?",
-    "questionVi": "Tại sao làm việc trong 'tâm trạng tồi tệ' lại nguy hiểm trong các công việc rủi ro cao?",
-    "options": {
-      "A": {
-        "en": "It makes the uniform look bad.",
-        "vi": "Nó làm cho đồng phục trông xấu đi."
-      },
-      "B": {
-        "en": "It reduces attention to safety rules and increases the risk of accidents.",
-        "vi": "Nó làm giảm sự chú ý vào các quy tắc an toàn và tăng nguy cơ tai nạn."
-      },
-      "C": {
-        "en": "It costs more in insurance.",
-        "vi": "Nó tốn nhiều tiền bảo hiểm hơn."
-      },
-      "D": {
-        "en": "Co-workers will be annoyed.",
-        "vi": "Đồng nghiệp sẽ bị làm phiền."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Bad moods distract workers from safety protocols, leading to injuries.",
-    "explanationVi": "Tâm trạng tồi tệ làm xao nhãng công nhân khỏi các quy trình an toàn, dẫn đến chấn thương.",
-    "relatedSectionId": "4.7.10",
-    "topic": "Safety"
-  },
-  {
-    "id": "OBE_234",
-    "chapter": 4,
-    "questionEn": "What does 'dissipates overnight' mean regarding work-life conflict?",
-    "questionVi": "'Tiêu tan sau một đêm' (dissipates overnight) có nghĩa là gì liên quan đến xung đột công việc - cuộc sống?",
-    "options": {
-      "A": {
-        "en": "The job disappears.",
-        "vi": "Công việc biến mất."
-      },
-      "B": {
-        "en": "Negative moods from work often return to normal after a night's sleep.",
-        "vi": "Tâm trạng tiêu cực từ công việc thường trở lại bình thường sau một đêm ngủ."
-      },
-      "C": {
-        "en": "Employees forget their salary.",
-        "vi": "Nhân viên quên lương của họ."
-      },
-      "D": {
-        "en": "The office is cleaned at night.",
-        "vi": "Văn phòng được dọn dẹp vào ban đêm."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Most daily negative moods from work do not persist indefinitely and reset after sleep.",
-    "explanationVi": "Hầu hết các tâm trạng tiêu cực hàng ngày từ công việc không tồn tại vô hạn và được thiết lập lại sau khi ngủ.",
-    "relatedSectionId": "4.7.8",
-    "topic": "Work-Life Conflict"
-  },
-  {
-    "id": "OBE_235",
-    "chapter": 4,
-    "questionEn": "A manager who uses 'Emotional Stability' to stay calm when an employee is rude is practicing:",
-    "questionVi": "Một nhà quản lý sử dụng 'Sự ổn định cảm xúc' để giữ bình tĩnh khi nhân viên thô lỗ đang thực hành:",
-    "options": {
-      "A": {
-        "en": "Perceiving emotions",
-        "vi": "Nhận biết cảm xúc"
-      },
-      "B": {
-        "en": "Regulating emotions",
-        "vi": "Điều chỉnh cảm xúc"
-      },
-      "C": {
-        "en": "Ignoring emotions",
-        "vi": "Bỏ qua cảm xúc"
-      },
-      "D": {
-        "en": "Surface acting",
-        "vi": "Diễn bề ngoài"
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Regulating emotions is the ability to manage one's own emotional response to a situation.",
-    "explanationVi": "Điều chỉnh cảm xúc là khả năng quản lý phản ứng cảm xúc của chính mình đối với một tình huống.",
-    "relatedSectionId": "4.5.1",
-    "topic": "Regulating Emotions"
-  },
-  {
-    "id": "OBE_236",
-    "chapter": 4,
-    "questionEn": "Which of the following is a 'displayed emotion' for a flight attendant?",
-    "questionVi": "Điều nào sau đây là một 'cảm xúc được thể hiện' (displayed emotion) đối với một tiếp viên hàng không?",
-    "options": {
-      "A": {
-        "en": "Feeling tired after a long flight.",
-        "vi": "Cảm thấy mệt mỏi sau một chuyến bay dài."
-      },
-      "B": {
-        "en": "Smiling and being friendly to passengers.",
-        "vi": "Mỉm cười và thân thiện với hành khách."
-      },
-      "C": {
-        "en": "Being angry at a rude passenger internally.",
-        "vi": "Tức giận thầm kín với một hành khách thô lỗ."
-      },
-      "D": {
-        "en": "Thinking about dinner.",
-        "vi": "Nghĩ về bữa tối."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Displayed emotions are those required by the organization for the job role.",
-    "explanationVi": "Cảm xúc được thể hiện là những cảm xúc mà tổ chức yêu cầu cho vai trò công việc.",
+    "correctAnswer": "D",
+    "explanationEn": "MBTI dimensions are E/I, S/N, T/F, and P/J. Agreeableness is part of the Big Five.",
+    "explanationVi": "Các khía cạnh của MBTI là E/I, S/N, T/F, và P/J. Sự hòa đồng (Agreeableness) thuộc mô hình Big Five.",
     "relatedSectionId": "4.3.1",
-    "topic": "Displayed Emotions"
+    "topic": "MBTI"
   },
   {
-    "id": "OBE_237",
+    "id": "OBE_116",
     "chapter": 4,
-    "questionEn": "What is the main drawback of 'Emotional Suppression'?",
-    "questionVi": "Nhược điểm chính của 'Kìm nén cảm xúc' (Emotional Suppression) là gì?",
+    "questionEn": "What is the primary advantage of the MBTI?",
+    "questionVi": "Ưu điểm chính của MBTI là gì?",
+    "options": {
+      "A": {
+        "en": "Strong empirical evidence",
+        "vi": "Bằng chứng thực nghiệm mạnh mẽ"
+      },
+      "B": {
+        "en": "Its popularity and widespread use",
+        "vi": "Sự phổ biến và được sử dụng rộng rãi"
+      },
+      "C": {
+        "en": "High predictive validity for job performance",
+        "vi": "Độ chính xác cao trong dự đoán hiệu suất công việc"
+      },
+      "D": {
+        "en": "It measures the Dark Triad traits",
+        "vi": "Nó đo lường các đặc điểm của Dark Triad"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "The primary advantage of the MBTI is its popularity; it is the most widely used personality framework.",
+    "explanationVi": "Ưu điểm chính của MBTI là sự phổ biến của nó, đây là khung tính cách được sử dụng rộng rãi nhất.",
+    "relatedSectionId": "4.3.1",
+    "topic": "MBTI"
+  },
+  {
+    "id": "OBE_117",
+    "chapter": 4,
+    "questionEn": "Why are managers cautioned against making substantive decisions based on MBTI results?",
+    "questionVi": "Tại sao các nhà quản lý được cảnh báo không nên đưa ra các quyết định quan trọng dựa trên kết quả MBTI?",
     "options": {
       "A": {
         "en": "It is too expensive.",
         "vi": "Nó quá đắt đỏ."
       },
       "B": {
-        "en": "It doesn't solve the root cause and can lead to burnout.",
-        "vi": "Nó không giải quyết được nguyên nhân gốc rễ và có thể dẫn đến kiệt sức."
+        "en": "It lacks strong empirical evidence.",
+        "vi": "Nó thiếu bằng chứng thực nghiệm mạnh mẽ."
       },
       "C": {
-        "en": "It makes people too happy.",
-        "vi": "Nó làm con người quá hạnh phúc."
+        "en": "It discriminates against introverts.",
+        "vi": "Nó phân biệt đối xử với người hướng nội."
       },
       "D": {
-        "en": "It is illegal.",
-        "vi": "Nó là bất hợp pháp."
+        "en": "It takes too long to complete.",
+        "vi": "Nó mất quá nhiều thời gian để hoàn thành."
       }
     },
     "correctAnswer": "B",
-    "explanationEn": "Suppression only hides the emotion and doesn't provide real relief or resolution.",
-    "explanationVi": "Kìm nén chỉ che giấu cảm xúc và không cung cấp sự giải tỏa hoặc giải quyết thực sự.",
-    "relatedSectionId": "4.6.1",
-    "topic": "Emotional Suppression"
+    "explanationEn": "Managers are cautioned because there is a lack of strong empirical evidence and support for the MBTI.",
+    "explanationVi": "Các nhà quản lý được cảnh báo vì MBTI thiếu bằng chứng thực nghiệm và sự hỗ trợ mạnh mẽ.",
+    "relatedSectionId": "4.3.1",
+    "topic": "MBTI"
   },
   {
-    "id": "OBE_238",
+    "id": "OBE_118",
     "chapter": 4,
-    "questionEn": "In AET, what does 'accumulate' mean?",
-    "questionVi": "Trong AET, 'tích tụ' (accumulate) có nghĩa là gì?",
+    "questionEn": "Which personality framework is the most widely supported by evidence to date?",
+    "questionVi": "Mô hình tính cách nào được hỗ trợ bởi nhiều bằng chứng nhất cho đến nay?",
     "options": {
       "A": {
-        "en": "To lose money.",
-        "vi": "Mất tiền."
+        "en": "MBTI",
+        "vi": "MBTI"
       },
       "B": {
-        "en": "Small emotional responses building up over time into a larger reaction.",
-        "vi": "Các phản ứng cảm xúc nhỏ tích tụ theo thời gian thành một phản ứng lớn hơn."
+        "en": "The Dark Triad",
+        "vi": "Dark Triad"
       },
       "C": {
-        "en": "To hire more people.",
-        "vi": "Thuê thêm người."
+        "en": "The Big Five Model",
+        "vi": "Mô hình Big Five"
       },
       "D": {
-        "en": "To clean the office.",
-        "vi": "Dọn dẹp văn phòng."
+        "en": "Holland's Typology",
+        "vi": "Mô hình Holland"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "The Big Five is the most widely supported personality framework to date.",
+    "explanationVi": "Big Five là mô hình tính cách được hỗ trợ rộng rãi nhất cho đến nay.",
+    "relatedSectionId": "4.3.2",
+    "topic": "Big Five Model"
+  },
+  {
+    "id": "OBE_119",
+    "chapter": 4,
+    "questionEn": "In the Big Five model, which trait leads to higher job and life satisfaction?",
+    "questionVi": "Trong mô hình Big Five, đặc điểm nào dẫn đến sự hài lòng cao hơn trong công việc và cuộc sống?",
+    "options": {
+      "A": {
+        "en": "Extroversion",
+        "vi": "Sự hướng ngoại"
+      },
+      "B": {
+        "en": "Emotional stability",
+        "vi": "Sự ổn định cảm xúc"
+      },
+      "C": {
+        "en": "Openness to experience",
+        "vi": "Sự cởi mở với trải nghiệm"
+      },
+      "D": {
+        "en": "Agreeableness",
+        "vi": "Sự hòa đồng"
       }
     },
     "correctAnswer": "B",
-    "explanationEn": "Accumulation refers to the build-up of minor emotional events into significant issues.",
-    "explanationVi": "Tích tụ đề cập đến việc xây dựng các sự kiện cảm xúc nhỏ thành các vấn đề lớn.",
+    "explanationEn": "Emotional stability leads to higher job and life satisfaction.",
+    "explanationVi": "Sự ổn định cảm xúc (Emotional stability) dẫn đến mức độ hài lòng cao hơn với công việc và cuộc sống.",
+    "relatedSectionId": "4.3.2",
+    "topic": "Big Five Model"
+  },
+  {
+    "id": "OBE_120",
+    "chapter": 4,
+    "questionEn": "Which Big Five trait enhances training performance?",
+    "questionVi": "Đặc điểm nào của Big Five giúp nâng cao hiệu suất đào tạo?",
+    "options": {
+      "A": {
+        "en": "Conscientiousness",
+        "vi": "Sự tận tâm"
+      },
+      "B": {
+        "en": "Extroversion",
+        "vi": "Sự hướng ngoại"
+      },
+      "C": {
+        "en": "Openness",
+        "vi": "Sự cởi mở"
+      },
+      "D": {
+        "en": "Agreeableness",
+        "vi": "Sự hòa đồng"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "Openness to experience enhances training performance.",
+    "explanationVi": "Sự cởi mở (Openness) giúp nâng cao hiệu suất trong quá trình đào tạo.",
+    "relatedSectionId": "4.3.2",
+    "topic": "Big Five Model"
+  },
+  {
+    "id": "OBE_121",
+    "chapter": 4,
+    "questionEn": "What is a general limitation of personality frameworks like the Big Five?",
+    "questionVi": "Hạn chế chung của các mô hình tính cách như Big Five là gì?",
+    "options": {
+      "A": {
+        "en": "They are too complex to understand.",
+        "vi": "Chúng quá phức tạp để hiểu."
+      },
+      "B": {
+        "en": "Some traits predict training success but not actual job performance.",
+        "vi": "Một số đặc điểm dự đoán thành công trong đào tạo nhưng không dự đoán hiệu suất công việc thực tế."
+      },
+      "C": {
+        "en": "They only apply to executives.",
+        "vi": "Chúng chỉ áp dụng cho các giám đốc điều hành."
+      },
+      "D": {
+        "en": "They ignore emotional stability.",
+        "vi": "Chúng bỏ qua sự ổn định cảm xúc."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "A limitation is that while some traits predict actual job performance, others may only predict how well an employee does during training and onboarding.",
+    "explanationVi": "Một hạn chế là trong khi một số đặc điểm dự đoán hiệu suất công việc thực tế, những đặc điểm khác có thể chỉ dự đoán nhân viên sẽ làm tốt như thế nào trong quá trình đào tạo và hội nhập.",
+    "relatedSectionId": "4.3.2",
+    "topic": "Big Five Model"
+  },
+  {
+    "id": "OBE_122",
+    "chapter": 4,
+    "questionEn": "Which Dark Triad trait describes a tendency to be arrogant and possess a grandiose sense of self-importance?",
+    "questionVi": "Đặc điểm nào của Dark Triad mô tả xu hướng kiêu ngạo và có cảm giác vĩ cuồng về tầm quan trọng của bản thân?",
+    "options": {
+      "A": {
+        "en": "Machiavellianism",
+        "vi": "Tính thực dụng"
+      },
+      "B": {
+        "en": "Narcissism",
+        "vi": "Sự ái kỷ"
+      },
+      "C": {
+        "en": "Psychopathy",
+        "vi": "Sự thái nhân cách"
+      },
+      "D": {
+        "en": "Neuroticism",
+        "vi": "Sự nhiễu tâm"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Narcissism describes a tendency to be arrogant, possess a grandiose sense of self-importance, require excessive admiration, and have a strong sense of entitlement.",
+    "explanationVi": "Sự ái kỷ (Narcissism) mô tả xu hướng kiêu ngạo, có cảm giác vĩ cuồng về tầm quan trọng của bản thân, đòi hỏi sự ngưỡng mộ quá mức và có ý thức mạnh mẽ về quyền lợi.",
+    "relatedSectionId": "4.3.3",
+    "topic": "The Dark Triad"
+  },
+  {
+    "id": "OBE_123",
+    "chapter": 4,
+    "questionEn": "Why are the Dark Triad traits considered a severe weakness or risk for an organization?",
+    "questionVi": "Tại sao các đặc điểm của Dark Triad được coi là điểm yếu hoặc rủi ro nghiêm trọng đối với một tổ chức?",
+    "options": {
+      "A": {
+        "en": "They make employees too agreeable.",
+        "vi": "Chúng làm cho nhân viên quá dễ dãi."
+      },
+      "B": {
+        "en": "They describe individuals who manipulate, act arrogantly, or harm others without remorse.",
+        "vi": "Chúng mô tả những cá nhân thao túng, hành động kiêu ngạo hoặc làm hại người khác mà không hối hận."
+      },
+      "C": {
+        "en": "They lead to excessive emotional stability.",
+        "vi": "Chúng dẫn đến sự ổn định cảm xúc quá mức."
+      },
+      "D": {
+        "en": "They cause employees to be overly cautious.",
+        "vi": "Chúng khiến nhân viên quá thận trọng."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "The Dark Triad traits represent a severe risk because they describe individuals who manipulate, act arrogantly, or harm others without remorse.",
+    "explanationVi": "Các đặc điểm này là rủi ro nghiêm trọng vì chúng mô tả những cá nhân thao túng, hành động kiêu ngạo hoặc làm hại người khác mà không hề hối hận.",
+    "relatedSectionId": "4.3.3",
+    "topic": "The Dark Triad"
+  },
+  {
+    "id": "OBE_124",
+    "chapter": 4,
+    "questionEn": "Which trait involves believing that 'the ends can justify the means'?",
+    "questionVi": "Đặc điểm nào liên quan đến niềm tin rằng 'mục đích có thể biện minh cho phương tiện'?",
+    "options": {
+      "A": {
+        "en": "Psychopathy",
+        "vi": "Sự thái nhân cách"
+      },
+      "B": {
+        "en": "Narcissism",
+        "vi": "Sự ái kỷ"
+      },
+      "C": {
+        "en": "Machiavellianism",
+        "vi": "Tính thực dụng"
+      },
+      "D": {
+        "en": "Conscientiousness",
+        "vi": "Sự tận tâm"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "Machiavellianism describes an individual who is pragmatic, maintains emotional distance, and believes that the ends can justify the means.",
+    "explanationVi": "Tính thực dụng (Machiavellianism) mô tả một cá nhân thực dụng, giữ khoảng cách cảm xúc và tin rằng mục đích có thể biện minh cho phương tiện.",
+    "relatedSectionId": "4.3.3",
+    "topic": "The Dark Triad"
+  },
+  {
+    "id": "OBE_125",
+    "chapter": 4,
+    "questionEn": "What does Core Self-Evaluation (CSE) measure?",
+    "questionVi": "Tự đánh giá cốt lõi (CSE) đo lường điều gì?",
+    "options": {
+      "A": {
+        "en": "The ability to adjust behavior to external factors.",
+        "vi": "Khả năng điều chỉnh hành vi theo các yếu tố bên ngoài."
+      },
+      "B": {
+        "en": "Bottom-line conclusions individuals have about their capabilities, competence, and worth.",
+        "vi": "Những kết luận sâu thẳm nhất mà cá nhân tự đánh giá về năng lực, sự tháo vát và giá trị của họ."
+      },
+      "C": {
+        "en": "The tendency to identify opportunities and take action.",
+        "vi": "Xu hướng nhận diện cơ hội và hành động."
+      },
+      "D": {
+        "en": "The level of emotional stability under stress.",
+        "vi": "Mức độ ổn định cảm xúc dưới áp lực."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "CSE refers to the bottom-line conclusions individuals have about their capabilities, competence, and worth as a person.",
+    "explanationVi": "CSE là những kết luận sâu thẳm nhất mà một cá nhân tự đánh giá về năng lực, sự tháo vát và giá trị cốt lõi của họ như một con người.",
     "relatedSectionId": "4.4.1",
-    "topic": "AET"
+    "topic": "Core Self-Evaluation"
   },
   {
-    "id": "OBE_239",
+    "id": "OBE_126",
     "chapter": 4,
-    "questionEn": "Which of the following is an example of 'Affect'?",
-    "questionVi": "Ví dụ nào sau đây là một ví dụ về 'Xúc cảm' (Affect)?",
+    "questionEn": "An employee with low Core Self-Evaluation (CSE) is likely to react how during a crisis like downsizing?",
+    "questionVi": "Một nhân viên có Tự đánh giá cốt lõi (CSE) thấp có khả năng phản ứng như thế nào trong một cuộc khủng hoảng như cắt giảm nhân sự?",
     "options": {
       "A": {
-        "en": "Both emotions and moods.",
-        "vi": "Cả cảm xúc và tâm trạng."
+        "en": "They will remain calm and effective.",
+        "vi": "Họ sẽ giữ bình tĩnh và làm việc hiệu quả."
       },
       "B": {
-        "en": "Only physical pain.",
-        "vi": "Chỉ là nỗi đau thể xác."
+        "en": "They will panic and doubt themselves.",
+        "vi": "Họ sẽ hoảng loạn và nghi ngờ bản thân."
       },
       "C": {
-        "en": "Only logical thoughts.",
-        "vi": "Chỉ là những suy nghĩ logic."
+        "en": "They will manipulate others to keep their job.",
+        "vi": "Họ sẽ thao túng người khác để giữ việc."
       },
       "D": {
-        "en": "Only financial data.",
-        "vi": "Chỉ là dữ liệu tài chính."
+        "en": "They will proactively find new software solutions.",
+        "vi": "Họ sẽ chủ động tìm kiếm các giải pháp phần mềm mới."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "An employee with low CSE will panic and doubt themselves because they lack deep belief in their own capabilities and worth.",
+    "explanationVi": "Người có CSE thấp sẽ hoảng loạn và nghi ngờ bản thân vì họ thiếu niềm tin sâu sắc vào năng lực và giá trị của chính mình.",
+    "relatedSectionId": "4.4.1",
+    "topic": "Core Self-Evaluation"
+  },
+  {
+    "id": "OBE_127",
+    "chapter": 4,
+    "questionEn": "Self-monitoring refers to an individual's ability to:",
+    "questionVi": "Khả năng tự giám sát (Self-monitoring) đề cập đến khả năng của một cá nhân trong việc:",
+    "options": {
+      "A": {
+        "en": "Evaluate their own core worth.",
+        "vi": "Đánh giá giá trị cốt lõi của chính họ."
+      },
+      "B": {
+        "en": "Adjust their behavior to external, situational factors.",
+        "vi": "Điều chỉnh hành vi của họ cho phù hợp với các yếu tố tình huống bên ngoài."
+      },
+      "C": {
+        "en": "Identify opportunities and take initiative.",
+        "vi": "Nhận diện cơ hội và chủ động."
+      },
+      "D": {
+        "en": "Maintain emotional distance from coworkers.",
+        "vi": "Duy trì khoảng cách cảm xúc với đồng nghiệp."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Self-monitoring is the ability to adjust one's behavior to external, situational factors.",
+    "explanationVi": "Self-monitoring là thước đo khả năng của một cá nhân trong việc tự điều chỉnh hành vi của mình sao cho phù hợp với các yếu tố tình huống hoặc môi trường bên ngoài.",
+    "relatedSectionId": "4.4.2",
+    "topic": "Self-Monitoring"
+  },
+  {
+    "id": "OBE_128",
+    "chapter": 4,
+    "questionEn": "Why is high self-monitoring valuable in a workplace?",
+    "questionVi": "Tại sao khả năng tự giám sát cao lại có giá trị ở nơi làm việc?",
+    "options": {
+      "A": {
+        "en": "It explains behavioral flexibility and sensitivity to social cues.",
+        "vi": "Nó giải thích tính linh hoạt trong hành vi và sự nhạy bén với các tín hiệu xã hội."
+      },
+      "B": {
+        "en": "It ensures the employee never changes their personality.",
+        "vi": "Nó đảm bảo nhân viên không bao giờ thay đổi tính cách của họ."
+      },
+      "C": {
+        "en": "It guarantees high mathematical aptitude.",
+        "vi": "Nó đảm bảo khả năng tính toán cao."
+      },
+      "D": {
+        "en": "It makes the employee immune to stress.",
+        "vi": "Nó làm cho nhân viên miễn nhiễm với căng thẳng."
       }
     },
     "correctAnswer": "A",
-    "explanationEn": "Affect is the broad category that includes all feelings, both specific emotions and general moods.",
-    "explanationVi": "Affect là danh mục rộng bao gồm tất cả các cảm giác, cả cảm xúc cụ thể và tâm trạng chung.",
-    "relatedSectionId": "4.1",
-    "topic": "Affect"
+    "explanationEn": "High self-monitoring explains behavioral flexibility, showing why some people are highly sensitive to social cues and can adapt to different situations.",
+    "explanationVi": "Nó giải thích tính linh hoạt trong hành vi, cho thấy tại sao một số người cực kỳ nhạy bén với các tín hiệu xã hội và có thể 'nhập gia tùy tục'.",
+    "relatedSectionId": "4.4.2",
+    "topic": "Self-Monitoring"
   },
   {
-    "id": "OBE_240",
+    "id": "OBE_129",
     "chapter": 4,
-    "questionEn": "A person who is 'always grumpy' regardless of what happens likely has a specific:",
-    "questionVi": "Một người 'luôn cáu kỉnh' bất kể điều gì xảy ra có khả năng có một cái gì đó cụ thể:",
+    "questionEn": "Which personality trait is characterized by identifying opportunities, showing initiative, taking action, and persevering?",
+    "questionVi": "Đặc điểm tính cách nào được đặc trưng bởi việc nhận diện cơ hội, thể hiện sự chủ động, hành động và kiên trì?",
     "options": {
       "A": {
-        "en": "Emotion",
-        "vi": "Cảm xúc"
+        "en": "Core Self-Evaluation",
+        "vi": "Tự đánh giá cốt lõi"
       },
       "B": {
-        "en": "Mood",
-        "vi": "Tâm trạng"
+        "en": "Self-Monitoring",
+        "vi": "Khả năng tự giám sát"
       },
       "C": {
-        "en": "Trait component of personality",
-        "vi": "Thành phần đặc điểm của tính cách"
+        "en": "Proactive Personality",
+        "vi": "Tính cách chủ động"
       },
       "D": {
-        "en": "High IQ",
-        "vi": "Chỉ số IQ cao"
+        "en": "Narcissism",
+        "vi": "Sự ái kỷ"
       }
     },
     "correctAnswer": "C",
-    "explanationEn": "Personality traits can predispose individuals to certain moods or emotional intensities.",
-    "explanationVi": "Các đặc điểm tính cách có thể khiến cá nhân có xu hướng rơi vào các tâm trạng hoặc cường độ cảm xúc nhất định.",
-    "relatedSectionId": "4.2.1",
-    "topic": "Personality"
+    "explanationEn": "Proactive personality describes individuals who identify opportunities, show initiative, take action, and persevere until meaningful change occurs.",
+    "explanationVi": "Tính cách chủ động (Proactive Personality) mô tả những người luôn biết cách nhận diện cơ hội, thể hiện sự chủ động, dám hành động và kiên trì bám đuổi.",
+    "relatedSectionId": "4.4.3",
+    "topic": "Proactive Personality"
   },
   {
-    "id": "OBE_241",
+    "id": "OBE_130",
     "chapter": 4,
-    "questionEn": "Which day of the week do people usually report the highest positive affect?",
-    "questionVi": "Ngày nào trong tuần mọi người thường báo cáo mức xúc cảm tích cực cao nhất?",
+    "questionEn": "How does a proactive personality benefit an organization?",
+    "questionVi": "Tính cách chủ động mang lại lợi ích gì cho tổ chức?",
     "options": {
       "A": {
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "en": "They passively wait for orders.",
+        "vi": "Họ thụ động chờ đợi mệnh lệnh."
       },
       "B": {
-        "en": "Wednesday",
-        "vi": "Thứ Tư"
+        "en": "They act as 'seeds' for innovation and meaningful change.",
+        "vi": "Họ đóng vai trò là 'hạt giống' cho sự đổi mới và thay đổi có ý nghĩa."
       },
       "C": {
-        "en": "Friday or weekends",
-        "vi": "Thứ Sáu hoặc cuối tuần"
+        "en": "They strictly follow outdated procedures.",
+        "vi": "Họ tuân thủ nghiêm ngặt các quy trình lỗi thời."
       },
       "D": {
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
+        "en": "They manipulate others to gain power.",
+        "vi": "Họ thao túng người khác để giành quyền lực."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Proactive individuals help managers identify 'seeds' for innovation rather than just passively waiting for orders.",
+    "explanationVi": "Đặc điểm này giúp xác định những nhân tố 'hạt giống' mang lại sự đổi mới, thay vì những người chỉ biết thụ động chờ đợi mệnh lệnh.",
+    "relatedSectionId": "4.4.3",
+    "topic": "Proactive Personality"
+  },
+  {
+    "id": "OBE_131",
+    "chapter": 4,
+    "questionEn": "An employee who independently finds a new software solution to fix an outdated reporting process is showing:",
+    "questionVi": "Một nhân viên độc lập tìm kiếm giải pháp phần mềm mới để khắc phục quy trình báo cáo lỗi thời đang thể hiện:",
+    "options": {
+      "A": {
+        "en": "High Machiavellianism",
+        "vi": "Tính thực dụng cao"
+      },
+      "B": {
+        "en": "Low Core Self-Evaluation",
+        "vi": "Tự đánh giá cốt lõi thấp"
+      },
+      "C": {
+        "en": "Proactive Personality",
+        "vi": "Tính cách chủ động"
+      },
+      "D": {
+        "en": "Low Self-Monitoring",
+        "vi": "Khả năng tự giám sát thấp"
       }
     },
     "correctAnswer": "C",
-    "explanationEn": "Positive affect is generally higher toward the end of the work week and on weekends.",
-    "explanationVi": "Xúc cảm tích cực thường cao hơn vào cuối tuần làm việc và vào cuối tuần.",
-    "relatedSectionId": "4.2.2",
-    "topic": "Day of the Week"
+    "explanationEn": "Taking initiative to find a solution and persevering to implement it is a classic example of a proactive personality.",
+    "explanationVi": "Chủ động tìm kiếm giải pháp và kiên trì áp dụng nó là ví dụ điển hình của tính cách chủ động (proactive personality).",
+    "relatedSectionId": "4.4.3",
+    "topic": "Proactive Personality"
   },
   {
-    "id": "OBE_242",
+    "id": "OBE_132",
     "chapter": 4,
-    "questionEn": "What is the best advice for a manager regarding 'Surface Acting'?",
-    "questionVi": "Lời khuyên tốt nhất cho một nhà quản lý liên quan đến 'Diễn bề ngoài' là gì?",
+    "questionEn": "Which trait helps managers identify employees who will not just passively wait for orders?",
+    "questionVi": "Đặc điểm nào giúp các nhà quản lý xác định những nhân viên sẽ không chỉ thụ động chờ đợi mệnh lệnh?",
     "options": {
       "A": {
-        "en": "Encourage it as much as possible.",
-        "vi": "Khuyến khích nó càng nhiều càng tốt."
+        "en": "Proactive Personality",
+        "vi": "Tính cách chủ động"
       },
       "B": {
-        "en": "Train employees to use deep acting and cognitive reappraisal instead.",
-        "vi": "Đào tạo nhân viên sử dụng diễn sâu và tái đánh giá nhận thức thay thế."
+        "en": "Self-Monitoring",
+        "vi": "Khả năng tự giám sát"
       },
       "C": {
-        "en": "Ignore it.",
-        "vi": "Bỏ qua nó."
+        "en": "Agreeableness",
+        "vi": "Sự hòa đồng"
       },
       "D": {
-        "en": "Fire anyone who does it.",
-        "vi": "Sa thải bất cứ ai làm điều đó."
+        "en": "Conventional Type",
+        "vi": "Nhóm Quy củ"
+      }
+    },
+    "correctAnswer": "A",
+    "explanationEn": "Proactive personality helps identify individuals who take initiative rather than waiting for orders.",
+    "explanationVi": "Tính cách chủ động giúp xác định những người mang lại sự đổi mới, thay vì thụ động chờ đợi mệnh lệnh.",
+    "relatedSectionId": "4.4.3",
+    "topic": "Proactive Personality"
+  },
+  {
+    "id": "OBE_133",
+    "chapter": 4,
+    "questionEn": "What does Situation Strength Theory propose?",
+    "questionVi": "Lý thuyết Sức mạnh Tình huống đề xuất điều gì?",
+    "options": {
+      "A": {
+        "en": "Personality always predicts behavior perfectly.",
+        "vi": "Tính cách luôn dự đoán hành vi một cách hoàn hảo."
+      },
+      "B": {
+        "en": "The way personality translates into behavior depends on the strength of the situation.",
+        "vi": "Cách thức tính cách chuyển hóa thành hành vi phụ thuộc vào sức mạnh của tình huống."
+      },
+      "C": {
+        "en": "Strong situations allow personality to be freely expressed.",
+        "vi": "Tình huống mạnh cho phép tính cách được bộc lộ tự do."
+      },
+      "D": {
+        "en": "Weak situations suppress true personality.",
+        "vi": "Tình huống yếu đè nén tính cách thật."
       }
     },
     "correctAnswer": "B",
-    "explanationEn": "Deep acting and reappraisal are more effective and less draining than surface acting.",
-    "explanationVi": "Diễn sâu và tái đánh giá hiệu quả hơn và ít gây kiệt sức hơn diễn bề ngoài.",
-    "relatedSectionId": "4.6.2",
-    "topic": "Managerial Advice"
+    "explanationEn": "Situation Strength Theory indicates that the way personality translates into behavior depends on the strength of the situation.",
+    "explanationVi": "Lý thuyết này chỉ ra rằng cách thức mà tính cách chuyển hóa thành hành vi phụ thuộc vào 'sức mạnh của tình huống'.",
+    "relatedSectionId": "4.5.1",
+    "topic": "Situation Strength Theory"
   },
   {
-    "id": "OBE_243",
+    "id": "OBE_134",
     "chapter": 4,
-    "questionEn": "How does 'Cognitive Reappraisal' work?",
-    "questionVi": "'Tái đánh giá nhận thức' hoạt động như thế nào?",
+    "questionEn": "In a 'strong' situation (many strict rules), what happens to an employee's true personality?",
+    "questionVi": "Trong một tình huống 'mạnh' (nhiều quy tắc khắt khe), điều gì xảy ra với tính cách thật của nhân viên?",
     "options": {
       "A": {
-        "en": "By shouting loudly.",
-        "vi": "Bằng cách hét thật to."
+        "en": "It is freely expressed.",
+        "vi": "Nó được bộc lộ tự do."
       },
       "B": {
-        "en": "By changing the way you perceive the situation that caused the emotion.",
-        "vi": "Bằng cách thay đổi cách bạn nhìn nhận tình huống đã gây ra cảm xúc."
+        "en": "It is suppressed to comply with rules.",
+        "vi": "Nó bị đè nén để tuân thủ quy định."
       },
       "C": {
-        "en": "By taking a nap.",
-        "vi": "Bằng cách đi ngủ trưa."
+        "en": "It becomes permanently changed.",
+        "vi": "Nó bị thay đổi vĩnh viễn."
       },
       "D": {
-        "en": "By quitting the job.",
-        "vi": "Bằng cách nghỉ việc."
+        "en": "It becomes more proactive.",
+        "vi": "Nó trở nên chủ động hơn."
       }
     },
     "correctAnswer": "B",
-    "explanationEn": "Reappraisal involves reframing a situation to reduce its negative emotional impact.",
-    "explanationVi": "Tái đánh giá liên quan đến việc định khung lại một tình huống để giảm tác động cảm xúc tiêu cực của nó.",
+    "explanationEn": "In a strong situation, true personality is suppressed to comply with strict rules and norms.",
+    "explanationVi": "Trong một tình huống 'mạnh', tính cách thật sự của nhân viên sẽ bị đè nén để tuân thủ quy định.",
+    "relatedSectionId": "4.5.1",
+    "topic": "Situation Strength Theory"
+  },
+  {
+    "id": "OBE_135",
+    "chapter": 4,
+    "questionEn": "Which of the following is NOT one of the 4 elements of Situation Strength?",
+    "questionVi": "Yếu tố nào sau đây KHÔNG phải là một trong 4 yếu tố của Sức mạnh Tình huống?",
+    "options": {
+      "A": {
+        "en": "Clarity",
+        "vi": "Sự rõ ràng"
+      },
+      "B": {
+        "en": "Consistency",
+        "vi": "Sự nhất quán"
+      },
+      "C": {
+        "en": "Constraints",
+        "vi": "Sự ràng buộc"
+      },
+      "D": {
+        "en": "Competence",
+        "vi": "Sự tháo vát"
+      }
+    },
+    "correctAnswer": "D",
+    "explanationEn": "The 4 elements are Clarity, Consistency, Constraints, and Consequences. Competence is not one of them.",
+    "explanationVi": "4 yếu tố là Clarity, Consistency, Constraints, và Consequences. Competence (Sự tháo vát) không thuộc nhóm này.",
+    "relatedSectionId": "4.5.1",
+    "topic": "Situation Strength Theory"
+  },
+  {
+    "id": "OBE_136",
+    "chapter": 4,
+    "questionEn": "What is the core idea of Trait Activation Theory (TAT)?",
+    "questionVi": "Ý tưởng cốt lõi của Lý thuyết Kích hoạt Đặc điểm (TAT) là gì?",
+    "options": {
+      "A": {
+        "en": "All traits are active at all times.",
+        "vi": "Tất cả các đặc điểm luôn hoạt động mọi lúc."
+      },
+      "B": {
+        "en": "Certain situations or events 'activate' a specific personality trait more strongly than others.",
+        "vi": "Một số tình huống hoặc sự kiện nhất định 'kích hoạt' một đặc điểm tính cách cụ thể mạnh mẽ hơn các tình huống khác."
+      },
+      "C": {
+        "en": "Traits can only be activated by financial rewards.",
+        "vi": "Các đặc điểm chỉ có thể được kích hoạt bằng phần thưởng tài chính."
+      },
+      "D": {
+        "en": "Managers should suppress all trait activation.",
+        "vi": "Quản lý nên đè nén mọi sự kích hoạt đặc điểm."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "TAT predicts that some situations, events, or interventions 'activate' a trait more than others.",
+    "explanationVi": "TAT dự đoán rằng có một số tình huống, sự kiện nhất định sẽ 'kích hoạt' một đặc điểm tính cách cụ thể trỗi dậy mạnh mẽ hơn.",
+    "relatedSectionId": "4.5.2",
+    "topic": "Trait Activation Theory"
+  },
+  {
+    "id": "OBE_137",
+    "chapter": 4,
+    "questionEn": "According to TAT, a job requiring high detail orientation (like an Accountant) will immediately activate which trait?",
+    "questionVi": "Theo TAT, một công việc yêu cầu sự chú ý cao đến chi tiết (như Kế toán) sẽ lập tức kích hoạt đặc điểm nào?",
+    "options": {
+      "A": {
+        "en": "Extroversion",
+        "vi": "Sự hướng ngoại"
+      },
+      "B": {
+        "en": "Openness",
+        "vi": "Sự cởi mở"
+      },
+      "C": {
+        "en": "Conscientiousness",
+        "vi": "Sự tận tâm"
+      },
+      "D": {
+        "en": "Narcissism",
+        "vi": "Sự ái kỷ"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "Detail orientation required by accounting jobs strongly activates Conscientiousness.",
+    "explanationVi": "Những công việc yêu cầu sự chú ý đến chi tiết như Kế toán sẽ lập tức kích hoạt tính Tận tâm (Conscientiousness).",
+    "relatedSectionId": "4.5.2",
+    "topic": "Trait Activation Theory"
+  },
+  {
+    "id": "OBE_138",
+    "chapter": 4,
+    "questionEn": "Jobs requiring innovation, such as an advertising writer or actor, activate which personality trait?",
+    "questionVi": "Các công việc đòi hỏi sự đổi mới, chẳng hạn như người viết quảng cáo hoặc diễn viên, kích hoạt đặc điểm tính cách nào?",
+    "options": {
+      "A": {
+        "en": "Openness",
+        "vi": "Sự cởi mở với trải nghiệm"
+      },
+      "B": {
+        "en": "Agreeableness",
+        "vi": "Sự hòa đồng"
+      },
+      "C": {
+        "en": "Conventional",
+        "vi": "Quy củ"
+      },
+      "D": {
+        "en": "Machiavellianism",
+        "vi": "Tính thực dụng"
+      }
+    },
+    "correctAnswer": "A",
+    "explanationEn": "Innovation required in creative jobs activates the trait of Openness to experience.",
+    "explanationVi": "Những công việc đòi hỏi sự đổi mới sẽ kích hoạt đặc tính Cởi mở với trải nghiệm (Openness).",
+    "relatedSectionId": "4.5.2",
+    "topic": "Trait Activation Theory"
+  },
+  {
+    "id": "OBE_139",
+    "chapter": 4,
+    "questionEn": "When managers adjust the work environment to be a 'strong' or 'weak' situation, what is their goal?",
+    "questionVi": "Khi các nhà quản lý điều chỉnh môi trường làm việc thành tình huống 'mạnh' hoặc 'yếu', mục tiêu của họ là gì?",
+    "options": {
+      "A": {
+        "en": "To confuse employees.",
+        "vi": "Để làm nhân viên bối rối."
+      },
+      "B": {
+        "en": "To elicit desired behaviors and limit the appearance of bad traits.",
+        "vi": "Để khuyến khích các hành vi mong muốn và hạn chế sự xuất hiện của các nét tính cách tồi tệ."
+      },
+      "C": {
+        "en": "To increase the turnover rate.",
+        "vi": "Để tăng tỷ lệ nghỉ việc."
+      },
+      "D": {
+        "en": "To test the physical abilities of employees.",
+        "vi": "Để kiểm tra năng lực thể chất của nhân viên."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Managers adjust situations to elicit desired traits/behaviors and limit the appearance of bad ones.",
+    "explanationVi": "Việc điều chỉnh tình huống nhằm mục đích khuyến khích các đặc điểm tính cách/hành vi mong muốn và hạn chế sự xuất hiện của những nét tính cách tồi tệ.",
+    "relatedSectionId": "4.5.3",
+    "topic": "Implications for Managers"
+  },
+  {
+    "id": "OBE_140",
+    "chapter": 4,
+    "questionEn": "What caution should managers keep in mind when altering situational strength?",
+    "questionVi": "Các nhà quản lý nên ghi nhớ sự thận trọng nào khi thay đổi sức mạnh tình huống?",
+    "options": {
+      "A": {
+        "en": "It is always completely effective.",
+        "vi": "Nó luôn luôn hoàn toàn hiệu quả."
+      },
+      "B": {
+        "en": "It has no impact on personality.",
+        "vi": "Nó không có tác động đến tính cách."
+      },
+      "C": {
+        "en": "It can sometimes bring unintended negative effects on employees.",
+        "vi": "Nó đôi khi có thể mang lại những tác dụng phụ không mong muốn đối với nhân viên."
+      },
+      "D": {
+        "en": "It only works on executives.",
+        "vi": "Nó chỉ có tác dụng với các giám đốc điều hành."
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "Changing the situation to encourage or prevent behaviors can sometimes have unintended effects on employees.",
+    "explanationVi": "Việc thay đổi tình huống đôi khi có thể mang lại những tác dụng phụ không mong muốn (unintended effects) đối với nhân viên.",
+    "relatedSectionId": "4.5.3",
+    "topic": "Implications for Managers"
+  },
+  {
+    "id": "OBE_141",
+    "chapter": 4,
+    "questionEn": "How is 'Ability' defined in OB?",
+    "questionVi": "'Năng lực' (Ability) được định nghĩa như thế nào trong Hành vi Tổ chức?",
+    "options": {
+      "A": {
+        "en": "The potential to learn new skills in the future.",
+        "vi": "Tiềm năng học hỏi các kỹ năng mới trong tương lai."
+      },
+      "B": {
+        "en": "An individual's current capacity to perform the various tasks in a job.",
+        "vi": "Công suất/khả năng hiện tại của một cá nhân để thực hiện các nhiệm vụ khác nhau trong một công việc."
+      },
+      "C": {
+        "en": "The personality traits required for a job.",
+        "vi": "Các đặc điểm tính cách cần thiết cho một công việc."
+      },
+      "D": {
+        "en": "The values an employee brings to the organization.",
+        "vi": "Các giá trị mà một nhân viên mang lại cho tổ chức."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Ability is an individual's current capacity to perform the various tasks in a job.",
+    "explanationVi": "Năng lực là công suất/khả năng hiện tại của một cá nhân để có thể thực hiện các nhiệm vụ khác nhau trong một công việc.",
+    "relatedSectionId": "4.6",
+    "topic": "Defining Ability"
+  },
+  {
+    "id": "OBE_142",
+    "chapter": 4,
+    "questionEn": "Which intellectual ability is crucial for a plant manager to understand corporate HR policies?",
+    "questionVi": "Năng lực trí tuệ nào là rất quan trọng đối với một quản lý nhà máy để hiểu các chính sách nhân sự của tập đoàn?",
+    "options": {
+      "A": {
+        "en": "Number aptitude",
+        "vi": "Khả năng tính toán"
+      },
+      "B": {
+        "en": "Spatial visualization",
+        "vi": "Tưởng tượng không gian"
+      },
+      "C": {
+        "en": "Verbal comprehension",
+        "vi": "Đọc hiểu từ ngữ"
+      },
+      "D": {
+        "en": "Memory",
+        "vi": "Trí nhớ"
+      }
+    },
+    "correctAnswer": "C",
+    "explanationEn": "Verbal comprehension is the ability to understand what is read or heard, necessary for reading policies.",
+    "explanationVi": "Đọc hiểu từ ngữ (Verbal comprehension) cần cho Quản lý nhà máy để đọc hiểu các chính sách nhân sự.",
     "relatedSectionId": "4.6.1",
-    "topic": "Cognitive Reappraisal"
+    "topic": "Intellectual Abilities"
   },
   {
-    "id": "OBE_244",
+    "id": "OBE_143",
     "chapter": 4,
-    "questionEn": "Which of the following is a 'negative affect' dimension of mood?",
-    "questionVi": "Điều nào sau đây là một chiều 'xúc cảm tiêu cực' của tâm trạng?",
+    "questionEn": "Spatial visualization is most essential for which of the following professions?",
+    "questionVi": "Tưởng tượng không gian (Spatial visualization) là cần thiết nhất cho nghề nghiệp nào sau đây?",
     "options": {
       "A": {
-        "en": "Excitement",
-        "vi": "Hào hứng"
+        "en": "Accountant",
+        "vi": "Kế toán"
       },
       "B": {
-        "en": "Nervousness or stress",
-        "vi": "Lo lắng hoặc căng thẳng"
+        "en": "Interior designer",
+        "vi": "Nhà thiết kế nội thất"
       },
       "C": {
-        "en": "Relaxation",
-        "vi": "Thư giãn"
+        "en": "Salesperson",
+        "vi": "Nhân viên bán hàng"
+      },
+      "D": {
+        "en": "Market researcher",
+        "vi": "Người nghiên cứu thị trường"
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Spatial visualization is the ability to imagine how an object would look if its position in space were changed, highly needed for interior designers.",
+    "explanationVi": "Tưởng tượng không gian rất cần cho một Nhà thiết kế nội thất để hình dung không gian.",
+    "relatedSectionId": "4.6.1",
+    "topic": "Intellectual Abilities"
+  },
+  {
+    "id": "OBE_144",
+    "chapter": 4,
+    "questionEn": "What are the three main categories of the 9 basic physical abilities?",
+    "questionVi": "Ba danh mục chính của 9 năng lực thể chất cơ bản là gì?",
+    "options": {
+      "A": {
+        "en": "Strength, Flexibility, and Other Factors",
+        "vi": "Sức mạnh, Sự dẻo dai, và Các yếu tố khác"
+      },
+      "B": {
+        "en": "Speed, Agility, and Endurance",
+        "vi": "Tốc độ, Sự nhanh nhẹn, và Sức chịu đựng"
+      },
+      "C": {
+        "en": "Dynamic, Static, and Explosive",
+        "vi": "Động, Tĩnh, và Bùng nổ"
+      },
+      "D": {
+        "en": "Coordination, Balance, and Stamina",
+        "vi": "Phối hợp, Thăng bằng, và Sức bền"
+      }
+    },
+    "correctAnswer": "A",
+    "explanationEn": "The 9 physical abilities are grouped into Strength Factors, Flexibility Factors, and Other Factors.",
+    "explanationVi": "9 năng lực thể chất được chia làm 3 nhóm: Nhóm sức mạnh, Nhóm dẻo dai, và Các yếu tố khác.",
+    "relatedSectionId": "4.6.2",
+    "topic": "Physical Abilities"
+  },
+  {
+    "id": "OBE_145",
+    "chapter": 4,
+    "questionEn": "Why are ability tests considered the best predictors of job performance?",
+    "questionVi": "Tại sao các bài kiểm tra năng lực được coi là yếu tố dự đoán tốt nhất về hiệu suất công việc?",
+    "options": {
+      "A": {
+        "en": "Because they measure personality.",
+        "vi": "Vì chúng đo lường tính cách."
+      },
+      "B": {
+        "en": "Because they directly assess the current capacity to perform required tasks.",
+        "vi": "Vì chúng đánh giá trực tiếp khả năng hiện tại để thực hiện các nhiệm vụ được yêu cầu."
+      },
+      "C": {
+        "en": "Because they are cheap.",
+        "vi": "Vì chúng rẻ."
+      },
+      "D": {
+        "en": "Because they measure values.",
+        "vi": "Vì chúng đo lường các giá trị."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Ability tests evaluate the actual capacity to perform tasks, making them the best predictors of job performance.",
+    "explanationVi": "Đánh giá năng lực thường là yếu tố dự đoán tốt nhất về kết quả làm việc vì nó đo lường khả năng thực tế.",
+    "relatedSectionId": "4.6.3",
+    "topic": "Implications for Managers"
+  },
+  {
+    "id": "OBE_146",
+    "chapter": 4,
+    "questionEn": "Under what condition should a manager use intellectual or physical ability tests in hiring?",
+    "questionVi": "Trong điều kiện nào một nhà quản lý nên sử dụng các bài kiểm tra năng lực trí tuệ hoặc thể chất trong tuyển dụng?",
+    "options": {
+      "A": {
+        "en": "Whenever they want to filter out candidates.",
+        "vi": "Bất cứ khi nào họ muốn lọc ứng viên."
+      },
+      "B": {
+        "en": "ONLY if those abilities are necessary and required for the job.",
+        "vi": "CHỈ KHI những năng lực đó là điều kiện bắt buộc và thực sự cần thiết cho công việc."
+      },
+      "C": {
+        "en": "For all executive positions.",
+        "vi": "Cho tất cả các vị trí điều hành."
+      },
+      "D": {
+        "en": "To avoid paying higher salaries.",
+        "vi": "Để tránh phải trả lương cao hơn."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Managers must be careful of disparate impact and only test abilities if they are strictly necessary and required for the job.",
+    "explanationVi": "Chỉ được phép đánh giá ứng viên về năng lực NẾU những năng lực đó là điều kiện bắt buộc và thực sự cần thiết cho vị trí công việc đó.",
+    "relatedSectionId": "4.6.3",
+    "topic": "Implications for Managers"
+  },
+  {
+    "id": "OBE_147",
+    "chapter": 4,
+    "questionEn": "How are 'Values' defined in OB?",
+    "questionVi": "'Giá trị' (Values) được định nghĩa như thế nào trong OB?",
+    "options": {
+      "A": {
+        "en": "Temporary feelings about a job.",
+        "vi": "Cảm xúc tạm thời về một công việc."
+      },
+      "B": {
+        "en": "Basic convictions about what is right, good, or desirable.",
+        "vi": "Những niềm tin cơ bản về việc điều gì là đúng, là tốt, hoặc đáng khao khát."
+      },
+      "C": {
+        "en": "The monetary worth of an employee.",
+        "vi": "Giá trị tiền tệ của một nhân viên."
+      },
+      "D": {
+        "en": "The physical strength of a person.",
+        "vi": "Sức mạnh thể chất của một người."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Values represent basic convictions that a specific mode of conduct or end-state is personally or socially preferable.",
+    "explanationVi": "Giá trị là những niềm tin cơ bản về việc điều gì là đúng, là tốt, hoặc đáng khao khát.",
+    "relatedSectionId": "4.7",
+    "topic": "Defining Values"
+  },
+  {
+    "id": "OBE_148",
+    "chapter": 4,
+    "questionEn": "What are Terminal Values?",
+    "questionVi": "Giá trị đích đến (Terminal Values) là gì?",
+    "options": {
+      "A": {
+        "en": "Preferred modes of behavior.",
+        "vi": "Những phương thức hành vi được ưu tiên."
+      },
+      "B": {
+        "en": "Desirable end-states of existence.",
+        "vi": "Những trạng thái tồn tại mong muốn cuối cùng."
+      },
+      "C": {
+        "en": "Values that change daily.",
+        "vi": "Những giá trị thay đổi hàng ngày."
+      },
+      "D": {
+        "en": "Values related only to physical health.",
+        "vi": "Những giá trị chỉ liên quan đến sức khỏe thể chất."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Terminal values are desirable end-states of existence; the goals a person wants to achieve.",
+    "explanationVi": "Terminal values là những 'trạng thái tồn tại mong muốn cuối cùng', là cái đích cuối cùng mà một người khao khát đạt được.",
+    "relatedSectionId": "4.7.1",
+    "topic": "Terminal Values"
+  },
+  {
+    "id": "OBE_149",
+    "chapter": 4,
+    "questionEn": "What are Instrumental Values?",
+    "questionVi": "Giá trị công cụ (Instrumental Values) là gì?",
+    "options": {
+      "A": {
+        "en": "The ultimate goals in life.",
+        "vi": "Những mục tiêu tối thượng trong cuộc sống."
+      },
+      "B": {
+        "en": "Preferred modes of behavior or means to achieve terminal values.",
+        "vi": "Những phương thức hành vi được ưu tiên hoặc phương tiện để đạt được giá trị đích đến."
+      },
+      "C": {
+        "en": "The tools used in a factory.",
+        "vi": "Các công cụ được sử dụng trong nhà máy."
+      },
+      "D": {
+        "en": "Values that are no longer relevant.",
+        "vi": "Những giá trị không còn phù hợp."
+      }
+    },
+    "correctAnswer": "B",
+    "explanationEn": "Instrumental values are preferable modes of behavior, or means of achieving one's terminal values.",
+    "explanationVi": "Instrumental values là những phương thức hành vi được ưu tiên hoặc các phương tiện, cách thức để giúp đạt được 'giá trị đích đến'.",
+    "relatedSectionId": "4.7.2",
+    "topic": "Instrumental Values"
+  },
+  {
+    "id": "OBE_150",
+    "chapter": 4,
+    "questionEn": "If 'freedom and independence' is a Terminal Value, which of the following is an Instrumental Value?",
+    "questionVi": "Nếu 'tự do và độc lập' là một Giá trị đích đến, điều nào sau đây là Giá trị công cụ?",
+    "options": {
+      "A": {
+        "en": "A comfortable life",
+        "vi": "Một cuộc sống thoải mái"
+      },
+      "B": {
+        "en": "World peace",
+        "vi": "Hòa bình thế giới"
+      },
+      "C": {
+        "en": "Being self-reliant and hard-working",
+        "vi": "Tự lực và làm việc chăm chỉ"
       },
       "D": {
         "en": "Happiness",
         "vi": "Hạnh phúc"
       }
     },
-    "correctAnswer": "B",
-    "explanationEn": "Negative affect includes states like nervousness, stress, and anxiety.",
-    "explanationVi": "Xúc cảm tiêu cực bao gồm các trạng thái như lo lắng, căng thẳng và bất an.",
-    "relatedSectionId": "4.1.1",
-    "topic": "Mood Dimensions"
-  },
-  {
-    "id": "OBE_245",
-    "chapter": 4,
-    "questionEn": "What is the 'Cascading Model' of EI?",
-    "questionVi": "'Mô hình thác đổ' của EI là gì?",
-    "options": {
-      "A": {
-        "en": "A model for water management.",
-        "vi": "Một mô hình quản lý nước."
-      },
-      "B": {
-        "en": "A sequential process of perceiving, understanding, and regulating emotions.",
-        "vi": "Một quá trình tuần tự gồm nhận biết, thấu hiểu và điều chỉnh cảm xúc."
-      },
-      "C": {
-        "en": "A way to increase sales.",
-        "vi": "Một cách để tăng doanh số."
-      },
-      "D": {
-        "en": "A type of organizational structure.",
-        "vi": "Một loại cấu trúc tổ chức."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "The model shows how EI skills build upon each other in a specific order.",
-    "explanationVi": "Mô hình cho thấy các kỹ năng EI xây dựng dựa trên nhau theo một thứ tự cụ thể.",
-    "relatedSectionId": "4.5",
-    "topic": "EI Model"
-  },
-  {
-    "id": "OBE_246",
-    "chapter": 4,
-    "questionEn": "Which EI step is most linked to 'Cognitive Ability'?",
-    "questionVi": "Bước EI nào liên kết nhất với 'Năng lực nhận thức'?",
-    "options": {
-      "A": {
-        "en": "Perceive",
-        "vi": "Nhận biết"
-      },
-      "B": {
-        "en": "Understand",
-        "vi": "Thấu hiểu"
-      },
-      "C": {
-        "en": "Regulate",
-        "vi": "Điều chỉnh"
-      },
-      "D": {
-        "en": "Suppress",
-        "vi": "Kìm nén"
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Understanding emotions requires logical analysis of why they occur.",
-    "explanationVi": "Thấu hiểu cảm xúc đòi hỏi sự phân tích logic về lý do tại sao chúng xảy ra.",
-    "relatedSectionId": "4.5.1",
-    "topic": "EI Model"
-  },
-  {
-    "id": "OBE_247",
-    "chapter": 4,
-    "questionEn": "Which EI step is most linked to 'Conscientiousness'?",
-    "questionVi": "Bước EI nào liên kết nhất với 'Sự tận tâm'?",
-    "options": {
-      "A": {
-        "en": "Perceive",
-        "vi": "Nhận biết"
-      },
-      "B": {
-        "en": "Understand",
-        "vi": "Thấu hiểu"
-      },
-      "C": {
-        "en": "Regulate",
-        "vi": "Điều chỉnh"
-      },
-      "D": {
-        "en": "Ignore",
-        "vi": "Bỏ qua"
-      }
-    },
-    "correctAnswer": "A",
-    "explanationEn": "Conscientious people are more observant and better at perceiving emotional cues.",
-    "explanationVi": "Những người tận tâm quan sát tốt hơn và giỏi hơn trong việc nhận biết các tín hiệu cảm xúc.",
-    "relatedSectionId": "4.5.1",
-    "topic": "EI Model"
-  },
-  {
-    "id": "OBE_248",
-    "chapter": 4,
-    "questionEn": "Which EI step is most linked to 'Emotional Stability'?",
-    "questionVi": "Bước EI nào liên kết nhất với 'Sự ổn định cảm xúc'?",
-    "options": {
-      "A": {
-        "en": "Perceive",
-        "vi": "Nhận biết"
-      },
-      "B": {
-        "en": "Understand",
-        "vi": "Thấu hiểu"
-      },
-      "C": {
-        "en": "Regulate",
-        "vi": "Điều chỉnh"
-      },
-      "D": {
-        "en": "Create",
-        "vi": "Tạo ra"
-      }
-    },
     "correctAnswer": "C",
-    "explanationEn": "Emotional stability allows a person to keep a 'cool head' and regulate their reactions.",
-    "explanationVi": "Sự ổn định cảm xúc cho phép một người giữ 'cái đầu lạnh' và điều chỉnh các phản ứng của họ.",
-    "relatedSectionId": "4.5.1",
-    "topic": "EI Model"
-  },
-  {
-    "id": "OBE_249",
-    "chapter": 4,
-    "questionEn": "What is the impact of a leader's positive emotions on employees?",
-    "questionVi": "Tác động của cảm xúc tích cực của nhà lãnh đạo đối với nhân viên là gì?",
-    "options": {
-      "A": {
-        "en": "It makes them jealous.",
-        "vi": "Nó làm họ ghen tị."
-      },
-      "B": {
-        "en": "It makes them more likely to accept the leader's message and be motivated.",
-        "vi": "Nó làm họ dễ chấp nhận thông điệp của nhà lãnh đạo và có động lực hơn."
-      },
-      "C": {
-        "en": "It has no impact.",
-        "vi": "Nó không có tác động."
-      },
-      "D": {
-        "en": "It makes them work slower.",
-        "vi": "Nó làm họ làm việc chậm hơn."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "Enthusiastic and sincere leadership positively influences employee acceptance and motivation.",
-    "explanationVi": "Sự lãnh đạo nhiệt huyết và chân thành ảnh hưởng tích cực đến sự chấp nhận và động lực của nhân viên.",
-    "relatedSectionId": "4.7.5",
-    "topic": "Leadership"
-  },
-  {
-    "id": "OBE_250",
-    "chapter": 4,
-    "questionEn": "Why should HR use EI tests for customer service roles?",
-    "questionVi": "Tại sao nhân sự nên sử dụng các bài kiểm tra EI cho các vai trò dịch vụ khách hàng?",
-    "options": {
-      "A": {
-        "en": "To see if they can type fast.",
-        "vi": "Để xem họ có thể đánh máy nhanh không."
-      },
-      "B": {
-        "en": "To see if they can stay calm and handle difficult social interactions.",
-        "vi": "Để xem họ có thể giữ bình tĩnh và xử lý các tương tác xã hội khó khăn không."
-      },
-      "C": {
-        "en": "To check their physical health.",
-        "vi": "Để kiểm tra sức khỏe thể chất của họ."
-      },
-      "D": {
-        "en": "To save time during interviews.",
-        "vi": "Để tiết kiệm thời gian trong các cuộc phỏng vấn."
-      }
-    },
-    "correctAnswer": "B",
-    "explanationEn": "EI is critical for roles that involve high levels of emotional labor and social interaction.",
-    "explanationVi": "EI rất quan trọng cho các vai trò liên quan đến mức độ lao động cảm xúc và tương tác xã hội cao.",
-    "relatedSectionId": "4.7.1",
-    "topic": "Selection"
+    "explanationEn": "Being self-reliant and hard-working is a behavior (instrumental) used to achieve the end goal of freedom (terminal).",
+    "explanationVi": "Tự lực và làm việc chăm chỉ là cách hành xử (công cụ) để đạt được đích đến là sự tự do.",
+    "relatedSectionId": "4.7.3",
+    "topic": "Values"
   }
 ];
