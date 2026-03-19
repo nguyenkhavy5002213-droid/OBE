@@ -36,13 +36,13 @@ export function ResultsSection({ score, total, weakTopics, knowledgeBaseContext,
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col h-full animate-in fade-in zoom-in-95 duration-500 transition-colors">
       <div className="p-8 flex-1 flex flex-col items-center justify-center text-center">
-        <div className="w-28 h-28 bg-gradient-to-br from-vibrant-yellow to-vibrant-orange text-white rounded-3xl flex items-center justify-center mb-6 shadow-xl shadow-vibrant-yellow/30 rotate-3">
+        <div className="w-28 h-28 bg-gradient-to-br from-theme-yellow to-theme-pink text-slate-800 rounded-3xl flex items-center justify-center mb-6 shadow-xl shadow-theme-yellow/30 rotate-3">
           <Trophy className="w-14 h-14" />
         </div>
         
         <h2 className="text-4xl font-black text-slate-900 dark:text-slate-100 mb-2 uppercase tracking-tight">Tuyệt vời!</h2>
         <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 font-bold">
-          Bạn đã trả lời đúng <strong className="text-vibrant-green text-3xl">{score}</strong> trên tổng số <strong className="text-slate-900 dark:text-slate-100 text-2xl">{total}</strong> câu hỏi ({percentage}%).
+          Bạn đã trả lời đúng <strong className="text-emerald-500 text-3xl">{score}</strong> trên tổng số <strong className="text-slate-900 dark:text-slate-100 text-2xl">{total}</strong> câu hỏi ({percentage}%).
         </p>
 
         {weakTopics.length > 0 ? (
@@ -79,7 +79,7 @@ export function ResultsSection({ score, total, weakTopics, knowledgeBaseContext,
           <button
             onClick={handleGenerateAdaptive}
             disabled={isGenerating}
-            className="flex-1 py-4 px-8 bg-gradient-to-r from-vibrant-indigo to-vibrant-purple hover:shadow-2xl hover:shadow-vibrant-indigo/40 disabled:bg-slate-300 text-white rounded-2xl font-black text-lg uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center gap-3"
+            className="flex-1 py-4 px-8 bg-gradient-to-r from-theme-blue to-theme-purple hover:shadow-2xl hover:shadow-theme-blue/40 disabled:bg-slate-300 text-slate-800 rounded-2xl font-black text-lg uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center gap-3"
           >
             {isGenerating ? (
               <><Loader2 className="w-5 h-5 animate-spin" /> Đang tạo...</>

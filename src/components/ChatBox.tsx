@@ -61,7 +61,7 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
       <button
         onClick={() => setIsOpen(true)}
         className={cn(
-          "fixed bottom-6 right-6 p-5 rounded-2xl shadow-2xl bg-gradient-to-br from-vibrant-pink to-vibrant-rose text-white transition-all duration-300 z-40 hover:scale-110 active:scale-95 hover:rotate-6",
+          "fixed bottom-6 right-6 p-5 rounded-2xl shadow-2xl bg-gradient-to-br from-theme-pink to-theme-purple text-slate-800 transition-all duration-300 z-40 hover:scale-110 active:scale-95 hover:rotate-6",
           isOpen ? "scale-0 opacity-0" : "scale-100 opacity-100"
         )}
       >
@@ -76,10 +76,10 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
         )}
       >
         {/* Header */}
-        <div className="p-4 bg-gradient-to-r from-vibrant-pink to-vibrant-rose text-white flex items-center justify-between shadow-md">
+        <div className="p-4 bg-gradient-to-r from-theme-pink to-theme-purple text-slate-800 flex items-center justify-between shadow-md">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
-              <Bot className="w-5 h-5 text-white" />
+              <Bot className="w-5 h-5 text-slate-800" />
             </div>
             <h3 className="font-black uppercase tracking-widest text-sm">AI Assistant</h3>
           </div>
@@ -103,7 +103,7 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
             >
               <div className={cn(
                 "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm",
-                msg.role === 'user' ? "bg-vibrant-pink text-white" : "bg-vibrant-blue text-white"
+                msg.role === 'user' ? "bg-theme-pink text-slate-800" : "bg-theme-blue text-slate-800"
               )}>
                 {msg.role === 'user' ? <User className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
               </div>
@@ -111,8 +111,8 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
                 className={cn(
                   "p-4 rounded-2xl text-sm shadow-sm",
                   msg.role === 'user' 
-                    ? "bg-gradient-to-br from-vibrant-pink to-vibrant-rose text-white rounded-tr-sm font-bold" 
-                    : "bg-white dark:bg-slate-800 border-2 border-vibrant-blue/10 text-slate-700 dark:text-slate-200 rounded-tl-sm"
+                    ? "bg-gradient-to-br from-theme-pink to-theme-purple text-slate-800 rounded-tr-sm font-bold" 
+                    : "bg-white dark:bg-slate-800 border-2 border-theme-blue/10 text-slate-700 dark:text-slate-200 rounded-tl-sm"
                 )}
               >
                 {msg.role === 'user' ? (
@@ -141,7 +141,7 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
 
         {/* Input */}
         <div className="p-4 bg-white dark:bg-slate-800 border-t-2 border-slate-100 dark:border-slate-700">
-          <div className="flex items-center gap-2 bg-slate-50 dark:bg-slate-900 border-2 border-vibrant-pink/20 rounded-2xl p-2 focus-within:ring-2 focus-within:ring-vibrant-pink focus-within:border-vibrant-pink transition-all">
+          <div className="flex items-center gap-2 bg-slate-50 dark:bg-slate-900 border-2 border-theme-pink/20 rounded-2xl p-2 focus-within:ring-2 focus-within:ring-theme-pink focus-within:border-theme-pink transition-all">
             <input
               type="text"
               value={input}
@@ -154,7 +154,7 @@ export function ChatBox({ knowledgeBaseContext }: ChatBoxProps) {
             <button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
-              className="p-3 bg-gradient-to-br from-vibrant-pink to-vibrant-rose hover:shadow-lg text-white rounded-xl transition-all active:scale-90"
+              className="p-3 bg-gradient-to-br from-theme-pink to-theme-purple hover:shadow-lg text-slate-800 rounded-xl transition-all active:scale-90"
             >
               <Send className="w-4 h-4" />
             </button>

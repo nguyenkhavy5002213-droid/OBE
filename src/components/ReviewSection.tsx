@@ -26,9 +26,9 @@ export function ReviewSection({ highlightedId, selectedChapter, onStartSpecificQ
 
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden flex flex-col h-full transition-colors duration-300">
-      <div className="p-6 bg-pastel-offwhite-1 dark:bg-slate-900/50 border-b border-pastel-mint-1 dark:border-slate-700">
+      <div className="p-6 bg-theme-yellow dark:bg-slate-900/50 border-b border-theme-blue dark:border-slate-700">
         <h2 className="text-2xl font-extrabold text-slate-800 dark:text-slate-100 flex items-center gap-2">
-          <BookMarked className="w-6 h-6 text-pastel-teal-2" />
+          <BookMarked className="w-6 h-6 text-theme-blue" />
           Hệ thống Ôn tập Kiến thức - Chương {selectedChapter}
         </h2>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
@@ -79,7 +79,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
       className={cn(
         "border-l-4 rounded-r-xl overflow-hidden transition-all duration-500 shadow-sm",
         (isHighlighted || isAnySubHighlighted)
-          ? "border-l-pastel-teal-2 ring-2 ring-pastel-teal-2/50 bg-pastel-cyan-1/30 dark:bg-sky-900/20" 
+          ? "border-l-theme-blue ring-2 ring-theme-blue/50 bg-theme-blue/30 dark:bg-sky-900/20" 
           : "border-l-slate-300 dark:border-l-slate-600 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
       )}
     >
@@ -98,7 +98,7 @@ function SectionItem({ section, highlightedId, onStartSpecificQuiz }: { section:
             e.stopPropagation();
             onStartSpecificQuiz(section.id, removeCitations(section.title));
           }}
-          className="mr-4 px-3 py-1.5 bg-pastel-teal-2 hover:bg-pastel-teal-1 text-slate-800 text-xs font-extrabold rounded-lg transition-colors flex items-center gap-1.5 shadow-sm border border-pastel-teal-2/50"
+          className="mr-4 px-3 py-1.5 bg-theme-blue hover:bg-theme-purple text-slate-800 text-xs font-extrabold rounded-lg transition-colors flex items-center gap-1.5 shadow-sm border border-theme-blue/50"
           title="Làm bài tập riêng cho phần này"
         >
           <BrainCircuit className="w-3.5 h-3.5" />
@@ -160,7 +160,7 @@ function SubSectionItem({ sub, highlightedId }: { sub: SubSection; highlightedId
         className="w-full flex items-start justify-between p-4 hover:bg-slate-50 dark:hover:bg-slate-700/30 transition-colors text-left gap-4"
       >
         <div className="flex items-start gap-3">
-          <Target className="w-5 h-5 text-pastel-seafoam-1 mt-0.5 flex-shrink-0" />
+          <Target className="w-5 h-5 text-theme-purple mt-0.5 flex-shrink-0" />
           <h4 className="font-extrabold text-slate-800 dark:text-slate-200 leading-snug">{removeCitations(sub.title)}</h4>
         </div>
         {isOpen ? <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" /> : <ChevronRight className="w-5 h-5 text-slate-400 flex-shrink-0" />}
@@ -184,7 +184,7 @@ function SubSectionItem({ sub, highlightedId }: { sub: SubSection; highlightedId
                 </button>
                 
                 {showExample && (
-                  <div className="mt-3 p-4 bg-pastel-yellow-1/30 dark:bg-amber-900/20 text-slate-800 dark:text-amber-100 rounded-xl text-sm border border-pastel-yellow-1/60 dark:border-amber-700/50 leading-relaxed shadow-sm">
+                  <div className="mt-3 p-4 bg-theme-yellow/30 dark:bg-amber-900/20 text-slate-800 dark:text-amber-100 rounded-xl text-sm border border-theme-yellow/60 dark:border-amber-700/50 leading-relaxed shadow-sm">
                     <div className="markdown-body">
                       <ReactMarkdown>{removeCitations(sub.example)}</ReactMarkdown>
                     </div>

@@ -1,5 +1,7 @@
 import ibm from './subjects/ibm';
 import obe from './subjects/obe';
+import shm from './subjects/shm';
+import bue from './subjects/bue';
 import { SubjectData, ChapterData, Section, QuizQuestion } from './types';
 
 function buildSubjectData(id: string, name: string, subjectModule: any): SubjectData {
@@ -43,7 +45,9 @@ function buildSubjectData(id: string, name: string, subjectModule: any): Subject
 
 export const subjects: SubjectData[] = [
   buildSubjectData('ibm', 'International Business Management (IBM)', ibm),
-  buildSubjectData('obe', 'Organizational Behavior', obe)
+  buildSubjectData('obe', 'Organizational Behavior', obe),
+  buildSubjectData('shm', 'Strategic Human Resource Management (SHM)', shm),
+  buildSubjectData('bue', 'Business Ethics (BUE)', bue)
 ];
 
 export * from './types';

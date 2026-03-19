@@ -9,6 +9,7 @@ import * as chapter8 from './chapter8';
 import * as chapter9 from './chapter9';
 import * as chapter10 from './chapter10';
 import * as chapter11 from './chapter11';
+import * as chapter12 from './chapter12';
 export default {
   chapter1,
   chapter2,
@@ -21,4 +22,5 @@ export default {
   chapter9,
   chapter10,
   chapter11,
+  chapter12,
 };

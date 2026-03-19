@@ -1,8 +1,8 @@
 {
   "sessions": {
     "nguyenkhavy5002213@gmail.com_obe": {
-      "token": "mmpln503rxvdd54a7ki",
-      "lastActive": 1773449549002,
+      "token": "mmwjha3bw0ewtwm2kfk",
+      "lastActive": 1773869393362,
       "subjectId": "obe"
     }
   },
@@ -16,6 +16,16 @@
       "name": "International Business Management (IBM)",
       "sheetUrl": "",
       "docUrl": "https://docs.google.com/document/d/1N1mjQTT67AGlqLB9ygCPqLOpSFwuwP8hAUNkgv4fw08/edit?usp=sharing"
+    },
+    "shm": {
+      "name": "Strategic Human Resource Management (SHM)",
+      "sheetUrl": "",
+      "docUrl": ""
+    },
+    "bue": {
+      "name": "Business Ethics (BUE)",
+      "sheetUrl": "",
+      "docUrl": ""
     }
   }
 }

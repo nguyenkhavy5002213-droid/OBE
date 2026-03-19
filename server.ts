@@ -43,7 +43,9 @@ async function readData() {
     } else if (!parsed.subjects) {
       parsed.subjects = {
         "obe": { name: "Organizational Behavior (OBE)", sheetUrl: "" },
-        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" }
+        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" },
+        "shm": { name: "Strategic Human Resource Management (SHM)", sheetUrl: "" },
+        "bue": { name: "Business Ethics (BUE)", sheetUrl: "" }
       };
     }
 
@@ -62,7 +64,9 @@ async function readData() {
     return { 
       subjects: {
         "obe": { name: "Organizational Behavior (OBE)", sheetUrl: "" },
-        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" }
+        "ibm": { name: "International Business Management (IBM)", sheetUrl: "" },
+        "shm": { name: "Strategic Human Resource Management (SHM)", sheetUrl: "" },
+        "bue": { name: "Business Ethics (BUE)", sheetUrl: "" }
       }, 
       sessions: {} 
     };
@@ -500,7 +504,7 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
-    app.get('*', (req, res) => {
+    app.get('*all', (req, res) => {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }

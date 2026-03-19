@@ -105,271 +105,6 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
     }
   };
 
-  const [isSyncing, setIsSyncing] = useState(false);
-  const [syncStatus, setSyncStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const safeJsonParse = (text: string) => {
-    try {
-      // Clean potential markdown formatting
-      const cleaned = text.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
-      return JSON.parse(cleaned);
-    } catch (e) {
-      console.error("JSON Parse Error. Raw text length:", text.length);
-      console.error("Raw text snippet:", text.substring(0, 200) + "...");
-      console.error("End of text snippet:", text.slice(-200));
-      
-      // Check if it looks truncated
-      if (text.length > 0 && !text.trim().endsWith('}')) {
-        throw new Error("Dữ liệu AI bị ngắt quãng do quá dài. Vui lòng thử lại hoặc chia nhỏ nội dung.");
-      }
-      throw e;
-    }
-  };
-
-  const handleAISync = async () => {
-    if (!selectedSubjectId || !docUrl) {
-      alert("Vui lòng nhập Link Google Docx để đồng bộ nội dung.");
-      return;
-    }
-    setIsSyncing(true);
-    setSyncStatus('idle');
-    try {
-      const authUser = localStorage.getItem('authUser');
-      const { email } = JSON.parse(authUser || '{}');
-      
-      // 1. Fetch raw text and existing content summary from server
-      const fetchRes = await fetch(`/api/subjects/sync/${selectedSubjectId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ docUrl, adminEmail: email })
-      });
-      
-      if (!fetchRes.ok) {
-        const err = await fetchRes.json();
-        throw new Error(err.error || 'Failed to fetch raw text');
-      }
-      
-      const { rawText, existingChaptersSummary, subjectName } = await fetchRes.json();
-      
-      if (!rawText || rawText.trim().length < 10) {
-        throw new Error('Dữ liệu lấy được quá ngắn hoặc trống.');
-      }
-
-      // 2. Fetch FULL existing content to merge later
-      const fullContentRes = await fetch(`/api/subjects/content/${selectedSubjectId}`);
-      const fullContentData = await fullContentRes.json();
-      const existingChapters = fullContentData.chapters || [];
-      
-      const apiKey = process.env.GEMINI_API_KEY;
-      if (!apiKey) throw new Error('GEMINI_API_KEY chưa được thiết lập.');
-      const ai = new GoogleGenAI({ apiKey });
-      const model = "gemini-3-flash-preview";
-
-      // STEP 1: Identify New or Updated Chapters
-      const identifyPrompt = `
-        Subject: ${subjectName}
-        Existing Chapters: ${JSON.stringify(existingChaptersSummary)}
-        
-        Task: Analyze the raw text from the provided Google Document/Sheet. 
-        1. Identify all chapters/modules present in the text. (Note: These might be organized as sections, headings, or even different sheets if the source is a spreadsheet).
-        2. Compare these identified chapters with the "Existing Chapters" list provided above.
-        3. Determine which chapters are BRAND NEW or have significant UPDATES that require re-generation.
-        
-        Return a JSON object with:
-        - "toProcess": Array of {id, title, status} where status is "new" or "update".
-        
-        Raw Text (beginning):
-        ${rawText.substring(0, 15000)}
-      `;
-
-      const idResult = await ai.models.generateContent({
-        model,
-        contents: [{ parts: [{ text: identifyPrompt }] }],
-        config: {
-          responseMimeType: "application/json",
-          temperature: 0.1,
-          responseSchema: {
-            type: Type.OBJECT,
-            properties: {
-              toProcess: {
-                type: Type.ARRAY,
-                items: {
-                  type: Type.OBJECT,
-                  properties: {
-                    id: { type: Type.NUMBER },
-                    title: { type: Type.STRING },
-                    status: { type: Type.STRING }
-                  }
-                }
-              }
-            }
-          }
-        }
-      });
-
-      const { toProcess } = safeJsonParse(idResult.text || "{}");
-      
-      if (!toProcess || toProcess.length === 0) {
-        alert("Không có chương mới hoặc thay đổi nào được phát hiện.");
-        setIsSyncing(false);
-        return;
-      }
-
-      console.log("Chapters to process:", toProcess);
-
-      // STEP 2: Process only the identified chapters
-      const processedChapters = [];
-      for (const chapter of toProcess) {
-        console.log(`Processing ${chapter.status} Chapter ${chapter.id}: ${chapter.title}`);
-        
-        // 2a. Generate Theory
-        const theoryPrompt = `
-          Subject: ${subjectName}
-          Chapter ${chapter.id}: "${chapter.title}"
-          Task: Perform a detailed study and write a comprehensive "theory" section in Markdown.
-          
-          Instructions:
-          - Break down the content into logical sub-sections (id, title, content).
-          - Ensure the content is educational, detailed, and covers all key concepts mentioned in the raw text for this chapter.
-          - Use professional and clear language (bilingual English/Vietnamese if possible, or as per source).
-          - Format must match existing chapters exactly.
-          
-          Raw Text Source:
-          ${rawText}
-        `;
-
-        const theoryResult = await ai.models.generateContent({
-          model,
-          contents: [{ parts: [{ text: theoryPrompt }] }],
-          config: {
-            responseMimeType: "application/json",
-            maxOutputTokens: 8192,
-            temperature: 0.1,
-            responseSchema: {
-              type: Type.OBJECT,
-              properties: {
-                theory: {
-                  type: Type.ARRAY,
-                  items: {
-                    type: Type.OBJECT,
-                    properties: {
-                      id: { type: Type.STRING },
-                      title: { type: Type.STRING },
-                      content: { type: Type.STRING },
-                      chapter: { type: Type.NUMBER }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        });
-
-        const { theory } = safeJsonParse(theoryResult.text || "{}");
-
-        // 2b. Generate Quiz in 10 batches of 5 to avoid truncation
-        const quiz = [];
-        const TOTAL_QUESTIONS = 50;
-        const BATCH_SIZE = 5;
-        const NUM_BATCHES = TOTAL_QUESTIONS / BATCH_SIZE;
-
-        for (let batch = 0; batch < NUM_BATCHES; batch++) {
-          const start = batch * BATCH_SIZE + 1;
-          const end = (batch + 1) * BATCH_SIZE;
-          console.log(`  Generating Quiz Batch ${batch + 1}/${NUM_BATCHES} (Questions ${start}-${end})`);
-          
-          const quizPrompt = `
-            Subject: ${subjectName}
-            Chapter ${chapter.id}: "${chapter.title}"
-            Task: Create ${BATCH_SIZE} high-quality bilingual (English/Vietnamese) MCQs (Questions ${start} to ${end}).
-            
-            Instructions:
-            - Each question must have exactly 4 options.
-            - Format: { "questions": [ { "id": number, "question": "Eng / Viet", "options": ["A", "B", "C", "D"], "answer": index, "explanation": "Eng / Viet", "relatedSectionId": "string", "chapter": ${chapter.id} } ] }
-            - Use the provided raw text as the source.
-            
-            Raw Text:
-            ${rawText.substring(0, 40000)}
-          `;
-
-          const quizResult = await ai.models.generateContent({
-            model,
-            contents: [{ parts: [{ text: quizPrompt }] }],
-            config: {
-              responseMimeType: "application/json",
-              maxOutputTokens: 8192, // Use max tokens to be safe
-              temperature: 0.1,
-              responseSchema: {
-                type: Type.OBJECT,
-                properties: {
-                  questions: {
-                    type: Type.ARRAY,
-                    items: {
-                      type: Type.OBJECT,
-                      properties: {
-                        id: { type: Type.NUMBER },
-                        question: { type: Type.STRING },
-                        options: { type: Type.ARRAY, items: { type: Type.STRING }, minItems: 4, maxItems: 4 },
-                        answer: { type: Type.NUMBER },
-                        explanation: { type: Type.STRING },
-                        relatedSectionId: { type: Type.STRING },
-                        chapter: { type: Type.NUMBER }
-                      },
-                      required: ["id", "question", "options", "answer", "explanation", "relatedSectionId", "chapter"]
-                    }
-                  }
-                },
-                required: ["questions"]
-              }
-            }
-          });
-
-          const { questions } = safeJsonParse(quizResult.text || "{}");
-          if (questions && Array.isArray(questions)) {
-            quiz.push(...questions);
-          }
-        }
-
-        processedChapters.push({
-          id: chapter.id,
-          title: chapter.title,
-          theory,
-          quiz
-        });
-      }
-
-      // STEP 3: Merge and Save
-      // Create a map of existing chapters for easy replacement
-      const chapterMap = new Map();
-      existingChapters.forEach((ch: any) => chapterMap.set(ch.id, ch));
-      
-      // Add/Update processed chapters
-      processedChapters.forEach(ch => chapterMap.set(ch.id, ch));
-      
-      // Convert back to array and sort
-      const finalChapters = Array.from(chapterMap.values()).sort((a, b) => a.id - b.id);
-
-      const saveRes = await fetch(`/api/subjects/save-content/${selectedSubjectId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: { chapters: finalChapters }, adminEmail: email })
-      });
-      
-      if (saveRes.ok) {
-        setSyncStatus('success');
-        setTimeout(() => setSyncStatus('idle'), 3000);
-      } else {
-        setSyncStatus('error');
-      }
-    } catch (error) {
-      console.error("Sync error:", error);
-      setSyncStatus('error');
-      alert(error instanceof Error ? error.message : "Có lỗi xảy ra khi đồng bộ AI.");
-    } finally {
-      setIsSyncing(false);
-    }
-  };
-
   const handleSaveSheet = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedSubjectId) return;
@@ -447,7 +182,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
         {/* Header */}
         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between bg-slate-50 dark:bg-slate-800/50">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg text-indigo-600 dark:text-indigo-400">
+            <div className="p-2 bg-theme-blue/20 dark:bg-theme-blue/10 rounded-lg text-theme-blue dark:text-theme-blue">
               <Shield className="w-5 h-5" />
             </div>
             <div>
@@ -473,7 +208,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
             onClick={() => setActiveTab('whitelist')}
             className={`px-4 py-3 text-sm font-medium border-b-2 transition-colors ${
               activeTab === 'whitelist'
-                ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+                ? 'border-theme-blue text-theme-blue dark:text-theme-blue'
                 : 'border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
             }`}
           >
@@ -483,13 +218,13 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
             onClick={() => setActiveTab('active')}
             className={`px-4 py-3 text-sm font-medium border-b-2 transition-colors ${
               activeTab === 'active'
-                ? 'border-indigo-600 text-indigo-600 dark:text-indigo-400'
+                ? 'border-theme-blue text-theme-blue dark:text-theme-blue'
                 : 'border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
             }`}
           >
             Người dùng đang truy cập
             {activeUsers.length > 0 && (
-              <span className="ml-2 px-1.5 py-0.5 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 text-[10px] rounded-full">
+              <span className="ml-2 px-1.5 py-0.5 bg-theme-blue/20 dark:bg-theme-blue/10 text-theme-blue dark:text-theme-blue text-[10px] rounded-full">
                 {activeUsers.length}
               </span>
             )}
@@ -508,7 +243,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                   </h3>
                   <button
                     onClick={() => setIsAddingSubject(!isAddingSubject)}
-                    className="p-1 text-indigo-600 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 rounded-md transition-colors"
+                    className="p-1 text-theme-blue hover:bg-theme-blue/10 dark:hover:bg-theme-blue/5 rounded-md transition-colors"
                   >
                     <Plus className="w-4 h-4" />
                   </button>
@@ -548,7 +283,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                         className="w-full px-2 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
                       />
                       <div className="flex gap-2">
-                        <button type="submit" disabled={isSaving} className="flex-1 bg-indigo-600 text-white text-xs py-1.5 rounded-md hover:bg-indigo-700">
+                        <button type="submit" disabled={isSaving} className="flex-1 bg-theme-blue text-slate-800 font-bold text-xs py-1.5 rounded-md hover:bg-theme-blue/80">
                           {isSaving ? 'Đang lưu...' : 'Thêm'}
                         </button>
                         <button type="button" onClick={() => setIsAddingSubject(false)} className="flex-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs py-1.5 rounded-md hover:bg-slate-300 dark:hover:bg-slate-600">
@@ -566,7 +301,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                       onClick={() => handleSelectSubject(subject.id)}
                       className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
                         selectedSubjectId === subject.id
-                          ? 'bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 font-medium'
+                          ? 'bg-theme-blue/20 dark:bg-theme-blue/10 text-theme-blue dark:text-theme-blue font-bold'
                           : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
                       }`}
                     >
@@ -608,7 +343,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                               value={sheetUrl}
                               onChange={(e) => setSheetUrl(e.target.value)}
                               placeholder="https://docs.google.com/spreadsheets/d/..."
-                              className="block w-full pl-10 pr-10 py-3 border border-slate-300 dark:border-slate-600 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all sm:text-sm"
+                              className="block w-full pl-10 pr-10 py-3 border border-slate-300 dark:border-slate-600 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue transition-all sm:text-sm"
                             />
                             {sheetUrl && (
                               <button
@@ -635,7 +370,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                               value={docUrl}
                               onChange={(e) => setDocUrl(e.target.value)}
                               placeholder="https://docs.google.com/document/d/..."
-                              className="block w-full pl-10 pr-10 py-3 border border-slate-300 dark:border-slate-600 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all sm:text-sm"
+                              className="block w-full pl-10 pr-10 py-3 border border-slate-300 dark:border-slate-600 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue transition-all sm:text-sm"
                             />
                             {docUrl && (
                               <button
@@ -654,7 +389,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                         <button
                           type="submit"
                           disabled={isSaving}
-                          className="flex items-center justify-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-medium transition-colors disabled:opacity-50"
+                          className="flex items-center justify-center gap-2 px-6 py-2.5 bg-theme-blue hover:bg-theme-blue/80 text-slate-800 rounded-xl font-bold transition-colors disabled:opacity-50"
                         >
                           {isSaving ? 'Đang lưu...' : 'Lưu Cấu Hình'}
                         </button>
@@ -666,27 +401,6 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                           className="flex items-center justify-center gap-2 px-6 py-2.5 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-xl font-medium transition-colors disabled:opacity-50"
                         >
                           {isTesting ? <RefreshCw className="w-5 h-5 animate-spin" /> : 'Làm mới whitelist'}
-                        </button>
-
-                        <button
-                          type="button"
-                          onClick={handleAISync}
-                          disabled={isSyncing || !docUrl}
-                          className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl font-bold transition-all ${
-                            syncStatus === 'success' 
-                              ? 'bg-emerald-500 text-white' 
-                              : syncStatus === 'error'
-                              ? 'bg-rose-500 text-white'
-                              : 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white hover:shadow-lg hover:scale-105'
-                          } disabled:opacity-50`}
-                        >
-                          {isSyncing ? (
-                            <><RefreshCw className="w-5 h-5 animate-spin" /> Đang quét AI...</>
-                          ) : syncStatus === 'success' ? (
-                            <><CheckCircle2 className="w-5 h-5" /> Đã xong!</>
-                          ) : (
-                            <><RefreshCw className="w-5 h-5" /> Đồng bộ AI (Docs/Sheet)</>
-                          )}
                         </button>
                       </div>
                     </form>
@@ -710,7 +424,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                               placeholder="Tìm email..."
                               value={searchTerm}
                               onChange={(e) => setSearchTerm(e.target.value)}
-                              className="w-full px-3 py-1.5 text-xs border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-1 focus:ring-indigo-500 outline-none"
+                              className="w-full px-3 py-1.5 text-xs border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:ring-1 focus:ring-theme-blue outline-none"
                             />
                           </div>
                         </div>
@@ -748,7 +462,7 @@ export function AdminPanel({ onClose }: AdminPanelProps) {
                 </h3>
                 <button 
                   onClick={fetchActiveUsers}
-                  className="p-1.5 text-slate-400 hover:text-indigo-600 transition-colors"
+                  className="p-1.5 text-slate-400 hover:text-theme-blue transition-colors"
                   title="Làm mới"
                 >
                   <RefreshCw className="w-4 h-4" />

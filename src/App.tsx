@@ -58,7 +58,7 @@ function AppContent() {
   }, [currentSubject]);
 
   useEffect(() => {
-    if (chapters.length > 0 && !chapters.includes(selectedChapter)) {
+    if (chapters.length > 0 && !chapters.map(String).includes(String(selectedChapter))) {
       setSelectedChapter(chapters[0]);
     }
   }, [chapters, selectedChapter]);
@@ -186,7 +186,7 @@ function AppContent() {
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
-        <Loader2 className="w-10 h-10 text-indigo-600 animate-spin" />
+        <Loader2 className="w-10 h-10 text-theme-blue animate-spin" />
       </div>
     );
   }
@@ -196,13 +196,13 @@ function AppContent() {
   }
 
   return (
-    <div className="min-h-screen bg-pastel-offwhite-1 dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans selection:bg-pastel-blue-1/50 dark:selection:bg-sky-900 selection:text-slate-900 dark:selection:text-sky-100 transition-colors duration-300">
+    <div className="min-h-screen bg-theme-yellow dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans selection:bg-theme-blue/50 dark:selection:bg-sky-900 selection:text-slate-900 dark:selection:text-sky-100 transition-colors duration-300">
       {/* Header */}
-      <header className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-pastel-mint-1 dark:border-slate-700 sticky top-0 z-30 shadow-sm transition-colors duration-300">
+      <header className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-theme-blue dark:border-slate-700 sticky top-0 z-30 shadow-sm transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <h1 className="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pastel-teal-2 to-pastel-pink-1 dark:from-sky-400 dark:to-pink-400">
-              {user.subjectId === 'ibm' ? 'International Business Management (IBM)' : (user.subjectName || 'OBE Revision')}
+            <h1 className="text-xl font-extrabold bg-clip-text text-transparent bg-theme-green">
+              {currentSubject?.name || user.subjectName || 'OBE Revision'}
             </h1>
           </div>
           <div className="flex items-center gap-4">
@@ -210,7 +210,7 @@ function AppContent() {
               {isAdmin && (
                 <button
                   onClick={() => setShowAdminPanel(true)}
-                  className="hidden md:flex items-center gap-2 px-3 py-1.5 text-sm font-bold text-slate-700 dark:text-sky-400 bg-pastel-mint-1 rounded-lg hover:bg-pastel-turquoise-1 transition-colors"
+                  className="hidden md:flex items-center gap-2 px-3 py-1.5 text-sm font-bold text-slate-700 dark:text-sky-400 bg-theme-blue rounded-lg hover:bg-theme-purple transition-colors"
                   title="Quản lý truy cập"
                 >
                   <Shield className="w-4 h-4" />
@@ -222,7 +222,7 @@ function AppContent() {
               </span>
               <button
                 onClick={logout}
-                className="p-2 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 transition-colors rounded-lg hover:bg-pastel-pink-2 dark:hover:bg-slate-700"
+                className="p-2 text-slate-500 hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-400 transition-colors rounded-lg hover:bg-theme-pink dark:hover:bg-slate-700"
                 title="Đăng xuất"
               >
                 <LogOut className="w-5 h-5" />
@@ -234,22 +234,28 @@ function AppContent() {
 
       {/* Chapter Selection */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-        <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-pastel-yellow-1 dark:border-slate-700 flex flex-wrap items-center gap-4">
-          <span className="text-sm font-extrabold text-slate-500 dark:text-amber-400 uppercase tracking-wider">Chọn Chương:</span>
-          <div className="flex gap-2">
-            {chapters.map((ch) => (
-              <button
-                key={ch}
-                onClick={() => setSelectedChapter(ch)}
-                className={`px-6 py-2 rounded-xl font-extrabold transition-all duration-200 ${
-                  selectedChapter === ch
-                    ? 'bg-pastel-yellow-1 text-slate-800 shadow-lg shadow-pastel-yellow-1/50 scale-105'
-                    : 'bg-pastel-yellow-1/20 dark:bg-slate-700 text-slate-600 dark:text-amber-300 hover:bg-pastel-yellow-1/40 dark:hover:bg-slate-600'
-                }`}
-              >
-                Chương {ch}
-              </button>
-            ))}
+        <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-theme-purple dark:border-slate-700 flex flex-wrap items-center gap-4">
+          <label htmlFor="chapter-select" className="text-sm font-extrabold text-slate-500 dark:text-theme-blue uppercase tracking-wider">
+            Chọn Chương:
+          </label>
+          <div className="relative flex-1 max-w-xs">
+            <select
+              id="chapter-select"
+              value={selectedChapter}
+              onChange={(e) => setSelectedChapter(e.target.value)}
+              className="w-full appearance-none bg-theme-yellow dark:bg-slate-700 text-slate-800 dark:text-theme-yellow font-extrabold px-4 py-2 pr-8 rounded-xl border border-theme-purple dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-theme-blue cursor-pointer transition-colors"
+            >
+              {chapters.map((ch) => (
+                <option key={ch} value={ch}>
+                  Chương {ch}
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-700 dark:text-theme-yellow">
+              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -294,7 +300,7 @@ function AppContent() {
       {/* Floating Theme Toggle */}
       <button
         onClick={() => setIsDarkMode(!isDarkMode)}
-        className="fixed bottom-6 right-24 p-4 rounded-full shadow-xl bg-white dark:bg-slate-800 border border-pastel-pink-1 dark:border-slate-700 text-pastel-pink-1 dark:text-amber-400 hover:scale-110 transition-all duration-300 z-40"
+        className="fixed bottom-6 right-24 p-4 rounded-full shadow-xl bg-white dark:bg-slate-800 border border-theme-pink dark:border-slate-700 text-slate-700 dark:text-amber-400 hover:scale-110 transition-all duration-300 z-40"
         title="Toggle Dark/Light Mode"
       >
         {isDarkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}

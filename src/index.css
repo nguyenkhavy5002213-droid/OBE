@@ -5,22 +5,17 @@
   --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
   
   /* Vibrant & Colorful Palette */
-  --color-vibrant-blue: #3B82F6;
-  --color-vibrant-pink: #EC4899;
-  --color-vibrant-yellow: #F59E0B;
-  --color-vibrant-green: #10B981;
-  --color-vibrant-purple: #8B5CF6;
-  --color-vibrant-orange: #F97316;
-  --color-vibrant-indigo: #6366F1;
-  --color-vibrant-cyan: #06B6D4;
-  --color-vibrant-rose: #F43F5E;
-  --color-vibrant-lime: #84CC16;
+  --color-theme-blue: #BFECFF;
+  --color-theme-purple: #CDC1FF;
+  --color-theme-yellow: #FFF6E3;
+  --color-theme-pink: #FFCCEA;
+  --color-theme-green: #B0DB9C;
 }
 
-@variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:is(.dark *));
 
 html, body {
-  @apply bg-slate-100 dark:bg-slate-900 transition-colors duration-300;
+  @apply bg-theme-yellow dark:bg-slate-900 transition-colors duration-300;
 }
 
 html.dark {
@@ -36,9 +31,9 @@ html.dark {
     background: transparent;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 dark:bg-slate-600 rounded-full;
+    @apply bg-theme-blue dark:bg-slate-600 rounded-full;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-400 dark:bg-slate-500;
+    @apply bg-theme-purple dark:bg-slate-500;
   }
 }
