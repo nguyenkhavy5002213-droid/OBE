@@ -84,7 +84,13 @@ function AppContent() {
   const [currentQuestions, setCurrentQuestions] = useState<QuizQuestion[]>([]);
   const [score, setScore] = useState(0);
   const [weakTopics, setWeakTopics] = useState<string[]>([]);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode');
+    if (saved !== null) {
+      return saved === 'true';
+    }
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   const [showAdminPanel, setShowAdminPanel] = useState(false);
   const [activeQuizFilter, setActiveQuizFilter] = useState<string | null>(null);
 
@@ -102,6 +108,7 @@ function AppContent() {
     } else {
       document.documentElement.classList.remove('dark');
     }
+    localStorage.setItem('darkMode', isDarkMode.toString());
   }, [isDarkMode]);
 
   const handleLocateKnowledge = (sectionId: string) => {
@@ -169,7 +176,18 @@ function AppContent() {
   }
 
   if (!user) {
-    return <AuthScreen />;
+    return (
+      <>
+        <AuthScreen />
+        <button
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          className="fixed bottom-6 right-6 p-4 rounded-full shadow-xl bg-white dark:bg-slate-800 border border-theme-pink dark:border-slate-700 text-slate-700 dark:text-amber-400 hover:scale-110 transition-all duration-300 z-40"
+          title="Toggle Dark/Light Mode"
+        >
+          {isDarkMode ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
+        </button>
+      </>
+    );
   }
 
   return (

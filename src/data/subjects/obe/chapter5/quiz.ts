@@ -583,7 +583,7 @@ export const chapter5Quiz: QuizQuestion[] = [
   },
   {
     "id": "OBE_271",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the focus of Utilitarianism in ethical decision making?",
     "questionVi": "Trọng tâm của Chủ nghĩa vị lợi trong việc ra quyết định đạo đức là gì?",
     "options": {
@@ -607,12 +607,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Utilitarianism evaluates ethics based on the consequences or outcomes of an action.",
     "explanationVi": "Chủ nghĩa vị lợi đánh giá đạo đức dựa trên hậu quả hoặc kết quả của một hành động.",
-    "relatedSectionId": "6.6.1",
+    "relatedSectionId": "5.6.1",
     "topic": "Utilitarianism"
   },
   {
     "id": "OBE_272",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Which ethical criterion focuses on protecting whistleblowers?",
     "questionVi": "Tiêu chuẩn đạo đức nào tập trung vào việc bảo vệ những người tố cáo sai phạm?",
     "options": {
@@ -636,12 +636,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "The focus on rights protects individual liberties and privileges, including freedom of speech for whistleblowers.",
     "explanationVi": "Việc tập trung vào quyền bảo vệ các quyền tự do và đặc quyền cá nhân, bao gồm quyền tự do ngôn luận cho những người tố cáo sai phạm.",
-    "relatedSectionId": "6.6.2",
+    "relatedSectionId": "5.6.2",
     "topic": "Focus on Rights"
   },
   {
     "id": "OBE_273",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the goal of the 'Justice' criterion in ethics?",
     "questionVi": "Mục tiêu của tiêu chuẩn 'Công bằng' trong đạo đức là gì?",
     "options": {
@@ -665,12 +665,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Justice ensures that rules are applied consistently and fairly to all members of an organization.",
     "explanationVi": "Sự công bằng đảm bảo rằng các quy tắc được áp dụng nhất quán và công bằng cho tất cả các thành viên của một tổ chức.",
-    "relatedSectionId": "6.6.3",
+    "relatedSectionId": "5.6.3",
     "topic": "Justice"
   },
   {
     "id": "OBE_274",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What are the two components of creativity?",
     "questionVi": "Hai thành phần của sự sáng tạo là gì?",
     "options": {
@@ -694,12 +694,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Creativity is the ability to produce ideas that are both novel (new) and useful (applicable).",
     "explanationVi": "Sáng tạo là khả năng tạo ra các ý tưởng vừa mới mẻ (mới) vừa hữu ích (có thể áp dụng).",
-    "relatedSectionId": "6.7",
+    "relatedSectionId": "5.7",
     "topic": "Defining Creativity"
   },
   {
     "id": "OBE_275",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "In the three-stage model of creativity, what are the causes of creative behavior?",
     "questionVi": "Trong mô hình sáng tạo 3 giai đoạn, nguyên nhân của hành vi sáng tạo là gì?",
     "options": {
@@ -723,12 +723,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "A",
     "explanationEn": "Creativity requires both the individual's potential and a supportive environment.",
     "explanationVi": "Sự sáng tạo đòi hỏi cả tiềm năng của cá nhân và một môi trường hỗ trợ.",
-    "relatedSectionId": "6.7.1",
+    "relatedSectionId": "5.7.1",
     "topic": "Causes of Creativity"
   },
   {
     "id": "OBE_276",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the first step in creative behavior?",
     "questionVi": "Bước đầu tiên trong hành vi sáng tạo là gì?",
     "options": {
@@ -752,12 +752,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Creative behavior starts with identifying and defining a problem that needs a creative solution.",
     "explanationVi": "Hành vi sáng tạo bắt đầu bằng việc xác định và định nghĩa một vấn đề cần một giải pháp sáng tạo.",
-    "relatedSectionId": "6.7.2",
+    "relatedSectionId": "5.7.2",
     "topic": "Creative Behavior Steps"
   },
   {
     "id": "OBE_277",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is 'Creative Potential'?",
     "questionVi": "'Tiềm năng sáng tạo' là gì?",
     "options": {
@@ -781,12 +781,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Creative potential belongs to the individual, while the environment is an external cause.",
     "explanationVi": "Tiềm năng sáng tạo thuộc về cá nhân, trong khi môi trường là một nguyên nhân bên ngoài.",
-    "relatedSectionId": "6.7.1",
+    "relatedSectionId": "5.7.1",
     "topic": "Creative Potential"
   },
   {
     "id": "OBE_278",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the 'Fundamental Attribution Error' specifically about?",
     "questionVi": "'Lỗi quy gán cơ bản' cụ thể là về điều gì?",
     "options": {
@@ -810,12 +810,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "It's a bias where we blame the person's character rather than the situation for their failure.",
     "explanationVi": "Đó là một thiên kiến mà chúng ta đổ lỗi cho tính cách của con người thay vì tình huống cho thất bại của họ.",
-    "relatedSectionId": "6.2.2",
+    "relatedSectionId": "5.2.2",
     "topic": "Fundamental Attribution Error"
   },
   {
     "id": "OBE_279",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "In the case of 'Al's Burgers', what was the manager's dilemma?",
     "questionVi": "Trong trường hợp 'Al's Burgers', tình thế tiến thoái lưỡng nan của người quản lý là gì?",
     "options": {
@@ -839,12 +839,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "The manager had to attribute the cause of the problem to decide whether to accept the shipment.",
     "explanationVi": "Người quản lý phải quy gán nguyên nhân của vấn đề để quyết định có nhận lô hàng hay không.",
-    "relatedSectionId": "6.2",
+    "relatedSectionId": "5.2",
     "topic": "Attribution in Practice"
   },
   {
     "id": "OBE_280",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is 'Hindsight Bias'?",
     "questionVi": "'Thiên kiến nhận thức muộn' là gì?",
     "options": {
@@ -868,12 +868,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Hindsight bias makes people feel they 'knew it all along' after an event occurs.",
     "explanationVi": "Thiên kiến nhận thức muộn khiến mọi người cảm thấy họ 'đã biết tất cả ngay từ đầu' sau khi một sự kiện xảy ra.",
-    "relatedSectionId": "6.3",
+    "relatedSectionId": "5.3",
     "topic": "Hindsight Bias"
   },
   {
     "id": "OBE_281",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Which factor in the target refers to how close objects are to each other?",
     "questionVi": "Yếu tố nào ở đối tượng đề cập đến mức độ gần nhau của các vật thể?",
     "options": {
@@ -897,12 +897,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Proximity leads us to perceive objects that are close together as a group.",
     "explanationVi": "Khoảng cách (sự gần gũi) dẫn chúng ta đến việc nhận thức các vật thể ở gần nhau như một nhóm.",
-    "relatedSectionId": "6.1.2",
+    "relatedSectionId": "5.1.2",
     "topic": "Proximity"
   },
   {
     "id": "OBE_282",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "When a manager blames a drop in sales on 'lazy staff' without considering the economic recession, they are committing:",
     "questionVi": "Khi một nhà quản lý đổ lỗi cho sự sụt giảm doanh số là do 'nhân viên lười biếng' mà không xem xét đến cuộc suy thoái kinh tế, họ đang mắc lỗi:",
     "options": {
@@ -926,12 +926,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "They are overestimating internal factors (staff) and underestimating external factors (economy).",
     "explanationVi": "Họ đang đánh giá quá cao các yếu tố bên trong (nhân viên) và đánh giá thấp các yếu tố bên ngoài (kinh tế).",
-    "relatedSectionId": "6.2.2",
+    "relatedSectionId": "5.2.2",
     "topic": "Fundamental Attribution Error"
   },
   {
     "id": "OBE_283",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the main difference between the Rational Model and Bounded Rationality?",
     "questionVi": "Sự khác biệt chính giữa Mô hình hợp lý và Tính hợp lý bị giới hạn là gì?",
     "options": {
@@ -955,12 +955,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Rationality aims for perfection; bounded rationality aims for sufficiency (satisficing).",
     "explanationVi": "Sự hợp lý hướng tới sự hoàn hảo; tính hợp lý bị giới hạn hướng tới sự thỏa đáng (satisficing).",
-    "relatedSectionId": "6.4",
+    "relatedSectionId": "5.4",
     "topic": "Rational vs Bounded"
   },
   {
     "id": "OBE_284",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "In 'Trait Activation Theory' (TAT), what activates personality traits?",
     "questionVi": "Trong 'Lý thuyết Kích hoạt Đặc điểm' (TAT), điều gì kích hoạt các đặc điểm tính cách?",
     "options": {
@@ -984,12 +984,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "A",
     "explanationEn": "TAT suggests that certain jobs or events 'activate' specific traits (e.g., accounting activates conscientiousness).",
     "explanationVi": "TAT gợi ý rằng một số công việc hoặc sự kiện nhất định 'kích hoạt' các đặc điểm cụ thể (ví dụ: kế toán kích hoạt tính tận tâm).",
-    "relatedSectionId": "6.5",
+    "relatedSectionId": "5.5",
     "topic": "Trait Activation Theory"
   },
   {
     "id": "OBE_285",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Which organizational constraint involves 'Historical Precedents'?",
     "questionVi": "Ràng buộc tổ chức nào liên quan đến 'Tiền lệ lịch sử'?",
     "options": {
@@ -1013,12 +1013,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Historical precedents mean current decisions are limited by past choices.",
     "explanationVi": "Tiền lệ lịch sử có nghĩa là các quyết định hiện tại bị giới hạn bởi các lựa chọn trong quá khứ.",
-    "relatedSectionId": "6.5.2",
+    "relatedSectionId": "5.5.2",
     "topic": "Historical Precedents"
   },
   {
     "id": "OBE_286",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the 'Utilitarian' approach to firing 20% of staff?",
     "questionVi": "Cách tiếp cận 'Vị lợi' đối với việc sa thải 20% nhân viên là gì?",
     "options": {
@@ -1042,12 +1042,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "A",
     "explanationEn": "Utilitarianism focuses on the greatest good for the greatest number (saving 80% is better than losing 100%).",
     "explanationVi": "Chủ nghĩa vị lợi tập trung vào lợi ích lớn nhất cho số đông người nhất (cứu 80% tốt hơn là mất 100%).",
-    "relatedSectionId": "6.6.1",
+    "relatedSectionId": "5.6.1",
     "topic": "Utilitarianism Example"
   },
   {
     "id": "OBE_287",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What does the 'Justice' criterion focus on during layoffs?",
     "questionVi": "Tiêu chuẩn 'Công bằng' tập trung vào điều gì trong quá trình sa thải?",
     "options": {
@@ -1071,12 +1071,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Justice ensures that the burden of a decision is distributed fairly according to impartial rules.",
     "explanationVi": "Sự công bằng đảm bảo rằng gánh nặng của một quyết định được phân phối công bằng theo các quy tắc vô tư.",
-    "relatedSectionId": "6.6.3",
+    "relatedSectionId": "5.6.3",
     "topic": "Justice Example"
   },
   {
     "id": "OBE_288",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is 'Information Gathering' in the creative process?",
     "questionVi": "'Thu thập thông tin' trong quá trình sáng tạo là gì?",
     "options": {
@@ -1100,12 +1100,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "It is the second step of creative behavior, where raw materials for ideas are collected.",
     "explanationVi": "Đây là bước thứ hai của hành vi sáng tạo, nơi các nguyên liệu thô cho các ý tưởng được thu thập.",
-    "relatedSectionId": "6.7.2",
+    "relatedSectionId": "5.7.2",
     "topic": "Creative Behavior"
   },
   {
     "id": "OBE_289",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Why should managers be aware of 'Perceptual Errors' in recruitment?",
     "questionVi": "Tại sao các nhà quản lý nên nhận thức được các 'Lỗi nhận thức' trong tuyển dụng?",
     "options": {
@@ -1129,12 +1129,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Recognizing biases like first impressions or stereotypes helps in making better selection decisions.",
     "explanationVi": "Nhận biết các thiên kiến như ấn tượng đầu tiên hoặc định kiến giúp đưa ra các quyết định lựa chọn tốt hơn.",
-    "relatedSectionId": "6.8.3",
+    "relatedSectionId": "5.8.3",
     "topic": "Implications for Managers"
   },
   {
     "id": "OBE_290",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the 'Triple Bottom Line' in the context of CSR?",
     "questionVi": "'Bộ ba cốt lõi' (Triple Bottom Line) trong bối cảnh CSR là gì?",
     "options": {
@@ -1163,7 +1163,7 @@ export const chapter5Quiz: QuizQuestion[] = [
   },
   {
     "id": "OBE_291",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "If a manager only listens to feedback that praises their new policy and ignores complaints, they are showing:",
     "questionVi": "Nếu một nhà quản lý chỉ lắng nghe phản hồi khen ngợi chính sách mới của họ và phớt lờ các khiếu nại, họ đang thể hiện:",
     "options": {
@@ -1187,12 +1187,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Confirmation bias leads people to seek out information that supports their existing views.",
     "explanationVi": "Thiên kiến xác nhận dẫn dắt mọi người tìm kiếm thông tin hỗ trợ các quan điểm hiện có của họ.",
-    "relatedSectionId": "6.3.1",
+    "relatedSectionId": "5.3.1",
     "topic": "Confirmation Bias"
   },
   {
     "id": "OBE_292",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Why does 'Time Pressure' lead to Bounded Rationality?",
     "questionVi": "Tại sao 'Áp lực thời gian' dẫn đến Tính hợp lý bị giới hạn?",
     "options": {
@@ -1216,12 +1216,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "When time is short, we cannot perform a full rational analysis and must satisfice.",
     "explanationVi": "Khi thời gian ngắn, chúng ta không thể thực hiện một phân tích hợp lý đầy đủ và phải satisfice.",
-    "relatedSectionId": "6.5.2",
+    "relatedSectionId": "5.5.2",
     "topic": "Time Constraints"
   },
   {
     "id": "OBE_293",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Which ethical criterion is most likely to be used by a whistleblower?",
     "questionVi": "Tiêu chuẩn đạo đức nào có khả năng nhất được sử dụng bởi một người tố cáo sai phạm?",
     "options": {
@@ -1245,12 +1245,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Whistleblowers rely on their right to free speech and ethical duty to report wrongdoing.",
     "explanationVi": "Những người tố cáo sai phạm dựa trên quyền tự do ngôn luận và nghĩa vụ đạo đức của họ để báo cáo hành vi sai trái.",
-    "relatedSectionId": "6.6.2",
+    "relatedSectionId": "5.6.2",
     "topic": "Focus on Rights"
   },
   {
     "id": "OBE_294",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the 'Creative Environment'?",
     "questionVi": "'Môi trường sáng tạo' là gì?",
     "options": {
@@ -1274,12 +1274,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "A creative environment removes barriers and rewards innovation.",
     "explanationVi": "Một môi trường sáng tạo loại bỏ các rào cản và khen thưởng sự đổi mới.",
-    "relatedSectionId": "6.7.1",
+    "relatedSectionId": "5.7.1",
     "topic": "Creative Environment"
   },
   {
     "id": "OBE_295",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "How does 'Culture' influence ethical decisions?",
     "questionVi": "'Văn hóa' ảnh hưởng đến các quyết định đạo đức như thế nào?",
     "options": {
@@ -1303,12 +1303,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Cultural values define what is considered 'right' or 'fair' in a specific society.",
     "explanationVi": "Các giá trị văn hóa định nghĩa những gì được coi là 'đúng' hoặc 'công bằng' trong một xã hội cụ thể.",
-    "relatedSectionId": "6.5.1",
+    "relatedSectionId": "5.5.1",
     "topic": "Cultural Differences"
   },
   {
     "id": "OBE_296",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is 'Problem Formulation' in creativity?",
     "questionVi": "'Định hình vấn đề' trong sáng tạo là gì?",
     "options": {
@@ -1332,12 +1332,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "It is the first step of creative behavior.",
     "explanationVi": "Đây là bước đầu tiên của hành vi sáng tạo.",
-    "relatedSectionId": "6.7.2",
+    "relatedSectionId": "5.7.2",
     "topic": "Creative Behavior"
   },
   {
     "id": "OBE_297",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "Which factor in the perceiver refers to 'what we want' influencing what we see?",
     "questionVi": "Yếu tố nào ở người nhận thức đề cập đến việc 'những gì chúng ta muốn' ảnh hưởng đến những gì chúng ta thấy?",
     "options": {
@@ -1361,12 +1361,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Unsatisfied needs or motives stimulate perception and can distort it.",
     "explanationVi": "Các nhu cầu hoặc động cơ không được thỏa mãn kích thích nhận thức và có thể bóp méo nó.",
-    "relatedSectionId": "6.1.1",
+    "relatedSectionId": "5.1.1",
     "topic": "Motives"
   },
   {
     "id": "OBE_298",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "If a person is late for work every single day, their behavior has:",
     "questionVi": "Nếu một người đi làm muộn mỗi ngày, hành vi của họ có:",
     "options": {
@@ -1390,12 +1390,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "A",
     "explanationEn": "Consistency is high when the person responds the same way over time.",
     "explanationVi": "Sự nhất quán cao khi người đó phản ứng giống nhau theo thời gian.",
-    "relatedSectionId": "6.2.1",
+    "relatedSectionId": "5.2.1",
     "topic": "Consistency"
   },
   {
     "id": "OBE_299",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is 'Intuition' in decision making?",
     "questionVi": "'Trực giác' trong việc ra quyết định là gì?",
     "options": {
@@ -1419,12 +1419,12 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "Intuition is fast and relies on holistic associations from experience.",
     "explanationVi": "Trực giác là nhanh chóng và dựa trên các liên tưởng tổng thể từ kinh nghiệm.",
-    "relatedSectionId": "6.4.3",
+    "relatedSectionId": "5.4.3",
     "topic": "Intuition"
   },
   {
     "id": "OBE_300",
-    "chapter": 6,
+    "chapter": 5,
     "questionEn": "What is the final stage of the creativity model?",
     "questionVi": "Giai đoạn cuối cùng của mô hình sáng tạo là gì?",
     "options": {
@@ -1448,7 +1448,7 @@ export const chapter5Quiz: QuizQuestion[] = [
     "correctAnswer": "B",
     "explanationEn": "The model ends with the actual creative outcome, which must be novel and useful.",
     "explanationVi": "Mô hình kết thúc với kết quả sáng tạo thực tế, phải mới mẻ và hữu ích.",
-    "relatedSectionId": "6.7.3",
+    "relatedSectionId": "5.7.3",
     "topic": "Creative Outcomes"
   }
 ];
