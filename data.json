@@ -4,6 +4,11 @@
       "token": "mn3tq8j736y59fr8z4k",
       "lastActive": 1774311395519,
       "subjectId": "obe"
+    },
+    "nguyenkhavy5002213@gmail.com_bue": {
+      "token": "mnbsauonca5jznqztfp",
+      "lastActive": 1774792004832,
+      "subjectId": "bue"
     }
   },
   "subjects": {
@@ -21,7 +26,7 @@
     },
     "bue": {
       "name": "Business Ethics (BUE)",
-      "sheetUrl": ""
+      "sheetUrl": "https://docs.google.com/spreadsheets/d/1KFm0Koahlez6IHKuMcN__RcrnkqMyoG4FwVvfDeSU7I/edit?usp=sharing"
     }
   }
 }
