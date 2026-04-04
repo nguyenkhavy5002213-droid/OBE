@@ -1,20 +1,78 @@
 /// <reference types="vite/client" />
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
+
+// 1. Khai báo danh sách API Keys
+const API_KEYS = [
+  "AIzaSyAUwMZuoZGgBwnsxSkI2nDn0gs4Cp1cWsc",
+  "AIzaSyAU0826A38CCbqLmEowZ8aVFng-opYuQqI",
+  "AIzaSyBHweJxoPBNCeeL9DXatebf-7ajs449USM",
+  "AIzaSyBKshPP4I_x5IJX-WFQ9sveYnQiaBCcuoA"
+];
+
+// Biến lưu trữ index của Key hiện tại đang được sử dụng
+let currentKeyIndex = 0;
 
 function getAIInstance() {
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = API_KEYS[currentKeyIndex];
   if (!apiKey) {
-    throw new Error("Không tìm thấy API Key. Vui lòng kiểm tra cấu hình trong Settings.");
+    throw new Error("Không tìm thấy cấu hình API Key.");
   }
   return new GoogleGenAI({ apiKey });
 }
 
+function rotateKey() {
+  // Chuyển sang key tiếp theo, nếu đến cuối mảng thì quay lại key đầu tiên (vòng lặp)
+  currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
+  console.log(`🔄 Đã xoay vòng sang API Key thứ ${currentKeyIndex + 1}`);
+}
+
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+// 2. Hàm Wrapper: Xử lý cơ chế tự động thử lại khi gặp lỗi Quota
+async function executeWithRotation<T>(operation: (ai: GoogleGenAI) => Promise<T>): Promise<T> {
+  let attempts = 0;
+  const maxAttempts = API_KEYS.length; // Số lần thử tối đa bằng tổng số key
+
+  while (attempts < maxAttempts) {
+    const ai = getAIInstance();
+    try {
+      // Thực thi logic gọi API
+      return await operation(ai);
+    } catch (error: any) {
+      console.error(`Lỗi ở Key thứ ${currentKeyIndex + 1}:`, error?.message || error);
+
+      // Kiểm tra xem lỗi có phải do hết quota không (429 hoặc RESOURCE_EXHAUSTED)
+      const isQuotaError = error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("429");
+
+      if (isQuotaError) {
+        console.warn(`⚠️ Key thứ ${currentKeyIndex + 1} đã hết hạn mức. Đang thử Key dự phòng...`);
+        rotateKey(); // Đổi key
+        attempts++;  // Tăng số lần đã thử
+        await delay(1000); // Nghỉ 1 giây trước khi thử lại để tránh spam
+      } 
+      // Kiểm tra lỗi do key bị leak/khóa
+      else if (error?.message?.includes("leaked") || error?.status === "PERMISSION_DENIED") {
+        console.warn(`❌ Key thứ ${currentKeyIndex + 1} bị vô hiệu hóa do rò rỉ. Đang bỏ qua và thử Key khác...`);
+        rotateKey();
+        attempts++;
+      } 
+      // Nếu là lỗi khác (ví dụ: mất mạng, model lỗi) thì ném lỗi ra ngoài luôn, không xoay key nữa
+      else {
+        throw new Error(error?.message || "Không thể kết nối với AI. Vui lòng thử lại sau.");
+      }
+    }
+  }
+
+  // Nếu vòng lặp chạy hết mà không return được kết quả nghĩa là mọi Key đều thất bại
+  throw new Error("Tất cả các API Key đều đã hết hạn mức hoặc bị khóa. Vui lòng thử lại sau.");
+}
+
+// ==========================================
+// CÁC HÀM TÍNH NĂNG CHÍNH (Đã bọc qua executeWithRotation)
+// ==========================================
+
 export async function chatWithAI(message: string, history: any[], knowledgeBaseContext: string) {
-  const ai = getAIInstance();
-  try {
-    // Format history for the SDK
+  return executeWithRotation(async (ai) => {
     const formattedHistory = history.map(msg => ({
       role: msg.role === 'user' ? 'user' : 'model',
       parts: [{ text: msg.content }]
@@ -41,24 +99,11 @@ export async function chatWithAI(message: string, history: any[], knowledgeBaseC
       throw new Error("AI trả về phản hồi rỗng.");
     }
     return response.text;
-  } catch (error: any) {
-    console.error("Chat error:", error);
-    
-    if (error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("429")) {
-      throw new Error("Hạn mức API đã hết. Vui lòng thử lại sau một lát.");
-    }
-    
-    if (error?.message?.includes("leaked") || error?.status === "PERMISSION_DENIED") {
-      throw new Error("API Key của bạn đã bị vô hiệu hóa do rò rỉ (leaked). Vui lòng vào Google AI Studio (https://aistudio.google.com/app/apikey) để tạo API Key mới, sau đó cập nhật lại trong phần Settings (biểu tượng bánh răng) của ứng dụng này.");
-    }
-    
-    throw new Error(error?.message || "Không thể kết nối với AI. Vui lòng thử lại sau.");
-  }
+  });
 }
 
 export async function generateAdaptiveQuiz(weakTopics: string[], knowledgeBaseContext: string): Promise<any[]> {
-  const ai = getAIInstance();
-  try {
+  return executeWithRotation(async (ai) => {
     const prompt = `Based on the following knowledge base context, generate at least 5 new multiple-choice questions for EACH of these weak topics: ${weakTopics.join(', ')}.
     For example, if there are 2 weak topics, you must generate at least 10 questions in total.
     
@@ -96,7 +141,6 @@ export async function generateAdaptiveQuiz(weakTopics: string[], knowledgeBaseCo
     const jsonStr = response.text?.trim() || "[]";
     let parsedJson = [];
     try {
-      // Handle potential markdown code blocks
       let cleanJsonStr = jsonStr;
       if (cleanJsonStr.startsWith('```json')) {
         cleanJsonStr = cleanJsonStr.replace(/^```json\n/, '').replace(/\n```$/, '');
@@ -105,22 +149,8 @@ export async function generateAdaptiveQuiz(weakTopics: string[], knowledgeBaseCo
       }
       parsedJson = JSON.parse(cleanJsonStr);
     } catch (parseError) {
-      console.error("Failed to parse JSON:", jsonStr);
-      throw new Error("AI trả về dữ liệu không hợp lệ.");
+      throw new Error("AI trả về dữ liệu JSON không hợp lệ.");
     }
     return parsedJson;
-  } catch (error: any) {
-    console.error("Quiz generation error:", error);
-    
-    if (error?.status === "RESOURCE_EXHAUSTED" || error?.message?.includes("429")) {
-      throw new Error("Hạn mức API đã hết. Vui lòng thử lại sau một lát.");
-    }
-    
-    if (error?.message?.includes("leaked") || error?.status === "PERMISSION_DENIED") {
-      throw new Error("API Key của bạn đã bị vô hiệu hóa do rò rỉ (leaked). Vui lòng vào Google AI Studio (https://aistudio.google.com/app/apikey) để tạo API Key mới, sau đó cập nhật lại trong phần Settings (biểu tượng bánh răng) của ứng dụng này.");
-    }
-    
-    throw error; // Throw the error so the UI can display it
-  }
+  });
 }
-
